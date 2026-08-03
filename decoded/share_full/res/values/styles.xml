@@ -2312,6 +2312,11 @@
         <item name="a32">@color/o5</item>
         <item name="a3n">@color/o5</item>
     </style>
+    <style name="search_activity" parent="@style/jc">
+        <item name="android:windowBackground">@color/of</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
     <style name="jd" parent="@style/jk">
         <item name="a2y">@color/o0</item>
         <item name="a2z">@color/ax</item>

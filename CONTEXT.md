@@ -8,10 +8,12 @@
 - Version: `3.9.6` (`versionCode 925`)
 - SDK metadata: `minSdk 21`, `targetSdk 29`
 - Current APK: `artifacts/Share_floating_navigation_ui_fixed.apk`
-- Current SHA-256: `b6b9b789165493c788e68b76699a558e077e61da28c05f350b3076f4b187d481`
+- Current SHA-256: `5c045949d619e9414afc4b56c96d5a0e29890030e8d9f9623621e5c65be67c0c`
 - Signing certificate SHA-256: `4abaeb3cd7a99ac96985806f1a5f1f2f096504ebd20c834d68fc862d9b5bbe75`
 
 The current APK is installed on the connected test device. It uses the local signing key in `artifacts/`; future update APKs must reuse this exact key. Credentials are recorded in `artifacts/Share_floating_navigation_签名说明.md`.
+
+The main-page search transition is also patched to avoid a brief black frame on Android 16 while preserving the original search screen and back-stack behavior.
 
 ## Requested Scope
 
@@ -36,6 +38,9 @@ Final behavior:
 - `decoded/share_full/smali/com/hengye/share/ui/widget/behavior/BottomNavigationBehavior.smali`: nested-scroll bridge into the delegate.
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingNavigationBarDelegate.smali`: capsule styling, item layout, selection animation, insets, and scroll state.
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/ImeAwareNavigationBarController.smali`: show/hide animation and combined IME/scroll visibility.
+- `decoded/share_full/res/values/styles.xml`: transient translucent theme used while the search window enters.
+- `decoded/share_full/smali/com/hengye/share/module/search/SearchActivity.smali`: schedules restoration to an opaque window after the system transition.
+- `decoded/share_full/smali/com/hengye/share/module/search/SearchOpaqueRunnable.smali`: restores normal opaque Activity behavior after 400ms.
 
 The other files in the same `smali_classes3/.../third/` directory are required synthetic classes and listeners. Keep them together when rebuilding.
 
@@ -46,6 +51,7 @@ The other files in the same `smali_classes3/.../third/` directory are required s
 3. Legacy tabs are created after the first attach callback; item binding is delayed after window focus so all three children exist.
 4. The old tab XML applies top gravity to icons and bottom gravity to titles; the delegate overrides both to center vertically.
 5. On the API 36 test device, both navigation-bar and stable insets were reported as zero to this targetSdk 29 app; a 24dp gesture-region fallback is applied and shared with the publish FAB.
+6. Android 16 hides the previous Activity surface during its forced top-right search transition, exposing the black task background. The search window now starts translucent and is converted back to opaque after the transition so return navigation remains unchanged.
 
 ## Verification Status
 
@@ -57,6 +63,7 @@ Verified on a Xiaomi `24129PN74C`, Android 16 / API 36, 1200x2670, 520dpi, gestu
 - Transparent system navigation area.
 - Down-scroll hide and reverse-scroll restore.
 - Original page-specific publish FAB visibility.
+- Main-page search opens without black frames and returns to the timeline normally.
 - APK zip alignment and v1/v2/v3 signatures.
 - Original native libraries match the baseline APK byte-for-byte.
 

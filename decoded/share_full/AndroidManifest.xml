@@ -481,7 +481,7 @@
                 <data android:host="myallfollowerslist" android:scheme="sinaweibo"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.hengye.share.module.search.SearchActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustPan">
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.hengye.share.module.search.SearchActivity" android:screenOrientation="behind" android:theme="@style/search_activity" android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>

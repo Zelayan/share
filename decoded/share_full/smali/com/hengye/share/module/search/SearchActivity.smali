@@ -1244,6 +1244,22 @@
 
     invoke-super {p0, p1}, LooO00000;->onCreate(Landroid/os/Bundle;)V
 
+    new-instance v0, Lcom/hengye/share/module/search/SearchOpaqueRunnable;
+
+    invoke-direct {v0, p0}, Lcom/hengye/share/module/search/SearchOpaqueRunnable;-><init>(Landroid/app/Activity;)V
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v1
+
+    const-wide/16 v2, 0x190
+
+    invoke-virtual {v1, v0, v2, v3}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
     sget-boolean p1, LlC;->O000000o:Z
 
     const/4 v0, 0x0
