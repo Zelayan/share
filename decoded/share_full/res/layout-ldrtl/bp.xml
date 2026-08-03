@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton android:src="@drawable/i4" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/ao" style="@style/qr"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

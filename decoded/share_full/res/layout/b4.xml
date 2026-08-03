@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.appbase.ui.widget.drawer.HomeDrawerLayout android:id="@id/mg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/b5" />
+    <com.google.android.material.navigation.NavigationView android:id="@id/a5v" android:layout_width="wrap_content" android:layout_height="fill_parent" app:nd="@layout/h8" app:ox="?a37" app:t8="@menu/k">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/yo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.navigation.NavigationView>
+</com.hengye.appbase.ui.widget.drawer.HomeDrawerLayout>

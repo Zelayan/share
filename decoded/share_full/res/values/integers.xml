@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="c">150</integer>
+    <integer name="d">150</integer>
+    <integer name="e">100</integer>
+    <integer name="f">100</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="i">2</integer>
+    <integer name="j">300</integer>
+    <integer name="k">320</integer>
+    <integer name="l">200</integer>
+    <integer name="m">14</integer>
+    <integer name="n">400</integer>
+    <integer name="o">200</integer>
+    <integer name="p">4</integer>
+    <integer name="q">100</integer>
+    <integer name="r">100</integer>
+    <integer name="s">1</integer>
+    <integer name="t">1</integer>
+    <integer name="u">3</integer>
+    <integer name="v">75</integer>
+    <integer name="w">120</integer>
+    <integer name="x">100</integer>
+    <integer name="y">250</integer>
+    <integer name="z">200</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="a1">1500</integer>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <FrameLayout android:id="@id/zp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zq" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tl" android:textColor="?android:textColorTertiary" android:gravity="center_vertical" android:id="@id/amw" android:background="@drawable/em" android:paddingTop="@dimen/s0" android:paddingBottom="@dimen/s0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/io" android:text="@string/zp" android:singleLine="true" android:drawablePadding="@dimen/ry" android:layout_weight="1.0" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/rx" app:re="@dimen/is" app:rf="@dimen/is" />
+            <ImageView android:id="@id/gc" android:src="@drawable/rf" android:contentDescription="@string/zg" style="@style/k_" />
+            <ImageView android:id="@id/gy" android:src="@drawable/se" android:contentDescription="@string/a01" style="@style/k_" />
+            <ImageView android:id="@id/ft" android:src="@drawable/qj" android:contentDescription="@string/yb" style="@style/k_" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

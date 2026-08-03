@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/a7n" android:background="@color/ax" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.media.MediaPlayerTouchController android:id="@id/a7m" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layout_marginBottom="?actionBarSize" />
+    <com.hengye.share.module.video.view.ShareMediaPlayerView android:id="@id/a7o" android:layout_width="fill_parent" android:layout_height="fill_parent" app:h6="@layout/qz" app:v_="@layout/ak" app:a0z="ag5" />
+    <FrameLayout android:id="@id/zz" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center" android:id="@id/a3y" android:visibility="gone" android:layout_width="@dimen/io" android:layout_height="@dimen/io">
+            <ImageView android:id="@id/a3k" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/ij" android:contentDescription="@string/a2r" />
+            <ImageView android:id="@id/a3j" android:visibility="gone" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/ii" android:contentDescription="@string/a2q" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="end|center" android:id="@id/w8" android:background="@drawable/ez" android:padding="@dimen/ru" android:visibility="gone" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/ry" android:tint="@color/pr" android:contentDescription="@string/apy" />
+    </FrameLayout>
+    <include layout="@layout/r1" />
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zy" android:background="@drawable/b1" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/bh">
+            <ImageButton android:id="@id/fp" android:background="@null" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/qu" android:tint="@color/pr" android:contentDescription="@string/aph" />
+            <TextView android:textSize="@dimen/tg" android:textStyle="bold" android:textColor="@color/pr" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/anv" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/g2" android:background="@null" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/rg" android:tint="@color/pr" android:contentDescription="@string/apj" />
+            <ImageButton android:id="@id/hm" android:background="@null" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/p3" android:tint="@color/pr" android:contentDescription="@string/a28" />
+            <ImageButton android:id="@id/ff" android:background="@null" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/pw" android:tint="@color/pr" android:contentDescription="@string/aps" />
+            <ImageButton android:id="@id/g0" android:background="@null" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/s5" android:tint="@color/pr" android:contentDescription="@string/api" />
+        </LinearLayout>
+    </FrameLayout>
+    <ViewStub android:id="@id/aq6" android:layout="@layout/rc" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

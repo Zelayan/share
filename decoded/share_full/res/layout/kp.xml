@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/tb" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/t_" android:layout="@layout/kn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/kj" />
+    <ViewStub android:id="@id/an5" android:visibility="visible" android:layout="@layout/k5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/an6" android:paddingTop="@dimen/su" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj" />
+    <include layout="@layout/l2" />
+    <ViewStub android:id="@id/t5" android:layout="@layout/k8" android:layout_width="wrap_content" android:layout_height="@dimen/iv" />
+    <ViewStub android:id="@id/t9" android:layout="@layout/k9" android:layout_width="wrap_content" android:layout_height="@dimen/iv" />
+    <LinearLayout android:orientation="vertical" android:id="@id/acu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ek">
+        <ViewStub android:id="@id/an8" android:layout="@layout/k5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/an9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/an_" android:paddingTop="@dimen/s0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <include layout="@layout/l2" />
+        <ViewStub android:id="@id/t7" android:layout="@layout/k8" android:layout_width="wrap_content" android:layout_height="@dimen/iv" />
+    </LinearLayout>
+    <ViewStub android:id="@id/aea" android:layout="@layout/kf" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Space android:id="@id/abz" android:layout_width="fill_parent" android:layout_height="@dimen/s0" />
+    <include android:id="@id/zp" android:visibility="gone" layout="@layout/ke" />
+    <Space android:id="@id/zr" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ek" />
+    <View android:id="@id/m1" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+</LinearLayout>

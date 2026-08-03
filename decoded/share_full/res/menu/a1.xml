@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/s5" android:id="@id/c6" android:orderInCategory="180" android:title="@string/ao4" app:showAsAction="qy">
+        <menu>
+            <item android:icon="@drawable/sc" android:id="@id/ci" android:title="@string/aol" app:showAsAction="jl" />
+            <item android:icon="@drawable/qn" android:id="@id/bi" android:title="@string/a1s" app:showAsAction="jl" />
+            <item android:icon="@drawable/sm" android:id="@id/cp" android:title="@string/xh" app:showAsAction="jl" />
+            <item android:icon="@drawable/s6" android:id="@id/c8" android:title="@string/vq" app:showAsAction="jl" />
+        </menu>
+    </item>
+</menu>

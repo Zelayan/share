@@ -1,0 +1,4 @@
+decoded/share_full/build/
+decoded/share_full/dist/
+*.idsig
+.DS_Store

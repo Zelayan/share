@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:textSize="@dimen/tb" android:id="@id/hd" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="35.0dip" android:text="@string/x9"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

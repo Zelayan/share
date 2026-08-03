@@ -1,0 +1,36 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.hengye.share",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "activityPairs": [
+          {
+            "from": "com.hengye.share.module.status.StatusActivity",
+            "to": "*"
+          },
+          {
+            "from": "com.hengye.share.module.search.SearchActivity",
+            "to": "*"
+          }
+        ],
+        "transActivities": [
+          "com.hengye.share.module.util.HttpDispatchActivity",
+          "com.hengye.share.module.util.SchemeDispatchActivity",
+          "com.hengye.share.module.util.ComposerDispatchActivity",
+          "com.hengye.share.module.weibo.OpenProductAppActivity"
+        ],
+        "UX": {
+          "supportRotationUxCompat": "false",
+          "supportLock": "true",
+          "isDraggable": "true"
+        }
+      }
+    }
+  ]
+}

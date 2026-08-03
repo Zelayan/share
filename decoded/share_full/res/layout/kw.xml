@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/t0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.image.StatusImageView android:id="@id/r7" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/f0" app:qo="a6y" app:qs="a6y" />
+    <ImageView android:id="@id/vl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" android:src="@drawable/nr" android:contentDescription="@null" android:layout_marginEnd="@dimen/rz" app:q6="@id/r7" app:qs="@id/r7" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/e_" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru" app:q6="@id/r7" app:qo="@id/r7" app:qr="@id/r7">
+        <TextView android:textSize="@dimen/to" android:id="@id/ank" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/rz" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/v9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:maxWidth="50.0dip" android:maxHeight="30.0dip" android:contentDescription="@null" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

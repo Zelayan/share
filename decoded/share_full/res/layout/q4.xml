@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/v5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="2.0dip" />
+    <TextView android:textSize="@dimen/wu" android:textColor="@color/pr" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/ait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:shadowColor="@color/cf" android:shadowRadius="1.0" android:paddingEnd="@dimen/w7" />
+    <com.hengye.share.sina.card.widget.AvatarTextView android:layout_gravity="center_vertical" android:id="@id/ap0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/wu" android:textColor="@color/pr" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/aig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:shadowColor="@color/cf" android:shadowRadius="1.0" />
+</merge>

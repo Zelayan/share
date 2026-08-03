@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/a_r" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/d_" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include android:id="@id/agr" layout="@layout/rg" />
+        <FrameLayout android:id="@id/pw" android:layout_width="fill_parent" android:layout_height="390.0dip" android:layout_marginTop="-6.0dip" android:layout_below="@id/agr">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                <com.hengye.appbase.ui.widget.common.CommonViewPager android:layout_gravity="center_horizontal" android:id="@id/apl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" android:layout_centerHorizontal="true" />
+                <View android:id="@id/apg" android:background="@drawable/oe" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+                <ImageView android:id="@id/a5x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-16.0dip" android:layout_marginRight="100.0dip" android:src="@drawable/o3" android:layout_below="@id/apg" android:layout_alignParentRight="true" android:transformPivotX="15.099976dip" android:transformPivotY="15.099976dip" android:rotation="-30.0" />
+            </RelativeLayout>
+        </FrameLayout>
+        <RelativeLayout android:id="@id/a1s" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?android:actionBarSize" android:layout_above="@id/es">
+            <TextView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/ah1" android:background="#70d7d7d7" android:padding="5.0dip" android:focusable="false" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginBottom="10.0dip" android:text="获取封面和歌词" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAlignment="center" />
+            <com.hengye.share.ui.widget.music.lrc.LrcView android:id="@id/a1r" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/es" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/a5h" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="70.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="@color/pr" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/a5g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:singleLine="true" android:layout_weight="1.0" />
+                <com.hengye.share.ui.widget.music.PlayerSeekBar android:layout_gravity="center_vertical" android:id="@id/a7l" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="8.0dip" android:secondaryProgress="0" android:progressDrawable="@drawable/ge" android:minHeight="8.0dip" android:thumb="@drawable/o9" android:layout_weight="22.0" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/pr" android:layout_gravity="center_vertical" android:id="@id/a5f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/a7p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/od" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

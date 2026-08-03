@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.geetest.sdk.views.GT3GeetestView android:layout_gravity="center_vertical" android:id="@id/geetest_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="4.0">
+            <TextView android:textSize="14.0sp" android:textColor="#ff383838" android:id="@id/tv_test_geetest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt3_geetest_click" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff3873ff" android:id="@id/tv_test_geetest_cof" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/gt3_geetest_try_again" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_geetest_logo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="#ffafbbbf" android:id="@id/tv_test_geetest_cord" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_marginBottom="1.0dip" android:text="100" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

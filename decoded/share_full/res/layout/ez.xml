@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/za" android:background="?a2z" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/a_i" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/j1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/a1j" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/h_" android:background="@drawable/em" android:padding="@dimen/ru" android:visibility="gone" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/r5" android:scaleType="fitCenter" android:tint="?a37" android:contentDescription="@string/ex" />
+                <ImageButton android:id="@id/hq" android:background="@drawable/em" android:padding="@dimen/ru" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/s1" android:scaleType="fitCenter" android:tint="?a37" android:contentDescription="@string/wj" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/yc" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zl" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" android:layout_marginBottom="@dimen/rx" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz">
+                        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/an3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/wh" android:padding="@dimen/rx" android:layout_width="@dimen/iy" android:layout_height="@dimen/iy" android:contentDescription="@string/b40" />
+                    </LinearLayout>
+                    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:textSize="@dimen/tm" android:textColor="?android:textColorPrimary" android:id="@id/n3" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ru" android:layout_marginBottom="@dimen/ru" android:hint="@string/t5" android:maxLines="4" android:maxLength="300" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/tn" android:textColor="?android:textColorSecondary" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ys" android:padding="@dimen/rx" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/rz" android:layout_marginBottom="@dimen/rz" android:text="@string/vs" android:layout_weight="1.0" android:layout_marginStart="@dimen/s0" android:layout_marginEnd="@dimen/s0" />
+                <ImageButton android:id="@id/g4" android:background="@drawable/em" android:padding="@dimen/ru" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/s2" android:scaleType="fitCenter" android:tint="?a37" android:contentDescription="@string/rc" />
+                <FrameLayout android:layout_width="@dimen/io" android:layout_height="@dimen/io">
+                    <ImageButton android:id="@id/h1" android:background="@drawable/em" android:padding="@dimen/ru" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/sk" android:scaleType="fitCenter" android:tint="?a37" android:contentDescription="@string/re" />
+                    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeNewProgressBar android:layout_gravity="center" android:id="@id/a7w" android:visibility="gone" android:layout_width="@dimen/iy" android:layout_height="@dimen/iy" android:indeterminate="true" android:indeterminateTintMode="src_in" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/a1d" android:background="?a3a" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/hb" android:background="@drawable/em" android:padding="@dimen/ru" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/rv" android:scaleType="fitCenter" android:tint="?a37" android:contentDescription="@string/ew" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.hengye.share.ui.widget.emoticon.EmoticonPicker android:id="@id/mo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/tl" android:textColor="@color/kn" android:id="@id/zm" android:background="#aa000000" android:padding="@dimen/eo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/s9" />
+    <include layout="@layout/rf" />
+</FrameLayout>

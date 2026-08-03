@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/i8" android:id="@id/kg" android:visible="false" android:title="@string/es" app:showAsAction="qy" />
+    <item android:icon="@drawable/i9" android:id="@id/kh" android:title="@string/et" app:showAsAction="qy" />
+    <item android:icon="@drawable/i7" android:id="@id/kd" android:title="@string/ep" app:showAsAction="qy">
+        <menu>
+            <item android:id="@id/ke" android:title="@string/eq" />
+            <item android:id="@id/kf" android:title="@string/er" />
+        </menu>
+    </item>
+    <item android:id="@id/kc" android:title="@string/eo" app:showAsAction="di" />
+</menu>

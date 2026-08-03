@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/eu" android:layout_height="wrap_content" style="?android:buttonBarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/h0" android:textColor="?colorPrimary" android:id="@id/m7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/im" style="?android:buttonBarButtonStyle" />
+</LinearLayout>

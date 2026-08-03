@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/au4">
+        <Preference android:title="@string/arv" android:key="@string/arv" />
+        <Preference android:title="@string/arx" android:key="@string/arx" />
+        <Preference android:title="@string/as5" android:key="@string/as5" />
+        <Preference android:title="@string/arz" android:key="@string/arz" />
+        <Preference android:title="@string/as0" android:key="@string/as0" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/awq">
+        <Preference android:title="@string/as1" android:key="@string/as1" />
+        <Preference android:title="@string/as6" android:key="@string/as6" />
+        <Preference android:title="@string/ary" android:key="@string/ary" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/avp" android:key="other_category">
+        <Preference android:title="@string/aru" android:key="Share_Advanced" />
+        <Preference android:title="@string/as4" android:key="Share_Lab" />
+        <Preference android:title="@string/art" android:key="@string/art" />
+        <Preference android:title="@string/as3" android:key="@string/as3" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+</PreferenceScreen>

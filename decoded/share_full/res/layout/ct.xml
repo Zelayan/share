@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wl" android:visibility="gone" android:layout_width="3.0dip" android:layout_height="25.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/wk" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ru" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/a6h" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="7" android:singleLine="true" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/wj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorTertiary" android:gravity="center" android:id="@id/aln" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:id="@id/dp" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <ImageView android:id="@id/a43" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cb" android:paddingStart="@dimen/rz" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/to" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/ajj" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_toStartOf="@id/a_c" android:layout_toEndOf="@id/wk" />
+</RelativeLayout>

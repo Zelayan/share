@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="a">
+        <item>Only Wi-Fi</item>
+        <item>Always</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="c">
+        <item>Square</item>
+        <item>Square corners</item>
+        <item>Round</item>
+    </string-array>
+    <string-array name="h">
+        <item>No picture</item>
+        <item>Thumbnails</item>
+        <item>High-definition</item>
+        <item>Original</item>
+        <item>Auto</item>
+        <item>Only Wi-Fi</item>
+    </string-array>
+    <string-array name="j">
+        <item>White</item>
+        <item>Black</item>
+    </string-array>
+    <string-array name="k">
+        <item>Follow theme</item>
+        <item>Local pictures</item>
+        <item>Homepage cover</item>
+    </string-array>
+    <string-array name="m">
+        <item>Never</item>
+        <item>Switch group</item>
+        <item>Refresh</item>
+        <item>Send weibo</item>
+    </string-array>
+    <string-array name="o">
+        <item>13 pt</item>
+        <item>14 pt</item>
+        <item>15 pt</item>
+        <item>16 pt</item>
+        <item>17 pt</item>
+        <item>18 pt</item>
+        <item>19 pt</item>
+        <item>20 pt</item>
+        <item>21 pt</item>
+        <item>23 pt</item>
+    </string-array>
+    <string-array name="q">
+        <item>All Weibo</item>
+        <item>Following Weibo</item>
+        <item>Original Weibo</item>
+    </string-array>
+    <string-array name="r">
+        <item>Original Weibo</item>
+        <item>Retweeted Weibo</item>
+        <item>Weibo comments</item>
+    </string-array>
+    <string-array name="s">
+        <item>All</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="t">
+        <item>All</item>
+        <item>Original</item>
+        <item>Picture</item>
+        <item>Video</item>
+    </string-array>
+    <string-array name="u">
+        <item>Public</item>
+        <item>Friends</item>
+        <item>Only visible to me</item>
+    </string-array>
+    <string-array name="v">
+        <item>Follow weibo</item>
+        <item>At the bottom right</item>
+        <item>At the bottom of the center</item>
+        <item>At the Image center</item>
+        <item>Hide</item>
+    </string-array>
+    <string-array name="w">
+        <item>All</item>
+        <item>Following</item>
+        <item>My fans</item>
+        <item>Myself</item>
+    </string-array>
+    <string-array name="x">
+        <item>Sort by hot</item>
+        <item>Sort by time</item>
+    </string-array>
+    <string-array name="y">
+        <item>Copy content</item>
+        <item>Free copy</item>
+        <item>Copy @%s</item>
+    </string-array>
+    <string-array name="z">
+        <item>Edit</item>
+        <item>Save original picture</item>
+        <item>Save all original pictures</item>
+    </string-array>
+    <string-array name="a0">
+        <item>Chinese</item>
+        <item>English</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+    </string-array>
+    <string-array name="a1">
+        <item>Auto</item>
+        <item>简体中文</item>
+        <item>繁体中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="a3">
+        <item>Auto</item>
+        <item>30 counts</item>
+        <item>50 counts</item>
+        <item>88 counts</item>
+        <item>100 counts</item>
+    </string-array>
+    <string-array name="a5">
+        <item>Bottom bar</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="a7">
+        <item>Normal night</item>
+        <item>Amoled night</item>
+        <item>Blue night</item>
+    </string-array>
+    <string-array name="a9">
+        <item>1 min</item>
+        <item>5 mins</item>
+        <item>15 mins</item>
+        <item>Half an hour</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="ab">
+        <item>Comment</item>
+        <item>Mention</item>
+        <item>Direct Message</item>
+        <item>New Follower</item>
+        <item>Like</item>
+    </string-array>
+    <string-array name="ae">
+        <item>Comment</item>
+        <item>Mention</item>
+        <item>Like</item>
+    </string-array>
+    <string-array name="ag">
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="aj">
+        <item>Compress</item>
+        <item>Original</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="al">
+        <item>From the newest</item>
+        <item>Reverse reading</item>
+    </string-array>
+    <string-array name="ao">
+        <item>Newer weibo</item>
+        <item>Unread notification</item>
+        <item>Video download successfully</item>
+    </string-array>
+    <string-array name="aq">
+        <item>Weibo avatar</item>
+        <item>Comment/Repost/Like avatar</item>
+        <item>"Don't hide avatar over Wi-Fi data"</item>
+    </string-array>
+    <string-array name="as">
+        <item>Follow weibo picture</item>
+        <item>Only Wi-Fi</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="av">
+        <item>Slide right</item>
+        <item>Swipe left</item>
+        <item>Slide left or right</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="ax">
+        <item>夜间模式</item>
+        <item>绅士蓝</item>
+        <item>小草绿</item>
+        <item>少女粉</item>
+    </string-array>
+    <string-array name="b0">
+        <item>Full HD</item>
+        <item>HD</item>
+        <item>SD</item>
+        <item>LD</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="b2">
+        <item>1080P</item>
+        <item>720P</item>
+        <item>480P</item>
+    </string-array>
+</resources>

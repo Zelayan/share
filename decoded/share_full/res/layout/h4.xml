@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="wrap_content" android:layout_height="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/x8" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/rv" android:paddingBottom="@dimen/rx" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/r1" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/eo" />
+            <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:textSize="@dimen/tl" android:textColor="?android:textColorPrimary" android:id="@id/ge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/r0" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/eo" app:j0="agd" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/a9_" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/a7" android:title="@string/avj" android:key="night_theme" android:summary="%s" android:defaultValue="3" android:entryValues="@array/a8" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/atr" android:key="auto_night_mode_follow_system" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/ato" android:key="auto_night_mode" android:defaultValue="true" />
+    <Preference android:title="@string/atp" android:key="auto_night_mode_duration" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/avh" android:key="night_shade_mode" android:summary="@string/avi" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/aw2" android:key="read_verse_order" android:summary="@string/aw3" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/ava" android:key="like_status_long_click" android:summary="@string/avb" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/awu" android:key="show_like_status_error" android:summary="@string/awv" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/awz" android:key="show_recommend_status" android:summary="@string/ax0" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/avx" android:key="video_play_list" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/atn" android:key="auto_fullscreen_video" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/aup" android:key="floating_video" android:summary="@string/aus" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/auq" android:key="floating_video_move" android:summary="@string/aur" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/axy" android:key="video_controller_hide" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/atm" android:key="auto_close_video" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/axc" android:key="start_refresh_status" android:summary="@string/axd" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/att" android:key="auto_refresh_status" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/awd" android:key="reselect_tab_refresh" android:summary="@string/awe" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/av4" android:key="hot_status_comment_preview" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/au1" android:key="comment_floor" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/au2" android:key="comment_sort_by_time" android:summary="@string/au3" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/awn" android:key="scroll_idle_load_photo" android:summary="@string/awo" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/auc" android:key="direct_repost" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/au8" android:key="direct_message_enter" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/av3" android:key="hot_search_tag" android:defaultValue="false" />
+</PreferenceScreen>

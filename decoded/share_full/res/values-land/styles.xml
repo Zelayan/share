@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="t4" parent="@style/f2">
+        <item name="a1a">iq</item>
+        <item name="a1n">ob</item>
+    </style>
+    <style name="uy" parent="@style/sq">
+        <item name="android:textAppearance">?a2c</item>
+        <item name="android:textColor">?g5</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/t</item>
+    </style>
+</resources>

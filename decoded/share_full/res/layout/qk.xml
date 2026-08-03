@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="143.0dip" android:baselineAligned="false">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/r5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <View android:layout_gravity="bottom" android:background="@drawable/g7" android:layout_width="fill_parent" android:layout_height="66.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/pr" android:gravity="center" android:layout_gravity="bottom" android:id="@id/akz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="1.0dip">
+            <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/r6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <View android:layout_gravity="bottom" android:background="@drawable/g7" android:layout_width="fill_parent" android:layout_height="66.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/pr" android:gravity="center" android:layout_gravity="bottom" android:id="@id/amq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="11.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/fu" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0dip" android:textColor="#ffff515d" android:gravity="center" android:id="@id/ao9" android:background="@drawable/g5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/b35" android:layout_weight="1.0" />
+            <Space android:layout_width="20.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff2ab8ee" android:gravity="center" android:id="@id/ao_" android:background="@drawable/g6" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/b35" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.hengye.share.sina.card.view.VoteImageBottomView android:id="@id/bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.hengye.share.sina.card.view.ImageVoteResultView android:id="@id/ew" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</merge>

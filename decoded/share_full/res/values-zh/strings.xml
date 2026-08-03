@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad">全部</string>
+    <string name="aw">使用(%1$d)</string>
+    <string name="ax">使用</string>
+    <string name="ay">返回</string>
+    <string name="az">我知道了</string>
+    <string name="b0">原图</string>
+    <string name="b1">预览</string>
+    <string name="b2">确定(%1$d)</string>
+    <string name="b3">确定</string>
+    <string name="em">正在取消，该操作未获得所需权限。</string>
+    <string name="en" />
+    <string name="eo">裁剪</string>
+    <string name="ep">翻转</string>
+    <string name="eq">水平翻转</string>
+    <string name="er">垂直翻转</string>
+    <string name="es">逆时针旋转</string>
+    <string name="et">旋转</string>
+    <string name="j3">还没有图片或视频</string>
+    <string name="j8">不支持的文件类型</string>
+    <string name="jd">没有支持视频预览的应用</string>
+    <string name="je">最多只能选择 %1$d 个文件</string>
+    <string name="jf">您已经达到最大选择数量</string>
+    <string name="jg">"有 %1$d 张照片大于 %2$d M
+无法上传，将取消勾选原图"</string>
+    <string name="jh">该照片大于 %1$d M，无法上传将取消勾选原图</string>
+    <string name="ji">图片质量太高</string>
+    <string name="jk">不能同时选择图片和视频</string>
+    <string name="jl">图片质量太低</string>
+    <string name="af9">拍一张</string>
+    <string name="afe">选择来源</string>
+    <string name="ayg">裁剪</string>
+    <string name="ayh">原始比例</string>
+    <string name="ayi">裁剪</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/yx" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:id="@id/fc" android:background="@drawable/em" android:padding="@dimen/ru" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qq" app:j0="agc" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:id="@id/gd" android:background="@drawable/em" android:padding="@dimen/ru" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/uc" app:j0="agc" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:id="@id/gn" android:background="@drawable/em" android:padding="@dimen/ru" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4" app:j0="agc" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

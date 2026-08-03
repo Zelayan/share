@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/yu" android:padding="@dimen/ei" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/akd" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/k7" />
+    <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/ake" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/k7" />
+    <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/akf" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/k7" />
+    <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/akg" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/k7" />
+</LinearLayout>

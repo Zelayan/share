@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip android:ellipsize="end" android:id="@id/aql" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ce" app:es="0.0dip" style="@style/u5"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

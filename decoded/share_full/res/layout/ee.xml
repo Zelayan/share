@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/to" android:textColor="?android:textColorSecondary" android:id="@id/anv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/to" android:id="@id/ali" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/yy" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/a7w" android:layout_width="0.0dip" android:layout_height="wrap_content" android:indeterminate="false" android:layout_weight="1.0" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+        <TextView android:textSize="@dimen/to" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/am4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="40.0dip" />
+    </LinearLayout>
+    <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tj" android:gravity="center_vertical" android:id="@id/ak5" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableRight="@drawable/rg" />
+    <ScrollView android:id="@id/aa6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:id="@id/aji" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>

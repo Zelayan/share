@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/sc" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/us" android:layout_width="@dimen/il" android:layout_height="@dimen/il" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ep" android:paddingEnd="@dimen/ep">
+        <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/ao1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <Space android:layout_width="0.0dip" android:layout_height="@dimen/rx" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/aji" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

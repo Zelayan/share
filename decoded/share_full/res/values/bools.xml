@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="c">true</bool>
+    <bool name="d">false</bool>
+    <bool name="e">false</bool>
+    <bool name="f">true</bool>
+    <bool name="g">true</bool>
+    <bool name="h">false</bool>
+    <bool name="i">true</bool>
+    <bool name="j">true</bool>
+    <bool name="k">false</bool>
+</resources>

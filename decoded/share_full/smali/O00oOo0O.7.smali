@@ -1,0 +1,44 @@
+.class public LO00oOo0O;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LO00oOo0o;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic O000000o:LO00oOo0o;
+
+
+# direct methods
+.method public constructor <init>(LO00oOo0o;)V
+    .locals 0
+
+    iput-object p1, p0, LO00oOo0O;->O000000o:LO00oOo0o;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 1
+
+    iget-object v0, p0, LO00oOo0O;->O000000o:LO00oOo0o;
+
+    invoke-virtual {v0}, LO00oOo0o;->O00000Oo()V
+
+    return-void
+.end method

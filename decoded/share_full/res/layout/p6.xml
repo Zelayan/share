@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:stretch="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.loading.StretchLoadingView android:id="@id/adv" android:layout_width="fill_parent" android:layout_height="wrap_content" stretch:a0i="@drawable/re" stretch:a0j="5" />
+</FrameLayout>

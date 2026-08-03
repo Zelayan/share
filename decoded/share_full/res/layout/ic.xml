@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rcl="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/v7" android:layout_width="@dimen/kc" android:layout_height="@dimen/kc" android:scaleType="centerCrop" android:contentDescription="@string/f0" android:layout_marginStart="@dimen/gp" android:layout_marginEnd="@dimen/gp" />
+</FrameLayout>

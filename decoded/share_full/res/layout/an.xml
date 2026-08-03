@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/a_r" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/k7" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.hengye.appbase.ui.widget.common.CommonAppBarLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/rg" />
+            <com.hengye.appbase.ui.widget.common.CommonTabLayout android:id="@id/aeq" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bb="true" />
+        </com.hengye.appbase.ui.widget.common.CommonAppBarLayout>
+        <com.hengye.appbase.ui.widget.common.CommonViewPager android:id="@id/apl" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/aj" />
+        <com.hengye.share.ui.widget.fab.AnimatedFloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/ns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/h3" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

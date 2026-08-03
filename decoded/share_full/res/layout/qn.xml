@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wn" android:textColor="@color/ci" android:ellipsize="end" android:id="@id/ai_" android:paddingLeft="@dimen/u1" android:paddingRight="@dimen/u2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+    <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/u1" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginLeft="@dimen/u1" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/u2" android:layout_marginBottom="10.0dip" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/wl" android:textColor="@color/cj" android:ellipsize="end" android:id="@id/ai9" android:paddingLeft="@dimen/u1" android:paddingRight="@dimen/u2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:maxLines="3" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/a21" android:background="@drawable/ou" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <com.hengye.share.sina.card.view.VerticalTrendOperationButtonView android:gravity="center" android:id="@id/a0b" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/a0c" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/k5" />
+        <com.hengye.share.sina.card.view.VerticalTrendOperationButtonView android:gravity="center" android:id="@id/a4e" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/a_4" android:paddingBottom="1.5dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/k5" />
+        <com.hengye.share.sina.card.view.VerticalTrendOperationButtonView android:gravity="center" android:id="@id/a_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

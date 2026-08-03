@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab icon="@drawable/mu" id="@id/aey" />
+    <tab icon="@drawable/q5" id="@id/aex" />
+    <tab icon="@drawable/mw" id="@id/aev" />
+</tabs>

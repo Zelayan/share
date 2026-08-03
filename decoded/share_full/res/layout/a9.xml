@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@id/r2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="65.0dip" android:layout_marginStart="60.0dip" android:layout_marginEnd="60.0dip" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:textSize="@dimen/tj" android:textColor="@color/ax" android:layout_gravity="bottom" android:id="@id/h6" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:text="@string/x_" />
+</FrameLayout>

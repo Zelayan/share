@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:enabled="true" android:id="@id/ca" android:visible="false" />
+    <item android:enabled="true" android:id="@id/cb" android:visible="false" />
+    <item android:enabled="true" android:id="@id/cc" android:visible="false" />
+    <item android:enabled="true" android:id="@id/cd" android:visible="false" />
+    <item android:enabled="true" android:id="@id/ce" android:visible="false" />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center" android:id="@id/go" android:background="#cc000000" android:padding="@dimen/e9" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/s7" android:tint="@color/pr" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff646464" android:gravity="center_vertical" android:id="@id/ag9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+            <SeekBar android:id="@id/a3z" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff646464" android:gravity="center_vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+            <ImageView android:id="@id/g9" android:background="@drawable/em" android:padding="@dimen/rx" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/rl" android:contentDescription="@string/aph" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

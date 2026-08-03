@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/a_q" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="?a4o" android:id="@id/agr" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="?ah" android:gravity="center" android:id="@id/ab6" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:foreground="?selectableItemBackground" android:drawableRight="@drawable/hq" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@id/ey" android:background="?df" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="4.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="?dg" android:layout_gravity="start" android:id="@id/hy" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:text="@string/b1" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/a6m" android:padding="16.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+            <com.zhihu.matisse.internal.ui.widget.CheckRadioView android:layout_gravity="center_vertical" android:id="@id/a6l" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/hw" />
+            <TextView android:enabled="true" android:textSize="14.0sp" android:textColor="?dg" android:layout_gravity="center_vertical" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b0" android:paddingStart="4.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="?de" android:layout_gravity="end" android:id="@id/hv" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/jv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ey" android:layout_below="@id/agr" />
+    <FrameLayout android:id="@id/ms" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ey" android:layout_below="@id/agr">
+        <TextView android:textSize="16.0sp" android:textColor="?aj" android:gravity="center" android:layout_gravity="center" android:id="@id/mt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/j3" android:drawableTop="?ai" android:drawablePadding="8.0dip" />
+    </FrameLayout>
+</RelativeLayout>

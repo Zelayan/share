@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mq">0.0dip</dimen>
+    <dimen name="ms">22.0dip</dimen>
+    <dimen name="mt">48.0dip</dimen>
+    <dimen name="mx">48.0dip</dimen>
+    <dimen name="my">48.0dip</dimen>
+    <dimen name="na">0.0dip</dimen>
+</resources>

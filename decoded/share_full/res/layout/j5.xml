@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.common.media.player.ui.RatioFrameLayout android:layout_gravity="center" android:id="@id/a3_" android:layout_width="fill_parent" android:layout_height="fill_parent" app:xm="oc">
+        <View android:id="@id/a3t" android:background="@android:color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hengye.share.common.media.player.ui.RatioFrameLayout>
+    <com.hengye.share.ui.widget.image.StatusImageView android:id="@id/a39" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="center" android:id="@id/gr" android:layout_width="@dimen/in" android:layout_height="@dimen/in" android:src="@drawable/pu" android:contentDescription="@null" />
+    <View android:id="@id/a3b" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/a3i" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/xs" android:background="@drawable/ax" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/tb" android:textColor="@color/pr" android:layout_gravity="start|bottom|center" android:id="@id/alo" android:padding="@dimen/rx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/tb" android:textColor="@color/pr" android:gravity="end" android:layout_gravity="bottom" android:id="@id/ak6" android:padding="@dimen/rx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</merge>

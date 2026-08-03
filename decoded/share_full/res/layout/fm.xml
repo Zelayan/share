@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:id="@id/xz" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/y0" android:background="@drawable/ei" android:paddingTop="@dimen/bm" android:paddingBottom="@dimen/bm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bk">
+                <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:layout_width="@dimen/x9" android:layout_height="@dimen/x9" />
+                <Space android:layout_width="@dimen/ru" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/ao1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/tp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ajt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+                </LinearLayout>
+                <ImageView android:id="@id/qu" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/ru" android:tint="?a37" android:contentDescription="@null" />
+            </LinearLayout>
+            <Space android:id="@id/ly" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/y2" android:background="@drawable/ei" android:paddingTop="@dimen/bn" android:paddingBottom="@dimen/bn" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/akn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz" android:singleLine="true" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/bj" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/rx" android:paddingEnd="@dimen/bk">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/a9_" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/vh" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/ru" android:tint="?a37" android:contentDescription="@null" />
+                </LinearLayout>
+            </LinearLayout>
+            <Space android:id="@id/lz" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/y3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a01" android:background="@drawable/ei" android:paddingTop="@dimen/bm" android:paddingBottom="@dimen/bm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bk">
+                    <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/a17" android:singleLine="true" android:layout_weight="1.0" />
+                    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeSwitch android:id="@id/aep" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/rz" />
+                </LinearLayout>
+                <Space android:background="?a34" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/yl" android:background="@drawable/ei" android:paddingTop="@dimen/bm" android:paddingBottom="@dimen/bm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bk">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/al8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/u4" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/tp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/al9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:maxLines="2" />
+                    </LinearLayout>
+                    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeSwitch android:id="@id/aeo" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/rz" />
+                </LinearLayout>
+                <Space android:background="?a34" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/xr" android:background="@drawable/ei" android:paddingTop="@dimen/bm" android:paddingBottom="@dimen/bm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj">
+                    <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/aii" android:background="@drawable/ei" android:paddingTop="@dimen/rv" android:paddingBottom="@dimen/rv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:j0="agd" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/d4" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/d3" android:background="#66666666" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null" />
+    <ImageButton android:layout_gravity="end|center|top" android:id="@id/d5" android:background="#ccdcdddd" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/j1" android:scaleType="fitXY" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/d7" android:background="#ccffffff" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/sv" android:layout_width="25.0dip" android:layout_height="20.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dip" android:id="@id/d6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="@color/pr" android:layout_gravity="bottom" android:id="@id/d2" android:background="#ccdcdddd" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b42" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/a13" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.hengye.share.ui.widget.image.RoundedImageView android:id="@id/tr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/tu" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/ld" android:scaleType="fitXY" android:contentDescription="@null" />
+    </FrameLayout>
+    <Space android:layout_width="4.0dip" android:layout_height="0.0dip" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.hengye.share.ui.widget.image.RoundedImageView android:id="@id/tt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/tw" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/ld" android:scaleType="fitXY" android:contentDescription="@null" />
+    </FrameLayout>
+    <Space android:layout_width="4.0dip" android:layout_height="0.0dip" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.hengye.share.ui.widget.image.RoundedImageView android:id="@id/ts" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/tv" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/ld" android:scaleType="fitXY" android:contentDescription="@null" />
+    </FrameLayout>
+</LinearLayout>

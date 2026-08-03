@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="root_group"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:summary="不支持实时通知、后台推送也无法实现，消息通知需要保持应用开启和允许后台运行，如果收不到通知请检查是否手机限制了应用的后台活动" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/avn" android:key="notify_open" android:defaultValue="true" />
+    <Preference android:title="调整通知的振动和铃声" android:key="notify_oreo" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="开启应用常驻后台" android:key="app_persistent" android:summary="开启后会在通知栏里有个无法移除的通知，如果通知收不到请尝试开启该选项" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/au_" android:key="remind_dm_subscribe_ignore" android:defaultValue="false" />
+    <Preference android:title="@string/aua" android:key="remind_dm_subscribe_manage" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/aw4" android:key="remind_group">
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/axb" android:key="special_follow_remind" android:defaultValue="false" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomMultiSelectListPreference android:entries="@array/ab" android:title="@string/awb" android:key="remind_notify_type" android:defaultValue="@array/aa" android:entryValues="@array/ac" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomMultiSelectListPreference android:entries="@array/ae" android:title="@string/axo" android:key="remind_unread_type" android:defaultValue="@array/ad" android:entryValues="@array/af" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/aw9" android:key="remind_by_vibration" android:defaultValue="true" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/aw5" android:key="remind_by_lights" android:summary="@string/aw6" android:defaultValue="true" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+</PreferenceScreen>

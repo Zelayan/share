@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/zt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/sc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/xc" android:layout_width="@dimen/s4" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ep">
+        <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:layout_width="@dimen/s4" android:layout_height="@dimen/s4" android:layout_marginTop="@dimen/se" />
+        <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/u_" android:layout_width="@dimen/s4" android:layout_height="@dimen/s5" android:layout_marginTop="@dimen/sd" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/a04" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/se" android:layout_weight="1.0">
+        <include android:id="@id/ti" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/l4" />
+        <TextView android:textSize="@dimen/sf" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ak2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/yr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/se" />
+    <ImageView android:id="@id/qd" android:padding="@dimen/e9" android:visibility="gone" android:layout_width="@dimen/it" android:layout_height="@dimen/it" android:layout_marginTop="@dimen/s0" android:contentDescription="@string/amy" android:layout_marginEnd="-10.0dip" />
+    <Space android:layout_width="@dimen/sc" android:layout_height="0.0dip" />
+</LinearLayout>

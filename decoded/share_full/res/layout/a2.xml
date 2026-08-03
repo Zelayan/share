@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/j0" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="?android:textColorSecondary" android:id="@id/ajb" android:padding="@dimen/rx" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/by" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        <FrameLayout android:id="@id/t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="15.0dip" android:layout_toStartOf="@id/ajb" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="center" android:id="@id/u2" android:layout_width="150.0dip" android:layout_height="60.0dip" android:contentDescription="@null" />
+            <include android:layout_gravity="center" android:layout_width="@dimen/iw" android:layout_height="@dimen/iw" layout="@layout/qy" />
+        </FrameLayout>
+    </RelativeLayout>
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:textSize="14.0dip" android:gravity="center_vertical" android:id="@id/n7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:hint="@string/om" android:singleLine="true" android:paddingStart="5.0dip" />
+</LinearLayout>

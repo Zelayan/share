@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioGroup android:orientation="horizontal" android:id="@id/a9z" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/a8p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="低功耗模式" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/a8q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仅设备模式" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/a8r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="高精度模式" android:layout_weight="1.0" />
+        </RadioGroup>
+        <LinearLayout android:id="@id/yd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eo">
+            <TextView android:id="@id/akt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定位周期(ms)" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:id="@id/n8" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rz" android:hint="2000" android:ems="10" android:inputType="number">
+                <requestFocus />
+            </com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络超时(ms)" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:id="@id/n6" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rz" android:hint="30000" android:ems="10" android:inputType="number">
+                <requestFocus />
+            </com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单次定位" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/ik" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GPS优先" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/il" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="逆地理编码" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/ii" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="开启缓存" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/im" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提高首次定位精度" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/io" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用传感器" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="开启wifi扫描" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/f7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始定位" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/amo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eo" />
+    </ScrollView>
+</LinearLayout>

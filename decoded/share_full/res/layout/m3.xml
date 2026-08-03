@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <ProgressBar android:id="@id/a80" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginLeft="28.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="28.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/dv" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <com.hengye.share.sina.page.view.PagePopStepView android:tag="progress_pagepop_step1" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" />
+            <com.hengye.share.sina.page.view.PagePopStepView android:tag="progress_pagepop_step2" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" />
+            <com.hengye.share.sina.page.view.PagePopStepView android:tag="progress_pagepop_step3" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" />
+            <com.hengye.share.sina.page.view.PagePopStepView android:tag="progress_pagepop_step4" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" />
+            <com.hengye.share.sina.page.view.PagePopStepView android:tag="progress_pagepop_step5" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" />
+            <com.hengye.share.sina.page.view.PagePopStepView android:tag="progress_pagepop_step6" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" />
+            <com.hengye.share.sina.page.view.PagePopStepView android:tag="progress_pagepop_step7" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="15.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="9.0sp" android:textColor="@color/om" android:gravity="center" android:tag="progress_pagepop_tv1" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/l_" android:layout_weight="1.0" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/om" android:gravity="center" android:tag="progress_pagepop_tv2" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ah1" android:layout_weight="1.0" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/om" android:gravity="center" android:tag="progress_pagepop_tv3" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/am7" android:layout_weight="1.0" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/om" android:gravity="center" android:tag="progress_pagepop_tv4" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ln" android:layout_weight="1.0" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/om" android:gravity="center" android:tag="progress_pagepop_tv5" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/l9" android:layout_weight="1.0" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/om" android:gravity="center" android:tag="progress_pagepop_tv6" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ajz" android:layout_weight="1.0" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/om" android:gravity="center" android:tag="progress_pagepop_tv7" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ahn" android:layout_weight="1.2" />
+    </LinearLayout>
+</LinearLayout>

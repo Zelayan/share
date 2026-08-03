@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/r9" android:id="@id/cf" android:orderInCategory="180" android:title="@string/ay4" app:showAsAction="qy" />
+    <item android:icon="@drawable/sj" android:id="@id/co" android:orderInCategory="180" android:title="@string/wv" app:showAsAction="qy" />
+</menu>

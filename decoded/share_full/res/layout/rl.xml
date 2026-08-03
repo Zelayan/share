@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.share.module.media.ParentViewGroup android:id="@id/a_q" android:background="@color/ax" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/ax" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+    <com.hengye.share.ui.widget.media.PlayerController android:id="@id/a7m" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" android:layout_marginBottom="50.0dip" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/a7w" android:visibility="visible" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:indeterminate="true" android:indeterminateTint="@color/pr" android:indeterminateTintMode="src_in" style="@android:style/Widget.Material.Light.ProgressBar" />
+    <include layout="@layout/r1" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/zy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bh">
+        <ImageButton android:id="@id/fp" android:background="#cc000000" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/r2" android:tint="@color/pr" android:contentDescription="@string/aph" />
+        <ImageButton android:id="@id/hr" android:background="#cc000000" android:padding="@dimen/s0" android:visibility="gone" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/qi" android:tint="@color/pr" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/g2" android:background="#cc000000" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/rg" android:tint="@color/pr" android:contentDescription="@string/apj" />
+        <ImageButton android:id="@id/g0" android:background="#cc000000" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/s5" android:tint="@color/pr" android:contentDescription="@string/api" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/yn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/bh">
+        <ImageButton android:id="@id/gm" android:background="#cc000000" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/r2" android:tint="@color/pr" android:contentDescription="@string/aph" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/gj" android:background="#cc000000" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/rl" android:tint="@color/pr" />
+    </LinearLayout>
+    <include android:layout_gravity="end|center" android:id="@id/aq8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="60.0dip" layout="@layout/r7" />
+    <include android:layout_gravity="start|center" android:id="@id/aq_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="60.0dip" layout="@layout/r7" />
+    <include android:layout_gravity="center" android:id="@id/aq9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" layout="@layout/r4" />
+</com.hengye.share.module.media.ParentViewGroup>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/iv" android:layout_marginTop="@dimen/ru" android:paddingStart="@dimen/rx" android:paddingEnd="@dimen/rx"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.RoundedImageView android:id="@id/v5" android:layout_width="@dimen/ix" android:layout_height="@dimen/ix" android:contentDescription="@null" />
+    <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tb" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ald" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingStart="@dimen/s0" android:paddingEnd="@dimen/rx" />
+</LinearLayout>

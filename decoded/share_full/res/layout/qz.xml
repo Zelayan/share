@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/b0" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/a3d" style="@style/gk" />
+    <com.hengye.share.common.media.player.ui.DefaultTimeBar android:id="@id/a3o" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_weight="1.0" />
+    <TextView android:id="@id/a3e" style="@style/gk" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/pr" android:gravity="center_vertical" android:id="@id/a3u" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apz" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/pr" android:gravity="center_vertical" android:id="@id/a3q" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/a3g" android:padding="@dimen/rz" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/rl" android:contentDescription="@string/apo" />
+</LinearLayout>

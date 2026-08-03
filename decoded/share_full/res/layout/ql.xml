@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/a1c" android:background="@drawable/g3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.5" android:paddingStart="10.0dip" android:paddingEnd="9.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/jl" android:gravity="center_vertical" android:id="@id/akz" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/rh" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/q1" android:contentDescription="@null" android:layout_marginStart="3.0dip" />
+    </LinearLayout>
+    <Space android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/a1h" android:background="@drawable/g4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.5" android:paddingStart="9.0dip" android:paddingEnd="10.0dip">
+        <Space android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/ri" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/q0" android:contentDescription="@null" android:layout_marginEnd="3.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/jo" android:gravity="end|center" android:id="@id/amq" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</merge>

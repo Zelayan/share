@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ru" android:paddingBottom="@dimen/ru" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eo" android:layout_marginBottom="@dimen/eo" android:layout_marginStart="@dimen/eo" android:layout_marginEnd="@dimen/eo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="@dimen/ru" android:layout_height="wrap_content" />
+    <com.hengye.share.ui.widget.image.AvatarImageView android:layout_gravity="center_vertical" android:id="@id/s0" android:layout_width="@dimen/x7" android:layout_height="@dimen/x7" />
+    <Space android:layout_width="@dimen/rz" android:layout_height="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include layout="@layout/l4" />
+        <TextView android:textSize="@dimen/tp" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/an0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorTertiary" android:id="@id/akk" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/hv" />
+</LinearLayout>

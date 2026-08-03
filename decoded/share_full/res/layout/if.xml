@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/sb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/rz" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.share.ui.widget.image.RoundedImageView android:id="@id/us" android:layout_width="@dimen/il" android:layout_height="@dimen/il" android:scaleType="centerCrop" android:contentDescription="@null" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/xm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru">
+                <TextView android:textSize="@dimen/tl" android:ellipsize="end" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/ta" android:ellipsize="end" android:id="@id/ajt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="@dimen/ta" android:ellipsize="end" android:id="@id/anu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/tj" android:id="@id/aje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" />
+</LinearLayout>

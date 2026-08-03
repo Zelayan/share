@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/xo" android:layout_width="@dimen/il" android:layout_height="@dimen/il" android:layout_marginTop="@dimen/bn" android:layout_marginBottom="@dimen/bn" android:contentDescription="@null" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/ei">
+        <com.hengye.share.ui.widget.image.StatusImageView android:id="@id/us" android:layout_width="@dimen/il" android:layout_height="@dimen/il" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/vt" android:visibility="gone" android:layout_width="@dimen/it" android:layout_height="@dimen/it" android:src="@drawable/ld" android:contentDescription="@string/f3" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/xm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:layout_marginBottom="@dimen/bn" android:minHeight="@dimen/il" android:layout_marginStart="@dimen/ru" android:layout_marginEnd="@dimen/bj" android:layout_toStartOf="@id/hz" android:layout_toEndOf="@id/xo">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/tn" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+            <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/qm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/is" android:minWidth="@dimen/is" android:layout_marginStart="@dimen/rx" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/tq" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ajt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="@dimen/tq" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/aju" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+    <com.hengye.share.sina.card.view.CardActionButtonView android:id="@id/hz" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/abw" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <Space android:id="@id/abw" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_below="@id/xm" />
+    <TextView android:textSize="@dimen/tq" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/anu" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bn" android:maxLines="2" android:layout_below="@id/xm" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/bj" />
+</RelativeLayout>

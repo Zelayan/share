@@ -1,0 +1,63 @@
+# Project Context
+
+## Baseline And Deliverable
+
+- Original APK: `original/Share.apk`
+- Original SHA-256: `53db7765823b1589c1cbe5994463161f49589c8ccc566e9121423163e47509e7`
+- Package: `com.hengye.share`
+- Version: `3.9.6` (`versionCode 925`)
+- SDK metadata: `minSdk 21`, `targetSdk 29`
+- Current APK: `artifacts/Share_floating_navigation_ui_fixed.apk`
+- Current SHA-256: `b6b9b789165493c788e68b76699a558e077e61da28c05f350b3076f4b187d481`
+- Signing certificate SHA-256: `4abaeb3cd7a99ac96985806f1a5f1f2f096504ebd20c834d68fc862d9b5bbe75`
+
+The current APK is installed on the connected test device. It uses the local signing key in `artifacts/`; future update APKs must reuse this exact key. Credentials are recorded in `artifacts/Share_floating_navigation_签名说明.md`.
+
+## Requested Scope
+
+Only the legacy main-page bottom navigation is patched. Preserve the original ViewPager, pages, publish behavior, login, account storage, request signing, network layer, native libraries, and business data. Do not introduce Compose or replace the original client identity.
+
+Final behavior:
+
+- Floating `186x56dp` opaque capsule with three fixed `62x52dp` tabs.
+- Titles are `微博`, `消息`, and `热门`.
+- Only the selected tab displays its 20dp icon; icon and title are horizontally centered.
+- One `62x52dp` indicator moves between tabs; selection animation remains independent from ViewPager transitions.
+- Downward content browsing accumulates 24dp before hiding the bar; any reverse user gesture restores it immediately.
+- Programmatic/non-touch scrolling does not change the bar state.
+- IME visibility remains an independent hide condition.
+- The capsule and original publish FAB avoid the gesture navigation region, with a 24dp fallback when the legacy target receives zero system inset.
+- The system navigation background remains transparent; Android chooses a dark gesture indicator on a light background.
+
+## Important Patch Locations
+
+- `decoded/share_full/res/layout/b5.xml`: capsule dimensions, centered placement, and base margins.
+- `decoded/share_full/smali/com/hengye/share/ui/widget/third/CustomBottomBar.smali`: binary-compatible `LPC` subclass and delayed item binding.
+- `decoded/share_full/smali/com/hengye/share/ui/widget/behavior/BottomNavigationBehavior.smali`: nested-scroll bridge into the delegate.
+- `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingNavigationBarDelegate.smali`: capsule styling, item layout, selection animation, insets, and scroll state.
+- `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/ImeAwareNavigationBarController.smali`: show/hide animation and combined IME/scroll visibility.
+
+The other files in the same `smali_classes3/.../third/` directory are required synthetic classes and listeners. Keep them together when rebuilding.
+
+## Diagnosed Compatibility Issues
+
+1. `BottomNavigationBehavior` supplies scroll direction as `-1/1`; treating the third argument as nested-scroll type caused every real gesture to be ignored.
+2. The active theme resolves `?a3a` to translucent `#33FFFFFF`; the delegate now preserves its RGB while forcing an opaque surface.
+3. Legacy tabs are created after the first attach callback; item binding is delayed after window focus so all three children exist.
+4. The old tab XML applies top gravity to icons and bottom gravity to titles; the delegate overrides both to center vertically.
+5. On the API 36 test device, both navigation-bar and stable insets were reported as zero to this targetSdk 29 app; a 24dp gesture-region fallback is applied and shared with the publish FAB.
+
+## Verification Status
+
+Verified on a Xiaomi `24129PN74C`, Android 16 / API 36, 1200x2670, 520dpi, gesture navigation mode:
+
+- Main, message, and hot tab selection visuals.
+- Exactly one selected icon and one moving indicator.
+- Capsule and publish FAB placement above the gesture indicator.
+- Transparent system navigation area.
+- Down-scroll hide and reverse-scroll restore.
+- Original page-specific publish FAB visibility.
+- APK zip alignment and v1/v2/v3 signatures.
+- Original native libraries match the baseline APK byte-for-byte.
+
+Still pending: three-button navigation, IME open/close, dark theme, rotation, larger font scales, and TalkBack verification.

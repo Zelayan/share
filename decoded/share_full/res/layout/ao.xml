@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/a_r" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/a_r" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.hengye.appbase.ui.widget.common.CommonAppBarLayout android:id="@id/do" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/al">
+            <include layout="@layout/rg" />
+            <RelativeLayout android:id="@id/xp" android:background="@drawable/ei" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rc="mx|aa2">
+                <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:id="@id/qk" android:layout_width="@dimen/ix" android:layout_height="@dimen/ix" android:layout_marginTop="@dimen/rx" android:src="@drawable/rw" android:contentDescription="@null" android:layout_marginEnd="@dimen/rx" />
+                <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorSecondary" android:id="@id/ajq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/qk" />
+            </RelativeLayout>
+        </com.hengye.appbase.ui.widget.common.CommonAppBarLayout>
+        <com.hengye.appbase.ui.widget.common.CommonViewPager android:id="@id/apl" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/aj" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="16.0dip" android:gravity="center|left|top" android:id="@id/n1" android:background="@null" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:hint="@string/b3o" android:maxLines="2" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:id="@id/aia" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/apx" android:layout_width="wrap_content" android:layout_height="24.0dip" android:checkedButton="@id/a8o">
+            <RadioButton android:textSize="12.0dip" android:gravity="center" android:id="@id/a8o" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/b3q" />
+            <RadioButton android:textSize="12.0dip" android:gravity="center" android:id="@id/a8n" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/b3p" />
+        </RadioGroup>
+    </LinearLayout>
+    <FrameLayout android:id="@id/oe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dip" android:id="@id/ahw" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:drawablePadding="4.0dip" android:layout_marginStart="15.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0dip" android:id="@id/ahy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b3k" android:layout_marginEnd="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.appbase.ui.widget.DragBackLayout android:id="@id/me" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hengye.appbase.ui.widget.DragBackLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/a7x" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" style="@android:style/Widget.Holo.Light.ProgressBar.Small" />
+    <com.hengye.share.ui.widget.loading.SectorProgressView android:layout_gravity="center" android:id="@id/a7w" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="52.0dip" app:d4="@color/of" app:m1="@color/pr" app:uw="0.0" app:a01="0.0" />
+</FrameLayout>

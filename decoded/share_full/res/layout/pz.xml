@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/afy" android:text="100%" style="@style/x1" />
+    <com.yalantis.ucrop.view.widget.HorizontalProgressWheelView android:id="@id/aa0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/afy" />
+</RelativeLayout>

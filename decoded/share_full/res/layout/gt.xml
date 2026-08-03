@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/p_" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:orientation="vertical" android:id="@id/p9" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:id="@id/p8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

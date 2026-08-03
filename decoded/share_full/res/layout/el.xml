@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/a1a" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a_g" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <com.sina.weibo.base.component.avatar.WBAvatarView android:id="@id/aq2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" android:layout_marginEnd="10.0dip" weibo:bq="12.0dip" weibo:hj="12.0dip" weibo:hq="@color/cc" weibo:hr="1.0px" weibo:xv="true" />
+        <TextView android:textSize="@dimen/wu" android:ellipsize="end" android:id="@id/aj6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="82.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/wu" android:id="@id/anz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        <com.hengye.share.sina.freshnews.card.view.ReverseLinearLayout android:gravity="end" android:id="@id/a18" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/wu" android:id="@id/aka" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="15.0dip" android:id="@id/aiv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="spannable" android:lineSpacingExtra="2.669983dip" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/ef" android:paddingBottom="@dimen/eh" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz" android:text="A" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru" app:q1="@id/aat" app:qo="a6y" app:qs="a6y" />
+    <TextView android:textSize="@dimen/t9" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz" android:text="A" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru" app:q1="@id/aat" app:q6="a6y" app:qs="a6y" />
+    <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz" android:text="标准" app:q1="@id/aat" app:q6="a6y" app:qe="0.2" app:qo="a6y" app:qs="a6y" />
+    <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center_vertical" android:id="@id/aat" android:layout_width="fill_parent" android:layout_height="wrap_content" app:q0="a6y" app:q6="a6y" app:qo="a6y" />
+</androidx.constraintlayout.widget.ConstraintLayout>

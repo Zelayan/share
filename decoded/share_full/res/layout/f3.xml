@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/k1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/xl" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/xd" android:background="@color/pr" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip" android:elevation="10.0dip">
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:gravity="center" android:id="@id/dg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic" android:paddingStart="2.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/a9r" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/a97" android:paddingStart="40.0dip" android:paddingEnd="40.0dip" />
+        <TextView android:gravity="center" android:id="@id/d9" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/a58" android:paddingStart="40.0dip" android:paddingEnd="40.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" />
+    </LinearLayout>
+</LinearLayout>

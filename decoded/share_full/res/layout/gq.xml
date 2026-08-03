@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/ok" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/bh">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/gi" android:background="@null" android:padding="@dimen/s0" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/qu" android:tint="@color/pr" android:contentDescription="@string/aph" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/tj" android:textColor="@color/pr" android:id="@id/al7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/to" android:textColor="@color/pr" android:gravity="center" android:id="@id/al6" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="@dimen/rv" android:paddingStart="@dimen/cb" android:paddingEnd="@dimen/cb" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/sj" android:id="@id/ab1" android:title="@string/atk" app:showAsAction="di" />
+    <item android:icon="@drawable/qr" android:id="@id/ay" android:orderInCategory="180" android:title="@string/b3w" app:showAsAction="qy" />
+    <item android:icon="@drawable/r6" android:id="@id/bm" android:visible="false" android:orderInCategory="180" android:title="@string/b40" app:showAsAction="qy" />
+</menu>

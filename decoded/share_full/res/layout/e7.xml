@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextInputEditText android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:id="@id/n_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/of" android:singleLine="true" android:maxLength="50" android:inputType="text" android:imeOptions="actionNext" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextInputEditText android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:id="@id/n4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/oe" android:singleLine="true" android:maxLength="50" android:inputType="text" android:imeOptions="actionDone" />
+</LinearLayout>

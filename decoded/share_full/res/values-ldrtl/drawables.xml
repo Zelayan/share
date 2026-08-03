@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="d7">@drawable/d6</item>
+    <item type="drawable" name="d8">@drawable/d9</item>
+</resources>

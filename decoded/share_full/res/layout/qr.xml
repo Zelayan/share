@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/ru" android:paddingBottom="@dimen/ru" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.video.danmaku.WeiboDanmakuView android:id="@id/aq5" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.sina.weibo.video.danmaku.controller.DanmakuDetailView android:id="@id/ks" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

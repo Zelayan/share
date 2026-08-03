@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:layout_width="257.0dip" android:layout_height="260.0dip" android:layout_margin="1.0dip" android:src="@drawable/o2" />
+    <com.hengye.share.ui.widget.image.ShareImageView android:layout_gravity="center" android:id="@id/aa_" android:layout_width="170.0dip" android:layout_height="fill_parent" android:src="@drawable/o7" />
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.appbase.ui.widget.common.CommonToolBar android:theme="@style/fg" android:id="@id/agr" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:rc="mx|aa2" app:title="@string/app_name" />
+    <FrameLayout android:id="@id/k0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" />
+    <com.hengye.share.module.util.image.view.MediaPlayerSimpleView android:id="@id/a7o" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" app:h6="@layout/r2" app:v_="@layout/j7" app:a0z="ag5" />
+    <View android:id="@id/a7i" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layout_marginBottom="100.0dip" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/a3y" android:visibility="gone" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:layout_marginBottom="50.0dip">
+        <ImageView android:id="@id/a3k" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/ij" android:contentDescription="@string/a2r" />
+        <ImageView android:id="@id/a3j" android:visibility="gone" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/ii" android:contentDescription="@string/a2q" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/zq" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:elevation="10.0dip">
+        <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/to" android:textColor="@color/pr" android:gravity="center_vertical" android:id="@id/amw" android:background="@drawable/em" android:paddingTop="@dimen/s0" android:paddingBottom="@dimen/s0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/io" android:text="@string/zp" android:lines="1" android:drawablePadding="@dimen/ry" android:layout_weight="1.0" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/rx" app:re="@dimen/is" app:rf="@dimen/is" />
+    </LinearLayout>
+</FrameLayout>

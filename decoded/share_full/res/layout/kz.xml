@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ta" android:layout_width="fill_parent" android:layout_height="@dimen/il"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/il" android:layout_height="@dimen/il">
+        <com.hengye.share.ui.widget.image.StatusImageView android:id="@id/us" android:layout_width="@dimen/il" android:layout_height="@dimen/il" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center" android:id="@id/gr" android:layout_width="@dimen/it" android:layout_height="@dimen/it" android:src="@drawable/mk" android:contentDescription="@null" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/xm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru">
+        <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ajt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/anu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center_vertical" android:id="@id/hj" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ru" style="@style/g7" />
+</LinearLayout>

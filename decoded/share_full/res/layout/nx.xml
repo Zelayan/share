@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.base.component.avatar.WBAvatarView android:id="@id/uk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" weibo:be="12.0dip" weibo:bf="26.0dip" weibo:bq="14.0dip" weibo:d6="?a34" weibo:d7="1.0px" weibo:xv="true" />
+    <TextView android:textSize="@dimen/wj" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:gravity="center" android:id="@id/alf" android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_below="@id/uk" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/wj" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:gravity="center" android:id="@id/a9s" android:visibility="gone" android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:layout_below="@id/alf" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="@integer/a1" android:repeatCount="infinite" android:valueFrom="0.666" android:valueTo="1.0" android:valueType="floatType" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/a1" android:repeatCount="infinite" android:valueFrom="0.666" android:valueTo="1.0" android:valueType="floatType" android:propertyName="scaleY" />
+    <objectAnimator android:duration="@integer/a1" android:repeatCount="infinite" android:valueFrom="0" android:valueTo="360" android:valueType="floatType" android:propertyName="rotation" />
+</set>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0dip" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/aar" android:paddingLeft="12.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="版块" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/aaq" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="12.0dip" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="?a34" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

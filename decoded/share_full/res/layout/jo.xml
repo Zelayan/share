@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sq" android:background="@drawable/em" android:layout_width="fill_parent" android:layout_height="@dimen/bh"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:padding="@dimen/rv" android:layout_width="@dimen/bh" android:layout_height="@dimen/bh" android:src="@drawable/rp" android:tint="?a37" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/tm" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/amt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:id="@id/fm" android:background="?android:selectableItemBackground" android:padding="@dimen/rv" android:layout_width="@dimen/bh" android:layout_height="@dimen/bh" android:src="@drawable/r2" android:contentDescription="@string/amy" />
+</LinearLayout>

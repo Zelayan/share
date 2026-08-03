@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ei" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/eo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ank" android:paddingTop="@dimen/eo" android:paddingBottom="@dimen/eo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:layout_marginStart="@dimen/e9" android:layout_marginEnd="@dimen/e9" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:id="@id/fl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/gu" android:visibility="gone" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/sk" android:scaleType="fitCenter" android:tint="?a37" android:contentDescription="@string/re" />
+</LinearLayout>

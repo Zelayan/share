@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/rz" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout android:paddingTop="@dimen/s0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:layout_width="@dimen/x8" android:layout_height="@dimen/x8" android:layout_margin="@dimen/e9" />
+            <ImageView android:layout_gravity="start|center|top" android:id="@id/uv" android:padding="@dimen/ry" android:visibility="visible" android:layout_width="@dimen/iw" android:layout_height="@dimen/iw" android:src="@drawable/j1" android:contentDescription="@string/b40" />
+        </FrameLayout>
+        <Space android:layout_width="0.0dip" android:layout_height="@dimen/ry" />
+        <TextView android:textSize="@dimen/tq" android:ellipsize="end" android:gravity="center" android:id="@id/ao1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="@dimen/ry" android:paddingEnd="@dimen/ry" />
+    </LinearLayout>
+</FrameLayout>

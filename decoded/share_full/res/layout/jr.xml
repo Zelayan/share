@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/e9"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ud" android:layout_width="@dimen/rn" android:layout_height="@dimen/rn">
+        <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:visibility="gone" android:layout_width="@dimen/rn" android:layout_height="@dimen/rn" />
+        <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/uc" android:visibility="gone" android:layout_width="@dimen/rn" android:layout_height="@dimen/rn" />
+    </FrameLayout>
+    <Space android:layout_width="0.0dip" android:layout_height="@dimen/ry" />
+    <TextView android:textSize="@dimen/tq" android:ellipsize="end" android:gravity="center" android:id="@id/ao1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

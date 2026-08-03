@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/th" android:layout="@layout/li" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/i7" android:layout="@layout/ca" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

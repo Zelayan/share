@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gt3_dialog_shape" android:layout_width="220.0dip" android:layout_height="140.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.geetest.sdk.views.GT3View android:id="@id/gt3_success_iv" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff18a452" android:id="@id/gt3_success_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/gt3_geetest_pass" android:layout_below="@id/gt3_success_iv" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/gt3_success_view2" android:background="#ffefefef" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/gt3_success_lll" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/gt3_success_lll" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="10.0sp" android:textColor="#ffcacaca" android:id="@id/gt3_success_tvvv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt3_geetest_support" android:drawableLeft="@drawable/gt3logo" android:drawablePadding="4.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

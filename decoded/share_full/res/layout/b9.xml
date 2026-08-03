@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout android:id="@id/a89" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hengye.appbase.ui.widget.scrollview.ScrollableHeaderLayout android:orientation="vertical" android:id="@id/aa9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:orientation="vertical" android:id="@id/pv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:rc="aa2" layout="@layout/kp" />
+            </LinearLayout>
+            <com.hengye.appbase.ui.widget.common.CommonTabLayout android:id="@id/aeq" android:background="?a3a" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bb="false" app:a1n="aa8" />
+            <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/aj" />
+        </com.hengye.appbase.ui.widget.scrollview.ScrollableHeaderLayout>
+        <com.hengye.share.ui.widget.OverLayView android:id="@id/a6q" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.hengye.share.ui.widget.fab.AnimatedFloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/ns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/h3" android:src="@drawable/qr" android:tint="?a3r" android:contentDescription="@string/ao4" />
+        <androidx.cardview.widget.CardView android:layout_gravity="end|bottom|center" android:id="@id/nt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/wa">
+            <android.support.v7.widget.RecyclerView android:id="@id/ch" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout>

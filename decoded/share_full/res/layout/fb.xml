@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ab3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.ClipImageView android:layout_gravity="center" android:id="@id/u5" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hengye.share.ui.widget.third.CustomPhotoView android:layout_gravity="center" android:id="@id/vo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

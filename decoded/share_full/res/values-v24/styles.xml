@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored" parent="@android:style/TextAppearance.Material.Widget.Button.Borderless.Colored" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Colored" parent="@android:style/TextAppearance.Material.Widget.Button.Colored" />
+    <style name="cp" parent="@style/cq">
+        <item name="android:colorBackground">@color/d1</item>
+        <item name="android:buttonBarButtonStyle">?buttonBarButtonStyle</item>
+        <item name="android:timePickerDialogTheme">@style/pu</item>
+        <item name="android:datePickerDialogTheme">@style/pu</item>
+        <item name="android:contextPopupMenuStyle">@style/va</item>
+        <item name="actionBarPopupTheme">@style/pr</item>
+        <item name="actionBarSize">@dimen/q_</item>
+        <item name="actionBarStyle">@style/ta</item>
+        <item name="actionBarTheme">@style/pi</item>
+        <item name="actionOverflowMenuStyle">@style/vc</item>
+        <item name="alertDialogTheme">@style/pv</item>
+        <item name="az">@style/td</item>
+        <item name="borderlessButtonStyle">@style/tv</item>
+        <item name="db">@style/tm</item>
+        <item name="dc">@style/pq</item>
+        <item name="buttonBarButtonStyle">@style/tv</item>
+        <item name="checkboxStyle">@style/ue</item>
+        <item name="colorAccent">?gc</item>
+        <item name="colorError">@color/d2</item>
+        <item name="colorPrimary">@color/d8</item>
+        <item name="colorPrimaryDark">@color/d9</item>
+        <item name="m6">@style/uj</item>
+        <item name="listPopupWindowStyle">@style/vb</item>
+        <item name="s7">@style/q0</item>
+        <item name="se">@style/q8</item>
+        <item name="so">@style/un</item>
+        <item name="sp">@style/q7</item>
+        <item name="sw">@style/qd</item>
+        <item name="ty">@style/v9</item>
+        <item name="popupMenuStyle">@style/v_</item>
+        <item name="radioButtonStyle">@style/uf</item>
+        <item name="z5">@style/u0</item>
+        <item name="z6">@style/vg</item>
+        <item name="z7">@style/vi</item>
+        <item name="switchStyle">@style/ug</item>
+        <item name="a1v">@style/vj</item>
+        <item name="textAppearanceLargePopupMenu">?a2n</item>
+        <item name="textAppearanceSmallPopupMenu">?a2n</item>
+        <item name="a2t">@style/vq</item>
+        <item name="toolbarStyle">@style/w6</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="cr" parent="@style/cs">
+        <item name="android:colorBackground">@color/d1</item>
+        <item name="android:contextPopupMenuStyle">@style/va</item>
+        <item name="actionBarPopupTheme">@style/pr</item>
+        <item name="actionBarSize">@dimen/q_</item>
+        <item name="actionBarStyle">@style/ta</item>
+        <item name="actionBarTheme">@style/pi</item>
+        <item name="actionOverflowMenuStyle">@style/vc</item>
+        <item name="alertDialogTheme">@style/pv</item>
+        <item name="az">@style/td</item>
+        <item name="borderlessButtonStyle">@style/tv</item>
+        <item name="db">@style/tm</item>
+        <item name="buttonBarButtonStyle">@style/tx</item>
+        <item name="checkboxStyle">@style/ue</item>
+        <item name="colorAccent">?gc</item>
+        <item name="colorError">@color/d2</item>
+        <item name="colorPrimary">@color/d8</item>
+        <item name="colorPrimaryDark">@color/d9</item>
+        <item name="gc">@color/da</item>
+        <item name="m6">@style/uj</item>
+        <item name="listPopupWindowStyle">@style/vb</item>
+        <item name="s7">@style/q0</item>
+        <item name="ty">@style/v9</item>
+        <item name="popupMenuStyle">@style/v_</item>
+        <item name="radioButtonStyle">@style/uf</item>
+        <item name="z5">@style/u0</item>
+        <item name="z6">@style/vg</item>
+        <item name="z7">@style/vi</item>
+        <item name="switchStyle">@style/ug</item>
+        <item name="a1v">@style/vj</item>
+        <item name="textAppearanceLargePopupMenu">?a2n</item>
+        <item name="textAppearanceSmallPopupMenu">?a2n</item>
+        <item name="a2t">@style/vq</item>
+        <item name="toolbarStyle">@style/w6</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="ct" parent="@style/cu">
+        <item name="android:colorBackground">@color/dd</item>
+        <item name="android:buttonBarButtonStyle">?buttonBarButtonStyle</item>
+        <item name="android:timePickerDialogTheme">@style/pu</item>
+        <item name="android:datePickerDialogTheme">@style/pu</item>
+        <item name="android:contextPopupMenuStyle">@style/va</item>
+        <item name="actionBarPopupTheme">@style/px</item>
+        <item name="actionBarSize">@dimen/q_</item>
+        <item name="actionBarStyle">@style/uk</item>
+        <item name="actionOverflowMenuStyle">@style/vc</item>
+        <item name="alertDialogTheme">@style/pv</item>
+        <item name="az">@style/tb</item>
+        <item name="borderlessButtonStyle">@style/tv</item>
+        <item name="db">@style/tm</item>
+        <item name="dc">@style/py</item>
+        <item name="buttonBarButtonStyle">@style/tv</item>
+        <item name="checkboxStyle">@style/ue</item>
+        <item name="colorAccent">?gc</item>
+        <item name="colorError">@color/de</item>
+        <item name="colorPrimary">@color/dk</item>
+        <item name="colorPrimaryDark">@color/dl</item>
+        <item name="m6">@style/uj</item>
+        <item name="listPopupWindowStyle">@style/vb</item>
+        <item name="s7">@style/q0</item>
+        <item name="se">@style/q8</item>
+        <item name="so">@style/un</item>
+        <item name="sp">@style/q7</item>
+        <item name="sw">@style/qd</item>
+        <item name="ty">@style/v9</item>
+        <item name="popupMenuStyle">@style/v_</item>
+        <item name="radioButtonStyle">@style/uf</item>
+        <item name="z5">@style/u0</item>
+        <item name="z6">@style/vg</item>
+        <item name="z7">@style/vi</item>
+        <item name="switchStyle">@style/ug</item>
+        <item name="a1v">@style/vj</item>
+        <item name="textAppearanceLargePopupMenu">?a2n</item>
+        <item name="textAppearanceSmallPopupMenu">?a2n</item>
+        <item name="a2t">@style/vq</item>
+        <item name="toolbarStyle">@style/w6</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="cw" parent="@style/cx">
+        <item name="android:colorBackground">@color/dd</item>
+        <item name="android:contextPopupMenuStyle">@style/va</item>
+        <item name="actionBarPopupTheme">@style/px</item>
+        <item name="actionBarSize">@dimen/q_</item>
+        <item name="actionBarStyle">@style/uk</item>
+        <item name="actionOverflowMenuStyle">@style/vc</item>
+        <item name="alertDialogTheme">@style/pv</item>
+        <item name="az">@style/tb</item>
+        <item name="borderlessButtonStyle">@style/tv</item>
+        <item name="db">@style/tm</item>
+        <item name="buttonBarButtonStyle">@style/tx</item>
+        <item name="checkboxStyle">@style/ue</item>
+        <item name="colorAccent">?gc</item>
+        <item name="colorError">@color/de</item>
+        <item name="colorPrimary">@color/dk</item>
+        <item name="colorPrimaryDark">@color/dl</item>
+        <item name="gc">@color/dn</item>
+        <item name="m6">@style/uj</item>
+        <item name="listPopupWindowStyle">@style/vb</item>
+        <item name="s7">@style/q0</item>
+        <item name="ty">@style/v9</item>
+        <item name="popupMenuStyle">@style/v_</item>
+        <item name="radioButtonStyle">@style/uf</item>
+        <item name="z5">@style/u0</item>
+        <item name="z6">@style/vg</item>
+        <item name="z7">@style/vi</item>
+        <item name="switchStyle">@style/ug</item>
+        <item name="a1v">@style/vj</item>
+        <item name="textAppearanceLargePopupMenu">?a2n</item>
+        <item name="textAppearanceSmallPopupMenu">?a2n</item>
+        <item name="a2t">@style/vq</item>
+        <item name="toolbarStyle">@style/w6</item>
+        <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
+    </style>
+    <style name="m0" parent="@style/TextAppearance.Compat.Notification.Info" />
+    <style name="m3" parent="@style/TextAppearance.Compat.Notification" />
+    <style name="m5" parent="@style/TextAppearance.Compat.Notification.Time" />
+    <style name="m7" parent="@style/TextAppearance.Compat.Notification.Title" />
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/ig" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:layout_marginBottom="@dimen/ep" android:layout_marginStart="@dimen/eo" android:layout_marginEnd="@dimen/eo"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/ea" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/rz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz">
+            <TextView android:textSize="@dimen/tg" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz" />
+            <TextView android:textSize="@dimen/ta" android:id="@id/ann" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/eo" />
+            <com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout android:id="@id/xo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz">
+                <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/us" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout>
+            <TextView android:textSize="@dimen/tm" android:id="@id/aji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz" />
+            <View android:id="@id/lu" android:layout_width="fill_parent" android:layout_height="@dimen/gm" android:layout_marginBottom="@dimen/rz" />
+            <TextView android:textSize="@dimen/tm" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/aiz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

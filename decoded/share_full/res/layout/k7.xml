@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/zo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/t3" android:layout_width="@dimen/sb" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/zn" android:paddingTop="@dimen/ek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/k5" />
+        <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/an6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/l2" />
+        <include android:visibility="gone" layout="@layout/k8" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/eo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/gb" android:background="@null" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:visibility="invisible" android:layout_width="@dimen/it" android:layout_height="@dimen/it" android:scaleType="fitStart" android:contentDescription="@string/aqb" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rv" android:layout_marginBottom="@dimen/rv" android:layout_weight="1.0" android:layout_marginEnd="@dimen/e9">
+        <TextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/ank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="45.0dip" />
+        <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ajt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="-41.0dip" />
+    </LinearLayout>
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:layout_gravity="center_vertical" android:id="@id/fl" android:background="@null" android:visibility="invisible" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/r1" android:contentDescription="@null" />
+</LinearLayout>

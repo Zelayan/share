@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/xm" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/a9_" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ms" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a2a" />
+            <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorTertiary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/a2b" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/rz" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeNewProgressBar android:id="@id/a7w" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" />
+        <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/al3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a2_" android:layout_marginStart="@dimen/rz" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tl" android:gravity="center" android:id="@id/am5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a2c" android:drawablePadding="@dimen/rx" />
+    </LinearLayout>
+</LinearLayout>

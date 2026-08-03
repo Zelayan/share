@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.viewgroup.ThemeRoundFrameLayout android:id="@id/y7" android:layout_width="40.0dip" android:layout_height="40.0dip">
+        <ImageView android:id="@id/qv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/wa" android:padding="@dimen/s0" android:layout_width="@dimen/it" android:layout_height="@dimen/it" android:contentDescription="@null" />
+    </com.hengye.share.ui.widget.viewgroup.ThemeRoundFrameLayout>
+    <Space android:layout_width="@dimen/ep" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorPrimary" android:id="@id/anm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/tl" android:id="@id/aib" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/rz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强调色" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru" />
+</LinearLayout>

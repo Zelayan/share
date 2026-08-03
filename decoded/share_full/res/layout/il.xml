@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/to" android:id="@id/aky" android:paddingTop="@dimen/s0" android:paddingBottom="@dimen/s0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sl" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru" />
+        <View android:id="@id/lu" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/ru" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/ua" android:layout_width="@dimen/x_" android:layout_height="@dimen/x_" android:src="@drawable/if" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/rz">
+                <TextView android:textSize="@dimen/tg" android:ellipsize="end" android:id="@id/ao2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" />
+                <TextView android:textSize="@dimen/tl" android:ellipsize="end" android:id="@id/ajw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:maxLines="2" android:includeFontPadding="false" />
+                <TextView android:textSize="@dimen/tl" android:ellipsize="end" android:id="@id/anu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/tj" android:id="@id/aje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" />
+</LinearLayout>

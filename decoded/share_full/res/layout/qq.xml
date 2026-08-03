@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/yc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/api" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/xt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/tn" android:textColor="?android:textColorPrimary" android:id="@id/ni" android:background="@null" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/rz" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/f5" android:maxLines="1" android:maxLength="300" android:layout_weight="1.0" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj" />
+            <TextView android:textSize="@dimen/tq" android:textColor="@color/m_" android:gravity="center" android:id="@id/anl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="25.0dip" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeIconImageButton android:id="@id/g4" android:src="@drawable/s2" android:contentDescription="@string/rc" style="@style/k_" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeIconImageButton android:id="@id/gu" android:src="@drawable/sk" android:contentDescription="@string/re" style="@style/k_" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.hengye.share.ui.widget.emoticon.EmoticonPicker android:id="@id/mo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

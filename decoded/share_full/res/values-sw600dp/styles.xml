@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="t4" parent="@style/f2">
+        <item name="a1a">iq</item>
+        <item name="a1n">ob</item>
+    </style>
+</resources>

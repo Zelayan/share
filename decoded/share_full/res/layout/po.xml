@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ix" android:background="#00000000" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" android:importantForAccessibility="no" />
+    <TextView android:id="@id/q9" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ame" android:layout_toLeftOf="@id/ab_" android:layout_centerVertical="true" android:importantForAccessibility="no" style="@style/wy" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/h2" android:layout_marginRight="@dimen/h2" android:layout_alignLeft="@id/q9" android:layout_alignRight="@id/q9" android:layout_centerVertical="true">
+        <com.sleepbot.datetimepicker.AccessibleTextView android:textColor="?colorPrimary" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/q_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ame" style="@style/wy" />
+    </FrameLayout>
+    <TextView android:id="@id/ab_" android:paddingLeft="@dimen/rs" android:paddingRight="@dimen/rs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amg" android:layout_alignRight="@id/ix" android:layout_centerVertical="true" android:importantForAccessibility="no" style="@style/wy" />
+    <TextView android:id="@id/a4i" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ame" android:layout_toRightOf="@id/ab_" android:layout_centerVertical="true" android:importantForAccessibility="no" style="@style/wy" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/h2" android:layout_marginRight="@dimen/h2" android:layout_alignLeft="@id/a4i" android:layout_alignRight="@id/a4i" android:layout_centerVertical="true">
+        <com.sleepbot.datetimepicker.AccessibleTextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/a4h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ame" style="@style/wy" />
+    </FrameLayout>
+    <com.sleepbot.datetimepicker.AccessibleTextView android:id="@id/dj" android:layout_width="@dimen/br" android:layout_height="wrap_content" android:layout_alignLeft="@id/dk" android:layout_alignRight="@id/dk" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+    <TextView android:id="@id/dk" android:paddingLeft="@dimen/bs" android:paddingRight="@dimen/bs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ame" android:layout_toRightOf="@id/a4i" android:layout_alignBaseline="@id/ab_" android:importantForAccessibility="no" style="@style/we" />
+</RelativeLayout>

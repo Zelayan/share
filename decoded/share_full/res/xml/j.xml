@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/au4">
+        <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/avy" android:key="preread" android:summary="@string/avz" android:defaultValue="true" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/a3" android:title="@string/avc" android:key="load_status_count" android:summary="%s" android:defaultValue="1" android:entryValues="@array/a4" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/a" android:title="@string/ats" android:key="auto_play_options" android:summary="%s" android:defaultValue="3" android:entryValues="@array/b" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/b0" android:title="@string/axz" android:key="video_play_quality" android:summary="%s" android:defaultValue="3" android:entryValues="@array/b1" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/avt">
+        <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/avv" android:key="save_image_original" android:defaultValue="false" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomMultiSelectListPreference android:entries="@array/aq" android:title="@string/awx" android:key="show_avatar" android:summary="@string/awy" android:defaultValue="@array/l" android:entryValues="@array/ar" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/h" android:title="@string/avu" android:key="download_image_quality" android:summary="%s" android:defaultValue="5" android:entryValues="@array/i" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/as" android:title="@string/awr" android:key="show_comment_photo_options" android:summary="%s" android:defaultValue="1" android:entryValues="@array/at" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/aj" android:title="@string/avw" android:key="photo_upload_quality" android:summary="%s" android:defaultValue="2" android:entryValues="@array/ak" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+</PreferenceScreen>

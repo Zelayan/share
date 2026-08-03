@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sf" android:background="@drawable/em" android:paddingTop="@dimen/bn" android:paddingBottom="@dimen/bn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.viewgroup.AvatarFrameLayout android:id="@id/u9" android:layout_width="@dimen/iz" android:layout_height="@dimen/iz">
+        <ImageView android:id="@id/vp" android:padding="@dimen/e9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    </com.hengye.share.ui.widget.viewgroup.AvatarFrameLayout>
+    <Space android:id="@id/aby" android:layout_width="@dimen/rz" android:layout_height="0.0dip" android:layout_toEndOf="@id/u9" />
+    <TextView android:textSize="@dimen/th" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/aji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:text="@string/at5" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/rx" android:layout_toStartOf="@id/a02" android:layout_toEndOf="@id/aby" />
+    <FrameLayout android:id="@id/a02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/tp" android:ellipsize="end" android:gravity="center" android:id="@id/any" android:paddingTop="@dimen/ry" android:paddingBottom="@dimen/ry" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/tp" android:text="   " android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz" />
+        <View android:layout_gravity="center" android:id="@id/apf" android:visibility="gone" android:layout_width="@dimen/rk" android:layout_height="@dimen/rk" />
+    </FrameLayout>
+</RelativeLayout>

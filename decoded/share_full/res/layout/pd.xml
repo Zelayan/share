@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.GridGalleryEditorView android:id="@id/oy" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/a7d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="pick photo" android:onClick="pickPhoto" />
+</LinearLayout>

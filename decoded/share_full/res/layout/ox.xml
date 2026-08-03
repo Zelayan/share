@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.appbase.ui.widget.theme.widget.CustomThemeNewProgressBar android:layout_gravity="center" android:id="@id/a7w" android:visibility="visible" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:indeterminate="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

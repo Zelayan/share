@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sf" android:paddingTop="@dimen/bn" android:paddingBottom="@dimen/bn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ud" android:layout_width="@dimen/iz" android:layout_height="@dimen/iz" android:layout_centerVertical="true">
+        <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:visibility="gone" android:layout_width="@dimen/iz" android:layout_height="@dimen/iz" />
+        <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/uc" android:visibility="gone" android:layout_width="@dimen/iz" android:layout_height="@dimen/iz" />
+    </FrameLayout>
+    <Space android:id="@id/aby" android:layout_width="@dimen/rz" android:layout_height="0.0dip" android:layout_toEndOf="@id/ud" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/a07" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/rz" android:layout_toStartOf="@id/ajs" android:layout_toEndOf="@id/aby">
+        <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/ao1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="@dimen/ry" android:layout_marginEnd="36.0dip" />
+        <TextView android:textSize="@dimen/tl" android:textColor="@color/ea" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/anw" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a16" android:singleLine="true" android:layout_marginStart="-30.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ajs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/tp" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/aji" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:singleLine="true" android:layout_below="@id/a07" android:layout_marginEnd="@dimen/rx" android:layout_toStartOf="@id/a02" android:layout_toEndOf="@id/aby" />
+    <FrameLayout android:id="@id/a02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" android:layout_below="@id/ajs" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/tp" android:ellipsize="end" android:gravity="center" android:id="@id/any" android:paddingTop="@dimen/ry" android:paddingBottom="@dimen/ry" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/tp" android:text="   " android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz" />
+        <View android:layout_gravity="center" android:id="@id/apf" android:visibility="gone" android:layout_width="@dimen/rk" android:layout_height="@dimen/rk" />
+    </FrameLayout>
+</RelativeLayout>

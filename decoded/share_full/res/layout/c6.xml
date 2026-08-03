@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.image.ShareImageView android:layout_gravity="center_vertical" android:id="@id/ur" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/dy" android:layout_marginEnd="12.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_weight="1.0" android:layout_toStartOf="@id/v4" android:layout_alignParentStart="true">
+            <TextView android:textSize="@dimen/tj" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ajm" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" android:layout_marginEnd="8.0dip" />
+            <TextView android:textSize="@dimen/tb" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ajn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" android:layout_toEndOf="@id/ajm" />
+        </RelativeLayout>
+        <ImageView android:id="@id/v4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="24.0dip" android:maxHeight="24.0dip" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="12.0dip" android:id="@id/amr" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="5.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.hengye.share.ui.widget.image.AvatarImageView android:layout_gravity="center_vertical" android:id="@id/u9" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" />
+    <com.hengye.share.ui.widget.image.ShareImageView android:layout_gravity="center_vertical" android:id="@id/vc" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/en" />
+    <TextView android:textSize="@dimen/tb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/aln" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/aal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/w_" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/u4" android:layout_width="@dimen/iy" android:layout_height="@dimen/iy" android:src="@drawable/ru" android:contentDescription="@null" app:tint="?a37" />
+</LinearLayout>

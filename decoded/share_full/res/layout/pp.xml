@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/aga" android:background="@color/bw" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/agb" android:background="@color/ca" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/ht" layout="@layout/po" />
+    </FrameLayout>
+    <com.sleepbot.datetimepicker.time.RadialPickerLayout android:layout_gravity="center" android:id="@id/ag_" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="@dimen/r7" />
+    <View android:background="@color/g2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:buttonBarStyle">
+        <Button android:textSize="@dimen/h0" android:textColor="?colorPrimary" android:id="@id/m8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/im" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

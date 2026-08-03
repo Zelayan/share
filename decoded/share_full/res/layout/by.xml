@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/il" android:paddingStart="@dimen/ep" android:paddingEnd="@dimen/ep"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/ug" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:layout_marginBottom="@dimen/ry" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/tb" android:ellipsize="end" android:gravity="center" android:id="@id/aiz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:includeFontPadding="false" android:lineSpacingExtra="1.7999878dip" />
+</LinearLayout>

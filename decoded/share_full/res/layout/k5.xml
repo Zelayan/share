@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tm" android:ellipsize="end" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:layout_marginBottom="@dimen/rx" android:drawablePadding="@dimen/rz" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

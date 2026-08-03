@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/a6u" android:layout="@layout/ig" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ep" android:layout_marginStart="@dimen/eo" android:layout_marginEnd="@dimen/eo" />
+    <ViewStub android:id="@id/a6v" android:layout="@layout/ii" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ep" android:layout_marginStart="@dimen/eo" android:layout_marginEnd="@dimen/eo" />
+</FrameLayout>

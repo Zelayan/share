@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingBottom="@dimen/bn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/agm" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:id="@id/ai2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="@dimen/tf" android:gravity="center" android:id="@id/amk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:id="@id/ll" android:background="?a34" android:layout_width="fill_parent" android:layout_height="@dimen/gm" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:id="@id/ahj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/agm" />
+    <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ahz" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ahj" />
+</RelativeLayout>

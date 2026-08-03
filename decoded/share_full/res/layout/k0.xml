@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sv" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kl" />
+    <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:textSize="@dimen/sa" android:id="@id/an6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/td" android:layout="@layout/ky" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/so" android:layout="@layout/k4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/sw" android:layout="@layout/k2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/aec" android:layout="@layout/lp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bn" />
+    <Space android:layout_width="fill_parent" android:layout_height="@dimen/ep" />
+    <View android:id="@id/m1" android:background="?a34" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+    <View android:id="@id/m2" android:background="?a34" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+</LinearLayout>

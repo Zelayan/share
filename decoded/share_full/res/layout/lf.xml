@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/eh" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/lu" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ep" android:paddingBottom="@dimen/ep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/eo">
+        <com.hengye.share.ui.widget.image.AvatarImageView android:layout_gravity="center_vertical" android:id="@id/u9" android:layout_width="@dimen/x9" android:layout_height="@dimen/x9" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/a04" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/e9" android:layout_marginEnd="@dimen/e9">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/ao1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <Space android:layout_width="@dimen/rx" android:layout_height="0.0dip" />
+                <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/qn" android:layout_width="@dimen/is" android:layout_height="@dimen/is" android:contentDescription="@null" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ajt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/an0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

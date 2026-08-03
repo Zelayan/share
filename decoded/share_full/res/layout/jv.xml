@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.SquareStatusImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/to" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:layout_gravity="center_horizontal" android:id="@id/anv" android:paddingTop="@dimen/ru" android:paddingBottom="@dimen/ru" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

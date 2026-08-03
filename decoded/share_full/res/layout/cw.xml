@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/a0e" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_marginEnd="3.0dip" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="@style/fl" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="3.0dip" android:layout_toEndOf="@id/a0e" />
+    <ImageView android:id="@id/af0" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/title" />
+    <TextView android:textAppearance="@style/fk" android:id="@id/aed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/la" android:layout_toEndOf="@id/af0" />
+    <TextView android:textAppearance="@style/fk" android:id="@id/la" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

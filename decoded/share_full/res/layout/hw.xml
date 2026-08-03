@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/ei" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/e9">
+        <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ank" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/anx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:layout_gravity="center_vertical" android:id="@id/fl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

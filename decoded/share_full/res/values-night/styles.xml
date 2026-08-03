@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="ny" parent="@style/nu" />
+    <style name="nz" parent="@style/nv" />
+    <style name="o0" parent="@style/nw" />
+    <style name="o1" parent="@style/nu" />
+    <style name="o2" parent="@style/nw" />
+    <style name="o3" parent="@style/od" />
+    <style name="o4" parent="@style/oe" />
+    <style name="o5" parent="@style/of" />
+    <style name="o6" parent="@style/og" />
+    <style name="o7" parent="@style/oh" />
+    <style name="o8" parent="@style/oi" />
+    <style name="o9" parent="@style/oj" />
+    <style name="o_" parent="@style/ok" />
+    <style name="oa" parent="@style/ol" />
+    <style name="ob" parent="@style/p4" />
+    <style name="oc" parent="@style/p5" />
+    <style name="p_" parent="@style/ThemeOverlay.AppCompat.Dark" />
+    <style name="pt" parent="@style/pq" />
+    <style name="t9" parent="@style/ta" />
+    <style name="tc" parent="@style/td" />
+    <style name="tl" parent="@style/tj" />
+    <style name="to" parent="@style/tm" />
+    <style name="vl" parent="@style/vj" />
+    <style name="w8" parent="@style/w9" />
+</resources>

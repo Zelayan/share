@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/se" android:paddingBottom="@dimen/ep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/eo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tp" android:id="@id/amp" android:paddingTop="@dimen/ep" android:paddingBottom="@dimen/ep" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/k8" />
+    <include layout="@layout/hz" />
+</LinearLayout>

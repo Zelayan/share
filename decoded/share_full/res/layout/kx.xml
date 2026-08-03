@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/t1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout android:id="@id/xo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.share.ui.widget.image.StatusImageView android:id="@id/us" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/xm" android:padding="@dimen/ru" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/tm" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ajt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ana" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:id="@id/hj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ru" style="@style/g7" />
+    </LinearLayout>
+</LinearLayout>

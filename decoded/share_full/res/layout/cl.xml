@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.sina.card.view.CommonCardTitleView android:id="@id/jt" android:layout_width="fill_parent" android:layout_height="26.0dip" />
+    <LinearLayout android:id="@id/aoy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_below="@id/jt">
+        <include android:id="@id/op" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/nx" />
+        <include android:id="@id/oq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" layout="@layout/nx" />
+        <include android:id="@id/or" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" layout="@layout/nx" />
+        <include android:id="@id/os" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" layout="@layout/nx" />
+        <include android:id="@id/ot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" layout="@layout/nx" />
+    </LinearLayout>
+</RelativeLayout>

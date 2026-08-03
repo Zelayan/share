@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/qq" android:id="@id/ab1" android:visible="false" android:title="@string/atk" app:showAsAction="qy" />
+    <item android:icon="@drawable/s5" android:id="@id/act" android:title="@string/ap1" app:showAsAction="qy">
+        <menu>
+            <item android:id="@id/a84" android:title="@string/vw" app:showAsAction="a5y" />
+            <item android:id="@id/a85" android:title="@string/vx" app:showAsAction="a5y" />
+            <item android:id="@id/a87" android:title="@string/w9" app:showAsAction="a5y" />
+            <item android:id="@id/a83" android:title="@string/aqu" app:showAsAction="a5y" />
+            <item android:id="@id/lp" android:visible="false" android:title="@string/yz" app:showAsAction="a5y" />
+            <item android:id="@id/a82" android:visible="false" android:title="@string/zx" app:showAsAction="a5y" />
+            <item android:id="@id/a81" android:visible="false" android:title="@string/y9" app:showAsAction="a5y" />
+            <item android:id="@id/a86" android:visible="false" android:title="@string/b35" app:showAsAction="a5y" />
+        </menu>
+    </item>
+</menu>

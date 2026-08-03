@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/em" android:paddingTop="@dimen/ep" android:paddingBottom="@dimen/ep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/eo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.ShareImageView android:layout_gravity="center_vertical" android:id="@id/us" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:scaleType="centerCrop" />
+    <Space android:layout_width="@dimen/e9" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/tm" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ajt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/v5" android:layout_width="@dimen/ir" android:layout_height="@dimen/ir" />
+        <TextView android:textSize="@dimen/tp" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/anx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

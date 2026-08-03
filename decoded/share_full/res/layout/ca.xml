@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/bn" android:paddingBottom="@dimen/bn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.hengye.share.ui.widget.image.ShareImageView android:layout_gravity="center_vertical" android:id="@id/us" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:scaleType="centerCrop" />
+        <Space android:layout_width="@dimen/e9" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz">
+                <TextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_marginEnd="18.0dip" />
+                <ImageView android:id="@id/af0" android:layout_width="14.0dip" android:layout_height="14.0dip" android:contentDescription="@null" android:layout_marginStart="-14.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/sf" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ajt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/u4" android:layout_width="@dimen/iy" android:layout_height="@dimen/iy" android:src="@drawable/ru" android:tint="?a37" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

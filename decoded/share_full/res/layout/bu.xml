@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/e3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.6" />
+    <Space android:id="@id/spacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textAppearance="@style/p" android:id="@id/e7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/r" />
+</merge>

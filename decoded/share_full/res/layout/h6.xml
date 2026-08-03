@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/v5" android:layout_width="@dimen/ix" android:layout_height="@dimen/ix" android:contentDescription="@null" />
+    <View android:layout_width="@dimen/rx" android:layout_height="0.0dip" />
+    <TextView android:textSize="@dimen/to" android:ellipsize="end" android:id="@id/ank" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="6" />
+</LinearLayout>

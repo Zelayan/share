@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/a2e" layout="@layout/m5" />
+    <include layout="@layout/m7" />
+    <include android:id="@id/a2h" layout="@layout/m5" />
+</LinearLayout>

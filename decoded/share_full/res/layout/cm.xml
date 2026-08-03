@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/uk" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="12.0dip" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/v4" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="8.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/wj" android:gravity="center" android:id="@id/aln" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/wn" android:ellipsize="end" android:id="@id/ajt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/aln" android:layout_toEndOf="@id/uk" />
+    <TextView android:gravity="center" android:id="@id/a_a" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/u4" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/ru" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" app:tint="?a37" />
+</RelativeLayout>

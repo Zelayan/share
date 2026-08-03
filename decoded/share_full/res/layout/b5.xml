@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/acr" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/k7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.hengye.appbase.ui.widget.common.CommonAppBarLayout android:id="@id/do" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/ah" />
+            <com.hengye.appbase.ui.widget.common.CommonTabLayout android:id="@id/aeq" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bb="true" app:rc="mx" app:a1n="ob" />
+        </com.hengye.appbase.ui.widget.common.CommonAppBarLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/k1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/aj">
+            <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <View android:id="@id/eq" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip" />
+        </LinearLayout>
+        <View android:id="@id/a6r" android:background="@color/j8" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/js" />
+        <com.hengye.share.ui.widget.fab.AnimatedFloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/ns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/h3" android:contentDescription="@string/as8" />
+        <com.google.android.material.transformation.TransformationChildCard android:layout_gravity="end|bottom|center" android:id="@id/nt" android:layout_width="wrap_content" android:layout_height="wrap_content" app:e_="2.0dip" app:layout_behavior="@string/jt" style="@style/wa">
+            <FrameLayout android:id="@id/pb" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.google.android.material.transformation.TransformationChildCard>
+        <com.hengye.share.ui.widget.third.CustomBottomBar android:layout_gravity="bottom|center_horizontal" android:id="@id/eo" android:layout_width="186.0dip" android:layout_height="56.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_marginBottom="8.0dip" app:ck="qw" app:layout_behavior="@string/at" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

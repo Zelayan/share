@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rcl="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.image.BubbleImageView android:id="@id/v7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:id="@id/gr" android:layout_width="@dimen/it" android:layout_height="@dimen/it" android:src="@drawable/io" android:contentDescription="@null" />
+</FrameLayout>

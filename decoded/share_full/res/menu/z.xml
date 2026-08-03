@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/s5" android:id="@id/a4q" android:title="@string/ao4" app:showAsAction="qy">
+        <menu>
+            <item android:id="@id/co" android:title="@string/wv" app:showAsAction="jl" />
+            <item android:id="@id/cp" android:title="@string/x_" app:showAsAction="jl" />
+            <item android:id="@id/ck" android:title="@string/a00" app:showAsAction="jl" />
+            <item android:id="@id/cx" android:title="@string/a1a" app:showAsAction="jl" />
+            <item android:id="@id/bl" android:visible="false" android:title="@string/asa" app:showAsAction="jl" />
+        </menu>
+    </item>
+</menu>

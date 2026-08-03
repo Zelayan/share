@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sina.weibo.base.component.avatar.WBAvatarView android:layout_gravity="center_vertical" android:id="@id/u9" android:layout_width="wrap_content" android:layout_height="wrap_content" app:bl="@dimen/vs" app:bq="@dimen/we" app:hj="@dimen/wg" app:hq="#0f000000" app:hr="0.5dip" />
+    <TextView android:textSize="@dimen/wu" android:textColor="@color/pr" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/ao0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:shadowColor="@color/cf" android:shadowRadius="1.0" android:paddingStart="@dimen/w7" />
+</merge>

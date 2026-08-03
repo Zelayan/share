@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/rx" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/zw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rz">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.hengye.appbase.ui.widget.viewgroup.FlowLayout android:id="@id/zv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Space android:id="@id/zx" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/rz" />
+            <com.hengye.appbase.ui.widget.viewgroup.WrapContentLinearLayout android:orientation="vertical" android:id="@id/ya" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/rx" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/x5" android:layout_width="@dimen/i1" android:layout_height="@dimen/i1" android:contentDescription="@string/ao4">
+            <ImageView android:layout_gravity="center|top" android:id="@id/u4" android:layout_width="@dimen/iy" android:layout_height="@dimen/iy" android:layout_marginTop="@dimen/rx" android:contentDescription="@string/ao4" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/z5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginBottom="@dimen/rz">
+        <com.hengye.share.sina.freshnews.card.view.ReverseLinearLayout android:gravity="start" android:id="@id/a18" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/tq" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/amb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:layout_marginStart="@dimen/rz" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/tj" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/aid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:includeFontPadding="false" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz" />
+</LinearLayout>

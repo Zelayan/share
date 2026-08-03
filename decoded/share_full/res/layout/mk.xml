@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/a45" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/gp" android:layout_marginEnd="@dimen/gp" app:e9="@dimen/gs" app:e_="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout android:id="@id/z2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:xm="od">
+            <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/us" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout>
+        <TextView android:textSize="@dimen/wj" android:ellipsize="end" android:gravity="start|center" android:id="@id/ank" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

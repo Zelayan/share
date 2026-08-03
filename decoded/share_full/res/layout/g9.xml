@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ab4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.common.CommonViewPager android:id="@id/apl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip">
+        <TextView android:textSize="@dimen/tg" android:textColor="@color/pr" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/ank" android:background="@color/oh" android:padding="@dimen/ek" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:maxLines="4" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/alr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

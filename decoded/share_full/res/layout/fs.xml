@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#b3000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/pr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/af7" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <SeekBar android:id="@id/aax" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:progress="25" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/pr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/af8" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <SeekBar android:id="@id/aaw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:progress="100" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/a9_" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+</LinearLayout>

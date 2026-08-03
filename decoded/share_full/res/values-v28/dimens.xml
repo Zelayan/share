@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="oo">0.24</item>
+    <item type="dimen" name="op">0.4</item>
+    <item type="dimen" name="oq">0.4</item>
+    <item type="dimen" name="or">0.24</item>
+    <item type="dimen" name="ot">0.12</item>
+    <item type="dimen" name="ou">0.2</item>
+    <item type="dimen" name="ov">0.2</item>
+    <item type="dimen" name="ow">0.12</item>
+</resources>

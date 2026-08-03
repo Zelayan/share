@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:layout_width="@dimen/x7" android:layout_height="@dimen/x7" />
+    <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ao1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="@dimen/e9" android:layout_marginEnd="@dimen/e9" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:layout_gravity="center_vertical" android:id="@id/fl" android:background="@null" android:visibility="invisible" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/r1" android:contentDescription="@null" />
+</LinearLayout>

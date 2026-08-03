@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/tp" android:textColor="?android:textColorSecondary" android:id="@id/ajt" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/rz" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:textSize="@dimen/tp" android:id="@id/aj_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/rz" app:j0="agc" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:id="@id/v5" android:layout_width="@dimen/ix" android:layout_height="@dimen/ix" android:src="@drawable/qm" android:contentDescription="@null" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/a4k" android:paddingTop="@dimen/ne" android:paddingBottom="@dimen/nc" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.google.android.material.button.MaterialButton android:gravity="start|center" android:layout_gravity="start" android:id="@id/a4l" android:layout_width="wrap_content" android:layout_height="@dimen/nd" android:insetTop="0.0dip" android:insetBottom="0.0dip" app:icon="@drawable/d_" app:ny="afm" app:nz="4.0dip" style="?sq" />
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@id/a4n" android:layout_width="@dimen/ox" android:layout_height="@dimen/nd" android:insetTop="0.0dip" android:insetBottom="0.0dip" android:contentDescription="@string/abo" app:icon="@drawable/d8" style="?sn" />
+    <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@id/a4m" android:layout_width="@dimen/ox" android:layout_height="@dimen/nd" android:insetTop="0.0dip" android:insetBottom="0.0dip" android:contentDescription="@string/abn" app:icon="@drawable/d7" style="?sn" />
+</LinearLayout>

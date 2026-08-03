@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="start|center" android:id="@id/w6" android:background="@drawable/ez" android:padding="@dimen/ru" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/rx" android:tint="@color/pr" android:contentDescription="@string/apx" />
+    <ImageButton android:layout_gravity="end|center" android:id="@id/w7" android:background="@drawable/ez" android:padding="@dimen/ru" android:layout_width="@dimen/io" android:layout_height="@dimen/io" android:src="@drawable/rx" android:tint="@color/pr" android:contentDescription="@string/apx" />
+</FrameLayout>

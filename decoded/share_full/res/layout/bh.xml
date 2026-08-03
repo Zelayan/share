@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout android:id="@id/ael" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/k7" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <include layout="@layout/h_" />
+        <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/aj" />
+        <com.hengye.share.ui.widget.fab.AnimatedFloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/ns" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/h3" android:src="@drawable/r9" android:contentDescription="@string/ay4" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout>

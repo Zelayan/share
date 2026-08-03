@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="?android:textColorSecondary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/sf" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:src="@drawable/mg" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorTertiary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/se" />
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorTertiary" android:layout_gravity="center_horizontal" android:id="@id/alv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeCheckBox android:textSize="14.0sp" android:textColor="?android:textColorTertiary" android:layout_gravity="center_horizontal" android:id="@id/aih" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/pr" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/ao5" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="36.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="36.0dip" android:text="@string/a23" />
+</LinearLayout>

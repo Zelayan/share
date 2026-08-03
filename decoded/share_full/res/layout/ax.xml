@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.hengye.appbase.ui.widget.viewgroup.RoundCornerLayout android:id="@id/ig" android:layout_width="fill_parent" android:layout_height="wrap_content" app:xt="9.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/ih" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:id="@id/an4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/ry" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a17" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx">
+                    <TextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:id="@id/aie" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:id="@id/fv" android:text="复制" android:layout_marginStart="@dimen/rz" style="@style/fi" />
+                </LinearLayout>
+                <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tj" android:textColor="?android:textColorPrimary" android:id="@id/an7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:drawablePadding="@dimen/rx" android:lineSpacingExtra="@dimen/rx" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/ax" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/am3" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prime" android:paddingStart="50.0dip" android:paddingEnd="50.0dip" />
+        </com.hengye.appbase.ui.widget.viewgroup.RoundCornerLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:textSize="@dimen/tj" android:id="@id/alp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ru" android:text="订阅方式" app:j0="agd" />
+            <TextView android:textSize="@dimen/ta" android:textColor="@color/c_" android:id="@id/alq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" />
+            <com.hengye.appbase.ui.widget.viewgroup.FlowLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" app:p8="@dimen/rz" app:rm="@dimen/rz">
+                <TextView android:id="@id/fb" android:text="支付宝" style="@style/fi" />
+                <TextView android:id="@id/fg" android:text="Google Play" style="@style/fi" />
+            </com.hengye.appbase.ui.widget.viewgroup.FlowLayout>
+            <com.hengye.appbase.ui.widget.viewgroup.FlowLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" app:p8="@dimen/rz" app:rm="@dimen/rz">
+                <TextView android:id="@id/hp" android:text="恢复订阅" style="@style/fi" />
+                <TextView android:id="@id/g8" android:text="激活失败/忘记激活码？" style="@style/fi" />
+            </com.hengye.appbase.ui.widget.viewgroup.FlowLayout>
+            <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorTertiary" android:id="@id/ans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" android:text="请注意，高级版为虚拟产品，不支持兑现、退款" />
+            <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorSecondary" android:id="@id/anr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rz" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/to" android:textColor="?android:textColorSecondary" android:id="@id/aif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eo" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.sina.card.widget.PullToRightViewLayout android:id="@id/a88" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/ap9" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:layout_width="54.0dip" android:layout_height="38.0dip" layout="@layout/q9" />
+    </com.hengye.share.sina.card.widget.PullToRightViewLayout>
+</FrameLayout>

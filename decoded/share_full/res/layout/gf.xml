@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/aei" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+        <FrameLayout android:background="@color/ax" android:layout_width="fill_parent" android:layout_height="200.0dip">
+            <com.hengye.share.ui.widget.media.VideoView android:layout_gravity="center" android:id="@id/apd" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.hengye.share.ui.widget.media.MediaController android:id="@id/a3a" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <SeekBar android:id="@id/aay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/a1n" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/apa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="播放视频" />
+            <Button android:id="@id/apc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="停止播放" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@id/hc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="start video play" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/he" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stop video play" android:layout_toRightOf="@id/hc" android:layout_alignParentBottom="true" />
+</RelativeLayout>

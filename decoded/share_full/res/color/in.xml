@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="?g8" android:alpha="@dimen/ow" />
+    <item android:state_focused="true" android:color="?g8" android:alpha="@dimen/ou" />
+    <item android:color="?g8" android:alpha="@dimen/ov" android:state_hovered="true" />
+    <item android:color="?g8" android:alpha="@dimen/ot" />
+</selector>

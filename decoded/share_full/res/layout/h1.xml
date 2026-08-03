@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/do" android:background="@null" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:stateListAnimator="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.toolbar.TopicHomePageToolbarLayout android:id="@id/jm" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/hs" app:ft="@style/gr" app:lf="bottom" app:lh="@dimen/hr" app:lj="@dimen/i7" app:ll="@style/gq" app:rc="nn|aa2" app:title="" app:a4p="@id/agr">
+        <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/us" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:pt="a6x" />
+        <com.hengye.appbase.ui.widget.common.CommonToolBar android:theme="@style/fq" android:id="@id/agr" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:pt="a7e" app:title="@string/app_name" />
+    </com.hengye.share.ui.widget.toolbar.TopicHomePageToolbarLayout>
+</com.google.android.material.appbar.AppBarLayout>

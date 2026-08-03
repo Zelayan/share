@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:title="@string/aqu" android:key="publish_source" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/o" android:title="@string/aut" android:key="font_size" android:summary="%s" android:defaultValue="16" android:entryValues="@array/p" />
+    <SeekBarPreference android:title="@string/axa" android:key="font_spacing_value" android:defaultValue="50" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/ax2" android:key="show_status_card_background" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/c" android:title="@string/atu" android:key="avatar_style" android:summary="%s" android:defaultValue="3" android:entryValues="@array/d" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/ax1" android:key="show_status_card" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/axf" android:key="status_icon_show" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/ax5" android:key="show_status_options" android:summary="@string/ax6" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/ax4" android:key="show_status_collect_btn" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/ax7" android:key="show_status_space" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/axi" android:key="status_name_theme" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/axg" android:key="status_name_bold" android:summary="@string/axh" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/axj" android:key="status_origin_name_show" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/ax3" android:key="show_status_card_divider" android:defaultValue="false" />
+</PreferenceScreen>

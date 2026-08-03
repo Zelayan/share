@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/v0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_alignTop="@id/a_k" android:layout_alignBottom="@id/a_k" android:layout_alignStart="@id/a_k" android:layout_alignEnd="@id/a_k" />
+        <RelativeLayout android:id="@id/a_k" android:paddingTop="@dimen/bm" android:paddingBottom="@dimen/bm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:layout_width="@dimen/x7" android:layout_height="@dimen/x7" android:src="@drawable/if" android:contentDescription="@string/eu" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@android:color/white" android:id="@id/ao1" android:paddingTop="@dimen/qi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/u9" android:contentDescription="@string/aq4" />
+            <TextView android:textColor="@android:color/white" android:ellipsize="marquee" android:id="@id/an0" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/ao1" android:marqueeRepeatLimit="marquee_forever" />
+            <ImageView android:id="@id/qa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mq" android:layout_alignBottom="@id/ao1" android:contentDescription="@string/aq4" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.hengye.appbase.ui.widget.common.CommonTabLayout android:id="@id/mh" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/a99" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

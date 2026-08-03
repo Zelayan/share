@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout android:id="@id/a89" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.hengye.appbase.ui.widget.common.CommonAppBarLayout android:id="@id/do" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" fab:layout_behavior="@string/al">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" fab:rc="aa2" layout="@layout/kp" />
+                <View style="@style/wn" />
+                <com.hengye.appbase.ui.widget.common.CommonTabLayout android:id="@id/aeq" android:background="?a3a" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" fab:a1n="aa8" />
+            </com.hengye.appbase.ui.widget.common.CommonAppBarLayout>
+            <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" fab:layout_behavior="@string/aj" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <com.hengye.share.ui.widget.OverLayView android:id="@id/a6q" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout>

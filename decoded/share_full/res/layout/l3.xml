@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/te" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout android:id="@id/z2" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <com.hengye.share.module.video.view.MediaPlayerItemView android:id="@id/a7o" android:layout_width="fill_parent" android:layout_height="fill_parent" app:h6="@layout/j4" app:nn="false" app:v_="@layout/j5" app:a0z="ag5" app:a64="true" />
+    </com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout>
+    <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/tb" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ao7" android:padding="@dimen/ru" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="@dimen/s0" />
+</LinearLayout>

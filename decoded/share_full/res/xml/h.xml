@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/aue" android:key="download_update_auto" android:defaultValue="true" />
+    <Preference android:title="@string/aw1" android:key="rate" />
+    <Preference android:title="@string/aty" android:key="check_update" />
+    <Preference android:title="@string/av0" android:key="history_version" />
+    <Preference android:title="@string/axr" android:key="version_code" />
+    <Preference android:title="@string/axq" android:key="user_guide" />
+    <Preference android:title="@string/aud" android:key="donate_to_developer" />
+    <Preference android:title="@string/axp" android:key="user_and_privacy" />
+</PreferenceScreen>

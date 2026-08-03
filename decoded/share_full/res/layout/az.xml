@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/a_q" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.third.CustomQRCodeView android:id="@id/aqm" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:w8="1000" app:w9="将条码放入框内，即可自动扫描" app:w_="120.0dip" app:wa="@android:color/white" app:wb="1.0dip" app:we="20.0dip" app:wf="3.0dip" app:wi="true" app:wj="false" app:wk="false" app:wl="true" app:wm="true" app:wn="true" app:wo="true" app:wp="true" app:wq="false" app:wr="false" app:ws="#33ffffff" app:wt="@string/wf" app:wu="200.0dip" app:ww="0.0dip" app:wx="0.5dip" app:wz="@android:color/white" app:x1="12.0sp" app:x2="@dimen/bh" app:x4="0.5" />
+    <include layout="@layout/rg" />
+</RelativeLayout>

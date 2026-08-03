@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/a_l" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@id/wd" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/a0h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/va" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" android:layout_marginEnd="10.0dip" />
+            <TextView android:textSize="@dimen/wn" android:ellipsize="end" android:id="@id/akz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/a0k" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+        <ImageView android:id="@id/vb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dm" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/wd" android:layout_width="@dimen/gm" android:layout_height="36.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/a_n" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/wd" android:layout_alignParentEnd="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/a_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/w2" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" android:layout_marginEnd="10.0dip" />
+            <TextView android:textSize="@dimen/wn" android:ellipsize="end" android:id="@id/amq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/a_9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+        <ImageView android:id="@id/w4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dm" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

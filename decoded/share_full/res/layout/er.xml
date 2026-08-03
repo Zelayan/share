@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/search_bar" android:background="?a3a" android:paddingLeft="@dimen/bj" android:paddingTop="@dimen/bm" android:paddingRight="@dimen/bj" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:id="@id/ql" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/sj" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeView android:id="@id/m1" android:layout_alignParentBottom="true" app:ir="agc" style="@style/wn" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:layout_gravity="center_vertical" android:id="@id/n9" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ee" android:hint="@string/wv" android:lines="1" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="@dimen/ek" android:paddingEnd="@dimen/ek" android:layout_marginEnd="@dimen/rx" android:layout_toStartOf="@id/ql" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/xp" android:background="@drawable/ei" android:padding="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:id="@id/qk" android:layout_width="@dimen/ix" android:layout_height="@dimen/ix" android:layout_marginTop="@dimen/rx" android:src="@drawable/rw" android:contentDescription="@null" android:layout_marginEnd="@dimen/rx" />
+        <TextView android:textSize="@dimen/tl" android:textColor="?android:textColorSecondary" android:id="@id/ajq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/qk" />
+    </RelativeLayout>
+    <include layout="@layout/ey" />
+</LinearLayout>

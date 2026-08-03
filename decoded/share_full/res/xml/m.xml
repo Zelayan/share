@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/aw0" android:key="privacy_common" />
+    <Preference android:title="@string/atw" android:key="blacklist" />
+    <Preference android:title="@string/atv" android:key="black_content" />
+    <Preference android:title="@string/atx" android:key="block_status" />
+    <Preference android:title="@string/aub" android:key="repost_direct" />
+    <Preference android:title="@string/ass" android:key="recently_visit" />
+</PreferenceScreen>

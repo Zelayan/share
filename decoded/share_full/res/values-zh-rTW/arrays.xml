@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="a">
+        <item>僅Wi-Fi</item>
+        <item>總是</item>
+        <item>從不</item>
+    </string-array>
+    <string-array name="c">
+        <item>正方形</item>
+        <item>正方圓角</item>
+        <item>圓形</item>
+    </string-array>
+    <string-array name="h">
+        <item>無圖</item>
+        <item>縮略圖</item>
+        <item>高清圖</item>
+        <item>原圖</item>
+        <item>自動</item>
+        <item>僅Wi-Fi下加載</item>
+    </string-array>
+    <string-array name="j">
+        <item>白色</item>
+        <item>黑色</item>
+    </string-array>
+    <string-array name="k">
+        <item>跟隨主題</item>
+        <item>本地圖片</item>
+        <item>個人主頁封面</item>
+    </string-array>
+    <string-array name="m">
+        <item>不顯示</item>
+        <item>切換分組</item>
+        <item>刷新</item>
+        <item>發微博</item>
+    </string-array>
+    <string-array name="o">
+        <item>13 pt</item>
+        <item>14 pt</item>
+        <item>15 pt</item>
+        <item>16 pt</item>
+        <item>17 pt</item>
+        <item>18 pt</item>
+        <item>19 pt</item>
+        <item>20 pt</item>
+        <item>21 pt</item>
+        <item>23 pt</item>
+    </string-array>
+    <string-array name="q">
+        <item>全部微博</item>
+        <item>我關注人的微博</item>
+        <item>原創微博</item>
+    </string-array>
+    <string-array name="r">
+        <item>原創微博</item>
+        <item>轉發微博</item>
+        <item>微博評論</item>
+    </string-array>
+    <string-array name="s">
+        <item>全部</item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="t">
+        <item>全部</item>
+        <item>原創</item>
+        <item>圖片</item>
+        <item>視頻</item>
+    </string-array>
+    <string-array name="u">
+        <item>公開</item>
+        <item>好友圈</item>
+        <item>僅自己可見</item>
+    </string-array>
+    <string-array name="v">
+        <item>跟隨微博設置</item>
+        <item>底部居右</item>
+        <item>底部居中</item>
+        <item>圖片中心</item>
+        <item>不顯示</item>
+    </string-array>
+    <string-array name="w">
+        <item>所有人</item>
+        <item>我關注的人</item>
+        <item>我的粉絲</item>
+        <item>僅自己</item>
+    </string-array>
+    <string-array name="x">
+        <item>按熱度排序</item>
+        <item>按時間排序</item>
+    </string-array>
+    <string-array name="y">
+        <item>複製內容</item>
+        <item>自由複製</item>
+        <item>複製 @%s</item>
+    </string-array>
+    <string-array name="z">
+        <item>編輯</item>
+        <item>保存原圖</item>
+        <item>保存所有原圖</item>
+    </string-array>
+    <string-array name="a0">
+        <item>中文</item>
+        <item>English (英文)</item>
+        <item>日本语 (日文)</item>
+        <item>한국어 (韓文)</item>
+    </string-array>
+    <string-array name="a1">
+        <item>跟隨系統</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="a3">
+        <item>自動</item>
+        <item>30條</item>
+        <item>50條</item>
+        <item>88條</item>
+        <item>100條</item>
+    </string-array>
+    <string-array name="a5">
+        <item>底欄</item>
+        <item>不顯示</item>
+    </string-array>
+    <string-array name="a7">
+        <item>夜間黑</item>
+        <item>A屏黑</item>
+        <item>夜間藍</item>
+    </string-array>
+    <string-array name="a9">
+        <item>1分鐘</item>
+        <item>5分鐘</item>
+        <item>15分鐘</item>
+        <item>半小時</item>
+        <item>1小時</item>
+    </string-array>
+    <string-array name="ab">
+        <item>評論</item>
+        <item>\@我</item>
+        <item>私信</item>
+        <item>新粉絲</item>
+        <item>點贊</item>
+    </string-array>
+    <string-array name="ae">
+        <item>評論</item>
+        <item>\@我</item>
+        <item>點贊</item>
+    </string-array>
+    <string-array name="ag">
+        <item>豎屏</item>
+        <item>橫屏</item>
+    </string-array>
+    <string-array name="aj">
+        <item>壓縮處理</item>
+        <item>原圖</item>
+        <item>自動</item>
+    </string-array>
+    <string-array name="al">
+        <item>順序閱讀</item>
+        <item>逆序閱讀</item>
+    </string-array>
+    <string-array name="ao">
+        <item>首頁有新的微博</item>
+        <item>未讀通知</item>
+        <item>視頻下載成功</item>
+    </string-array>
+    <string-array name="aq">
+        <item>微博頭像</item>
+        <item>評論、轉發、贊頭像</item>
+        <item>Wi-Fi下不隐藏头像</item>
+    </string-array>
+    <string-array name="as">
+        <item>跟隨微博圖片</item>
+        <item>僅Wi-Fi下加載</item>
+        <item>從不</item>
+    </string-array>
+    <string-array name="av">
+        <item>向右滑動退出</item>
+        <item>向左滑動退出</item>
+        <item>向左或右滑動退出</item>
+        <item>禁用</item>
+    </string-array>
+    <string-array name="ax">
+        <item>夜間模式</item>
+        <item>紳士藍</item>
+        <item>小草綠</item>
+        <item>少女粉</item>
+    </string-array>
+    <string-array name="b0">
+        <item>超清</item>
+        <item>高清</item>
+        <item>標清</item>
+        <item>流暢</item>
+        <item>自動</item>
+    </string-array>
+    <string-array name="b2">
+        <item>超清 1080P</item>
+        <item>高清 720P</item>
+        <item>標清 480P</item>
+    </string-array>
+</resources>

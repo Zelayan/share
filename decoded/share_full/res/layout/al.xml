@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhihu.matisse.internal.ui.widget.PreviewViewPager android:id="@id/a6w" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/ey" android:background="@color/jz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="4.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="?vu" android:layout_gravity="start" android:id="@id/hw" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:text="@string/ay" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/a6m" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+                <com.zhihu.matisse.internal.ui.widget.CheckRadioView android:layout_gravity="center_vertical" android:id="@id/a6l" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/hw" android:tint="#ffffffff" />
+                <TextView android:enabled="true" android:textSize="14.0sp" android:textColor="?vu" android:layout_gravity="center_vertical" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b0" android:paddingStart="4.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/jy" android:layout_gravity="center" android:id="@id/abk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="?vt" android:layout_gravity="end" android:id="@id/hv" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/agx" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_alignParentRight="true">
+        <com.zhihu.matisse.internal.ui.widget.CheckView android:id="@id/j4" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

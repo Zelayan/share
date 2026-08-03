@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/bm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/ga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="get info" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:id="@id/nj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="input token" android:maxLines="3" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:id="@id/nd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="input prior token" android:maxLines="3" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:id="@id/n5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="input gsid" android:maxLines="3" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:id="@id/ne" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="input s" android:maxLines="3" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:id="@id/nm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="input wb s" android:maxLines="3" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/ho" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="update token" />
+</LinearLayout>

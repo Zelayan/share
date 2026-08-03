@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yalantis.ucrop.view.GestureCropImageView android:id="@id/r_" android:padding="@dimen/va" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yalantis.ucrop.view.OverlayView android:id="@id/apk" android:padding="@dimen/va" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

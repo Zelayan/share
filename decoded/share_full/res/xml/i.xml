@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/au4">
+        <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/av1" android:key="home_back" android:summary="@string/av2" android:defaultValue="false" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/av" android:title="@string/axk" android:key="swipe_back" android:summary="%s" android:defaultValue="3" android:entryValues="@array/aw" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/a1" android:title="@string/av9" android:key="language" android:summary="%s" android:defaultValue="1" android:entryValues="@array/a2" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/ag" android:title="@string/avo" android:key="orientation_new" android:summary="%s" android:defaultValue="1" android:entryValues="@array/ah" />
+        <Preference android:title="@string/av5" android:key="ic_launcher" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/awi" android:key="same_photo_name" android:summary="@string/awk" android:defaultValue="false" />
+        <Preference android:title="@string/awl" android:key="save_photo_path" />
+        <Preference android:title="@string/awm" android:key="save_video_path" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/au0" android:key="click_photo_back" android:defaultValue="true" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/auf" android:key="drag_photo_back" android:defaultValue="true" />
+        <Preference android:title="@string/atz" android:key="clear_photo_cache" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/av8" android:key="internal_app_browser" android:defaultValue="true" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/au6" android:key="custom_tabs_ui" android:summary="@string/au7" android:defaultValue="true" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+</PreferenceScreen>

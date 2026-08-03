@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/a24" android:background="@drawable/b4" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/pr" android:layout_gravity="center" android:id="@id/f8" android:background="@drawable/bc" android:layout_width="160.0dip" android:layout_height="32.0dip" style="?android:borderlessButtonStyle" />
+</LinearLayout>

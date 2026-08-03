@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/bm" android:paddingBottom="@dimen/bm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.StatusImageView android:id="@id/us" android:layout_width="@dimen/il" android:layout_height="@dimen/il" android:contentDescription="@null" android:layout_marginEnd="@dimen/ru" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/xm" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@id/ajt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ek" android:maxLines="2" />
+        <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/aju" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/e9" android:maxLines="2" />
+    </LinearLayout>
+</LinearLayout>

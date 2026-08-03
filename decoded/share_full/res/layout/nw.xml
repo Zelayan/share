@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/a0i" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="12.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="2.0dip" android:layout_toEndOf="@id/aoa" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/hx" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/qr" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="12.0dip" android:src="@drawable/l_" />
+        <View android:layout_gravity="center_vertical" android:id="@id/ap3" android:background="#ffd8d8d8" android:visibility="gone" android:layout_width="0.5px" android:layout_height="14.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textSize="16.0dip" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/a_8" android:visibility="gone" android:layout_width="62.0dip" android:layout_height="40.0dip" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/g6" android:id="@id/aoa" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/ck" android:id="@id/a8g" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="3.0dip" android:layout_toStartOf="@id/hx" />
+    <View android:id="@id/lv" android:background="@color/cl" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    <com.hengye.share.sina.page.view.LinearAvatarView android:id="@id/a0u" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="2.0dip" android:layout_toStartOf="@id/a8g" />
+</RelativeLayout>

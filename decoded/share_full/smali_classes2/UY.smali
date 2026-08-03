@@ -1,0 +1,233 @@
+.class public LUY;
+.super LBZ;
+
+
+# instance fields
+.field public O0000o:LKU;
+
+.field public O0000oO0:LIT;
+
+
+# direct methods
+.method public constructor <init>(LsY;LKU;)V
+    .locals 2
+
+    invoke-direct {p0, p1}, LBZ;-><init>(LsY;)V
+
+    iput-object p2, p0, LUY;->O0000o:LKU;
+
+    iget-object p1, p2, LKU;->O00000Oo:LIT;
+
+    iput-object p1, p0, LUY;->O0000oO0:LIT;
+
+    new-instance p1, LTZ;
+
+    iget-object p2, p0, LIY;->O000000o:LBY;
+
+    const/4 v0, 0x2
+
+    invoke-direct {p1, v0, v0, p2}, LTZ;-><init>(IILBY;)V
+
+    iput-object p1, p0, LBZ;->O0000o0O:LTZ;
+
+    const-string p1, "constructor, "
+
+    invoke-static {p1}, Lo00OOO;->O000000o(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p0}, LIY;->O00000o0()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p2, ", type="
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p2, p0, LUY;->O0000o:LKU;
+
+    iget p2, p2, LKU;->O00000oO:I
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p2, " ids:"
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object p2, p0, LUY;->O0000oO0:LIT;
+
+    invoke-virtual {p2}, LIT;->O000O0o()J
+
+    move-result-wide v0
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public O000000o(ILUZ;Ljava/util/HashMap;LAZ;)I
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "LUZ;",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Object;",
+            ">;",
+            "LAZ;",
+            ")I"
+        }
+    .end annotation
+
+    new-instance p4, LIW$O000000o;
+
+    invoke-direct {p4}, LIW$O000000o;-><init>()V
+
+    iget-object v0, p0, LUY;->O0000oO0:LIT;
+
+    invoke-virtual {v0}, LIT;->O00oOooO()I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    iput-object v0, p4, LIW$O000000o;->O00000o:Ljava/lang/Integer;
+
+    iget-object v0, p0, LUY;->O0000oO0:LIT;
+
+    iput-object v0, p4, LIW$O000000o;->O00000oO:LIT;
+
+    if-nez p1, :cond_0
+
+    if-eqz p2, :cond_0
+
+    if-eqz p3, :cond_0
+
+    const-wide/16 p1, -0x1
+
+    const/4 v0, 0x0
+
+    invoke-static {p3, v0, p1, p2}, LjQ;->O000000o(Ljava/util/HashMap;IJ)J
+
+    move-result-wide p1
+
+    long-to-int p2, p1
+
+    if-nez p2, :cond_0
+
+    invoke-static {}, LKX;->O000000o()Lo00OOooO;
+
+    move-result-object p1
+
+    new-instance p2, LJW;
+
+    iget-object p3, p0, LIY;->O000000o:LBY;
+
+    check-cast p3, LiY;
+
+    iget-object p3, p3, LiY;->O0000Oo0:Landroid/content/Context;
+
+    iget-object p4, p0, LUY;->O0000oO0:LIT;
+
+    invoke-direct {p2, p3, p4}, LJW;-><init>(Landroid/content/Context;LIT;)V
+
+    invoke-virtual {p1, p2}, Lo00OOooO;->O00000Oo(Lo00OOoO;)V
+
+    return v0
+
+    :cond_0
+    const/4 p1, 0x5
+
+    iput p1, p4, LaW;->O00000o0:I
+
+    invoke-static {}, LQwa;->O000000o()LQwa;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p4}, LQwa;->O000000o(Ljava/lang/Object;)V
+
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public O000000o(Z)LAZ;
+    .locals 10
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [J
+
+    iget-object v1, p0, LUY;->O0000oO0:LIT;
+
+    invoke-virtual {v1}, LIT;->O000O0o()J
+
+    move-result-wide v1
+
+    const/4 v3, 0x0
+
+    aput-wide v1, v0, v3
+
+    new-instance v7, LRaa;
+
+    invoke-direct {v7}, LRaa;-><init>()V
+
+    new-instance v1, LQaa;
+
+    iget-object v2, p0, LUY;->O0000o:LKU;
+
+    iget v2, v2, LKU;->O00000oO:I
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    const-string v4, "type"
+
+    const/4 v5, 0x2
+
+    invoke-direct {v1, v4, v5, v2}, LQaa;-><init>(Ljava/lang/String;ILjava/lang/Object;)V
+
+    invoke-virtual {v7, v1}, LRaa;->O000000o(LQaa;)V
+
+    new-instance v1, LQaa;
+
+    const-string v2, "ids"
+
+    invoke-direct {v1, v2, v3, v0}, LQaa;-><init>(Ljava/lang/String;ILjava/lang/Object;)V
+
+    invoke-virtual {v7, v1}, LRaa;->O000000o(LQaa;)V
+
+    new-instance v0, LAZ;
+
+    iget-object v6, p0, LBZ;->O0000o0O:LTZ;
+
+    const/4 v9, 0x1
+
+    move-object v4, v0
+
+    move-object v5, p0
+
+    move v8, p1
+
+    invoke-direct/range {v4 .. v9}, LAZ;-><init>(LBZ;LTZ;LRaa;ZZ)V
+
+    return-object v0
+.end method
+
+.method public O000000o()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "DeleteSingleMsgMessage"
+
+    return-object v0
+.end method

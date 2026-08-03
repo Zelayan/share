@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.base.component.avatar.CircularImageView android:id="@id/jf" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/vq" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="18.0dip" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

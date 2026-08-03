@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/sm" android:id="@id/cp" android:orderInCategory="180" android:title="@string/x_" app:showAsAction="qy" />
+    <item android:icon="@drawable/s5" android:id="@id/c6" android:orderInCategory="180" android:title="@string/ao4" app:showAsAction="qy">
+        <menu>
+            <item android:id="@id/c9" android:title="@string/vq" app:showAsAction="a5y" />
+            <item android:id="@id/bd" android:title="@string/y_" app:showAsAction="jl" />
+            <item android:id="@id/bi" android:title="@string/yq" app:showAsAction="jl" />
+            <item android:id="@id/ba" android:title="@string/y2" app:showAsAction="jl" />
+            <item android:id="@id/ck" android:title="@string/a00" app:showAsAction="jl" />
+            <item android:id="@id/bk" android:title="@string/s4" app:showAsAction="a5y" />
+            <item android:id="@id/be" android:visible="false" android:title="@string/yp" app:showAsAction="jl" />
+            <item android:id="@id/bv" android:visible="false" android:title="@string/z2" app:showAsAction="jl" />
+            <item android:id="@id/bw" android:visible="false" android:title="@string/ay3" app:showAsAction="jl" />
+            <item android:id="@id/cw" android:visible="false" android:title="@string/a0g" app:showAsAction="jl" />
+            <item android:id="@id/cn" android:visible="false" android:title="@string/a0q" app:showAsAction="jl" />
+            <item android:id="@id/bz" android:visible="false" android:title="@string/zd" app:showAsAction="jl" />
+            <item android:id="@id/bx" android:visible="true" android:title="@string/z6" app:showAsAction="jl" />
+            <item android:id="@id/bp" android:visible="false" android:title="@string/yt" app:showAsAction="jl" />
+        </menu>
+    </item>
+</menu>

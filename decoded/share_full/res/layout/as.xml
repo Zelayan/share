@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/aqe" android:background="@color/oz" android:layout_width="fill_parent" android:layout_height="@dimen/v7">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/x6" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/zb" layout="@layout/au" />
+        <include android:id="@id/xx" layout="@layout/at" />
+    </FrameLayout>
+    <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/aqj" android:background="@color/oz" android:layout_width="fill_parent" android:layout_height="@dimen/v8" android:baselineAligned="false">
+        <FrameLayout android:id="@id/acj" style="@style/x2">
+            <ImageView android:id="@id/rd" android:src="@drawable/ri" style="@style/wz" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ach" style="@style/x2">
+            <ImageView android:id="@id/rb" android:src="@drawable/gn" style="@style/wz" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/aci" style="@style/x2">
+            <ImageView android:id="@id/rc" android:src="@drawable/gs" style="@style/wz" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

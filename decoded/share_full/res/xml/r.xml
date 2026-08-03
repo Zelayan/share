@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/gl" android:enabled="true">
+        <intent android:targetPackage="com.hengye.share" android:action="android.intent.action.VIEW" android:targetClass="com.hengye.share.module.status.StatusActivity" />
+        <intent android:targetPackage="com.hengye.share" android:action="android.intent.action.VIEW" android:targetClass="com.hengye.share.module.qrcode.QRCodeScanActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/t2" android:enabled="true">
+        <intent android:targetPackage="com.hengye.share" android:action="android.intent.action.VIEW" android:targetClass="com.hengye.share.module.status.StatusActivity" />
+        <intent android:targetPackage="com.hengye.share" android:action="android.intent.action.VIEW" android:targetClass="com.hengye.share.module.publish.StatusPublishActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/t0" android:enabled="true">
+        <intent android:targetPackage="com.hengye.share" android:action="hot" android:targetClass="com.hengye.share.module.status.StatusActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut android:icon="@drawable/t3" android:enabled="true">
+        <intent android:targetPackage="com.hengye.share" android:action="android.intent.action.VIEW" android:targetClass="com.hengye.share.module.status.StatusActivity" />
+        <intent android:targetPackage="com.hengye.share" android:action="android.intent.action.VIEW" android:targetClass="com.hengye.share.module.search.SearchActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

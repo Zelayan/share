@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/a_r" android:background="@color/ax" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.media.VideoView android:layout_gravity="center" android:id="@id/apd" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.hengye.share.ui.widget.media.MediaController android:id="@id/a3a" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/t7" android:textColor="@color/pr" android:gravity="center" android:id="@id/al3" android:background="@color/ax" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ao1" />
+    <include layout="@layout/r1" />
+</FrameLayout>

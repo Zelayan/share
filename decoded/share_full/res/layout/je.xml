@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="64.0dip" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.third.CustomImageFilterView android:id="@id/v5" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="10.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/ank" android:background="#88000000" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

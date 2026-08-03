@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/abw" android:layout_width="fill_parent" android:layout_height="22.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/sl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.hengye.share.ui.widget.image.BitmapObserverImageView android:layout_gravity="center_horizontal" android:id="@id/s2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/s3" android:paddingLeft="40.0dip" android:paddingTop="10.0dip" android:paddingRight="40.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200.0dip" android:lineSpacingMultiplier="1.2" />
+</LinearLayout>

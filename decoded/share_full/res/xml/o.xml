@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="虚拟导航栏渐变动画" android:key="navigation_anim" android:summary="如果设备有虚拟导航栏，开启了该选项，当查看大图时虚拟导航栏会有渐变效果，部分手机开启后会引起卡顿时请关闭" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="微博文本支持大爆炸" android:key="text_boom" android:summary="如果出现微博正文换行异常，或者你的设备支持类似锤子的大爆炸功能，希望在微博正文支持该特性时请开启该选项，可能会带来一点性能损失" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="改善网络请求" android:key="http_dns" android:summary="如果发现加载缓慢，请尝试开启该选项" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="改善视频加载" android:key="video_dns" android:summary="如果发现视频加载缓慢，请尝试开启该选项，需要同时开启改善网络请求" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="开启微博翻译功能" android:key="status_translation" android:summary="在微博里显示翻译入口，长按查看翻译可切换语言" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/a0" android:title="默认翻译语言" android:key="status_translation_default" android:summary="%s" android:defaultValue="2" android:entryValues="@array/az" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="开启微博正文页Tab滑动切换" android:key="status_detail_tab_scroll" android:summary="开启该选项后正文页上下滑动时内容可能会错乱，并且导致你的设备可能不能长截图" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="优化内置浏览器短链的跳转" android:key="browser_https" android:summary="开启该选项后可以防止短链被劫持跳转广告，但可能会导致短链(https://t.cn)打不开，如果打不开请关闭该选项。" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="强制内置浏览器跟随应用开启夜间模式" android:key="webview_night" android:summary="如果夜间模式下浏览网页异常请关闭该选项" android:defaultValue="true" app:on="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="改善查看大图时的显示质量" android:key="big_image_improve" android:summary="如果在查看大图时觉得图片显示有质量问题请开启该选项，但是可能会导致卡顿或者闪退" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="体验新版私信消息" android:key="new_dm_2_mode" android:defaultValue="true" app:on="false" />
+</PreferenceScreen>

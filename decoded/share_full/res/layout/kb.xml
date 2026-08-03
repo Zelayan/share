@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/em" android:paddingTop="@dimen/eo" android:paddingBottom="@dimen/eo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/e9" android:paddingEnd="@dimen/e9"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeView android:layout_width="0.0dip" android:layout_height="@dimen/gm" android:layout_weight="1.0" app:ir="agd" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:textSize="@dimen/ta" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zc" android:layout_marginStart="@dimen/eo" android:layout_marginEnd="@dimen/eo" app:j0="agd" />
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeView android:layout_width="0.0dip" android:layout_height="@dimen/gm" android:layout_weight="1.0" app:ir="agd" />
+</LinearLayout>

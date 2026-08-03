@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/tc" android:layout="@layout/ku" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/td" android:layout="@layout/ky" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/sz" android:layout="@layout/kv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/t1" android:layout="@layout/kx" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/te" android:layout="@layout/l3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/t8" android:layout="@layout/l3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/ss" android:layout="@layout/kq" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/t4" android:layout="@layout/kz" android:layout_width="fill_parent" android:layout_height="@dimen/il" />
+    <ViewStub android:id="@id/sx" android:layout="@layout/kt" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/su" android:layout="@layout/ks" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/t0" android:layout="@layout/kw" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

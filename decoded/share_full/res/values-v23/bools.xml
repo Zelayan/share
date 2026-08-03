@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="f">false</bool>
+    <bool name="h">true</bool>
+</resources>

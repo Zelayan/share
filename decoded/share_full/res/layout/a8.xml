@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/bm" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/fk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Channel" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/fx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="copy token" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/h4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set token" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/fw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="copy s and gsid" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/gx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="remove gsid and s" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/fo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="clear image memory cache" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/fn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="clear cookie" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/h3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set custom source" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/h2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set phone id" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/h5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set custom mobile" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/fh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set black content" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/gt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="set prime" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="check" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/g_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="get sign" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/hi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:id="@id/hf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stop_remote_process" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/a_s" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a8m" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <com.hengye.share.sina.card.widget.WBRationBar android:id="@id/a8k" android:layout_width="wrap_content" android:layout_height="wrap_content" app:zh="5" app:zi="#ff939393" app:zn="10.0" app:zt="5.0" app:zv="16.0dip" app:zw="2.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffff8200" android:id="@id/a8l" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff939393" android:gravity="right" android:id="@id/js" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:includeFontPadding="false" />
+    </LinearLayout>
+    <com.sina.weibo.page.view.ProfileTagLayout android:id="@id/af1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/hs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+</LinearLayout>

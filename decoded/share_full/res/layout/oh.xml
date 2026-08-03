@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ag6" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ec" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/f0" />
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/a7c" android:layout_width="fill_parent" android:layout_height="82.0dip">
+            <com.sina.weibo.base.component.avatar.WBAvatarView android:id="@id/a7a" android:saveEnabled="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginBottom="12.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" android:layout_marginStart="12.0dip" weibo:bl="70.0dip" weibo:hj="3.0dip" weibo:hq="#21000000" weibo:hr="0.5dip" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff805100" android:ellipsize="end" android:gravity="center" android:id="@id/a7b" android:background="#ffffd500" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_alignBottom="@id/a7a" android:layout_alignStart="@id/a7a" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="9.0dip" android:layout_toEndOf="@id/a7a" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/age" android:background="#fffe515a" android:paddingLeft="3.0dip" android:paddingTop="2.0dip" android:paddingRight="3.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxWidth="60.0dip" android:text="" android:singleLine="true" android:layout_alignTop="@id/title" android:layout_marginEnd="10.0dip" android:layout_toEndOf="@id/title" />
+            <RelativeLayout android:id="@id/k1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/a7a" android:layout_alignStart="@id/title">
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/k2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_marginEnd="12.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/jz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="" android:singleLine="true" android:layout_below="@id/k2" android:layout_marginEnd="12.0dip" android:layout_alignStart="@id/k2" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:layout_gravity="bottom" android:id="@id/eu" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/xu" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

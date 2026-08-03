@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse" />
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow" />
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored" />
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Colored</item>
+    </style>
+    <style name="Base.Widget.AppCompat.EditText" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator" />
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small" />
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined" />
+    <style name="ey" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="fn" parent="@style/x">
+        <item name="e8">?android:colorBackgroundFloating</item>
+    </style>
+    <style name="fu" parent="@style/sq">
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="k1" parent="@style/jc">
+        <item name="android:textColorPrimary">@color/kd</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/ka</item>
+        <item name="android:textColorSecondary">@color/ku</item>
+        <item name="android:textColorPrimaryInverse">@color/k5</item>
+        <item name="android:textColorSecondaryInverse">@color/kn</item>
+        <item name="android:textColorHintInverse">@color/fm</item>
+        <item name="android:textColorHint">@color/fn</item>
+        <item name="android:textColorTertiary">@color/m7</item>
+        <item name="android:textColorTertiaryInverse">@color/m4</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/k9</item>
+        <item name="android:buttonBarButtonStyle">@style/ww</item>
+        <item name="android:colorEdgeEffect">#ffdddddd</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorButtonNormal">@color/of</item>
+        <item name="colorControlActivated">@color/ax</item>
+        <item name="a2y">@color/nr</item>
+        <item name="a2z">@color/of</item>
+        <item name="a30">@color/of</item>
+        <item name="a31">#44eeeeee</item>
+        <item name="a32">@color/nt</item>
+        <item name="a33">#44dddddd</item>
+        <item name="a34">#16000000</item>
+        <item name="a37">#ff777777</item>
+        <item name="a38">#ff888888</item>
+        <item name="a39">@color/of</item>
+        <item name="a3_">#44cccccc</item>
+        <item name="a3a">#33ffffff</item>
+        <item name="a3b">@color/nq</item>
+        <item name="a3c">@color/of</item>
+        <item name="a3d">#ff050505</item>
+        <item name="a3e">@drawable/iu</item>
+        <item name="a3f">#66e0e0e0</item>
+        <item name="a3g">#22000000</item>
+        <item name="a3h">#11000000</item>
+        <item name="a3i">#28000000</item>
+        <item name="a3j">#ff202020</item>
+        <item name="a3k">#ff404040</item>
+        <item name="a3l">?a32</item>
+        <item name="a3m">@color/pr</item>
+        <item name="a3n">@color/nt</item>
+        <item name="a3o">?a30</item>
+        <item name="a3p">?a32</item>
+        <item name="a3q">?a3r</item>
+        <item name="a3r">@color/p3</item>
+        <item name="a3s">@color/p4</item>
+        <item name="a3t">@color/na</item>
+    </style>
+    <style name="k4" parent="@style/jc">
+        <item name="android:textColorPrimary">@color/kd</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorControlActivated">@color/o0</item>
+        <item name="a2y">@color/o3</item>
+        <item name="a30">@color/o4</item>
+        <item name="a32">@color/o5</item>
+        <item name="a3l">@color/lv</item>
+        <item name="a3n">@color/na</item>
+        <item name="a3o">@color/nx</item>
+        <item name="a3p">@color/o0</item>
+        <item name="a3r">@color/p3</item>
+        <item name="a3s">@color/p4</item>
+        <item name="a3t">@color/na</item>
+    </style>
+    <style name="va" parent="@style/f8">
+        <item name="android:popupBackground">?va</item>
+        <item name="android:popupElevation">8.0dip</item>
+    </style>
+    <style name="vb" parent="@style/f9">
+        <item name="android:popupBackground">?va</item>
+        <item name="android:popupElevation">8.0dip</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:ratingBarStyleSmall</item>
+    </style>
+</resources>

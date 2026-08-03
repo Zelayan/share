@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/za" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="25.0sp" android:textColor="?android:textColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/aji" android:padding="@dimen/eo" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingMultiplier="1.2" android:textIsSelectable="true" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:textSize="@dimen/tl" android:layout_gravity="center_horizontal" android:padding="@dimen/ru" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v3" app:j0="agd" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout android:id="@id/a89" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.hengye.appbase.ui.widget.common.CommonListView android:id="@id/a10" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/of" android:divider="@drawable/cy" android:headerDividersEnabled="false" />
+    </com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout>
+    <com.hengye.appbase.ui.widget.common.CommonTabLayout android:id="@id/aeq" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/t5" />
+    <com.hengye.share.ui.widget.OverLayView android:id="@id/a6q" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

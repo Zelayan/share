@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/bm" android:visible="false" android:title="@string/aah" app:showAsAction="qy" />
+    <item android:id="@id/c0" android:visible="false" android:title="@string/aae" app:showAsAction="qy" />
+    <item android:icon="@drawable/qm" android:id="@id/cq" android:title="@string/f2" app:showAsAction="qy">
+        <menu>
+            <item android:id="@id/cs" android:title="@string/aao" app:showAsAction="jl" />
+            <item android:id="@id/cr" android:visible="false" android:title="@string/aan" app:showAsAction="jl" />
+            <item android:id="@id/ct" android:visible="true" android:title="@string/aap" app:showAsAction="jl" />
+            <item android:id="@id/cu" android:visible="true" android:title="@string/aaq" app:showAsAction="jl" />
+        </menu>
+    </item>
+</menu>

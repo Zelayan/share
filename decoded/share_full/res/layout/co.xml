@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/wl" android:textColor="@color/ci" android:ellipsize="end" android:id="@id/aj7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" android:layout_toStartOf="@id/a0x" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/a0x" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_alignParentEnd="true">
+        <TextView android:textSize="12.0sp" android:layout_gravity="center_vertical" android:id="@id/a0w" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/l_" android:layout_marginStart="@dimen/co" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/jk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/a1f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/aj7" />
+</RelativeLayout>

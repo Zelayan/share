@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/to" android:id="@id/ank" android:padding="@dimen/rz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:layout_marginBottom="@dimen/bn" android:minLines="1" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/bj" />
+</LinearLayout>

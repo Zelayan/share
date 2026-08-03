@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ei"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:layout_width="@dimen/bu" android:layout_height="@dimen/bu" />
+    <View android:id="@id/ue" android:background="#88ffffff" android:visibility="gone" android:layout_width="@dimen/bu" android:layout_height="@dimen/bu" />
+</FrameLayout>

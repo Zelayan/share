@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ab3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.module.util.image.view.MediaPlayerLiveView android:id="@id/a7o" android:layout_width="fill_parent" android:layout_height="fill_parent" app:h6="@layout/j4" app:nn="false" app:v_="@layout/j6" app:a0z="ag5" app:a64="true" />
+</FrameLayout>

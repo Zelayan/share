@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/aaf" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/i_" android:layout_width="fill_parent" android:layout_height="@dimen/bh">
+        <androidx.cardview.widget.CardView android:id="@id/i9" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/rl" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:e8="?a3a" app:e9="2.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:orientation="horizontal" android:id="@id/sp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/rl" android:layout_marginBottom="4.0dip">
+                <ImageView android:id="@id/w9" android:background="?android:selectableItemBackground" android:padding="@dimen/ru" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" android:src="@drawable/qu" android:tint="?a37" android:contentDescription="@null" />
+                <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:textSize="16.0dip" android:textColor="?android:textColorPrimary" android:textColorHint="?android:textColorHint" android:gravity="center_vertical" android:id="@id/nf" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/rl" android:hint="@string/wy" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" />
+                <ImageView android:id="@id/um" android:background="?android:selectableItemBackground" android:padding="@dimen/ru" android:visibility="gone" android:layout_width="@dimen/rl" android:layout_height="@dimen/rl" android:src="@drawable/qw" android:tint="?a37" android:contentDescription="@string/amy" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <View android:id="@id/m1" android:visibility="gone" style="@style/wn" />
+    <FrameLayout android:id="@id/aam" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

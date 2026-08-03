@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/ig" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ep" android:layout_marginStart="@dimen/eo" android:layout_marginEnd="@dimen/eo"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout android:orientation="vertical" android:id="@id/xo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/uj" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/tj" android:textStyle="bold" android:textColor="@color/pr" android:layout_gravity="bottom" android:id="@id/aj9" android:background="@drawable/as" android:paddingTop="@dimen/rv" android:paddingBottom="@dimen/rz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="@dimen/rv" android:paddingEnd="@dimen/rv" />
+        </com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout>
+        <include android:id="@id/s9" layout="@layout/ih" />
+        <View android:id="@id/lw" android:layout_width="fill_parent" android:layout_height="@dimen/go" android:layout_marginStart="16.0dip" android:layout_marginEnd="74.0dip" />
+        <include android:id="@id/s_" layout="@layout/ih" />
+        <View android:id="@id/lx" android:layout_width="fill_parent" android:layout_height="@dimen/go" android:layout_marginStart="16.0dip" android:layout_marginEnd="74.0dip" />
+        <include android:id="@id/sa" layout="@layout/ih" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

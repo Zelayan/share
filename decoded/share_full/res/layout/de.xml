@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/apn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sina.weibo.video.danmaku.controller.DanmakuReportView android:layout_gravity="end" android:id="@id/ab8" android:clickable="true" android:layout_width="314.0dip" android:layout_height="fill_parent" />
+    <com.sina.weibo.video.danmaku.controller.DanmakuReportView android:layout_gravity="bottom" android:id="@id/ab9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

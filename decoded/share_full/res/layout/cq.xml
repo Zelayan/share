@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:weibo="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/ap2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+                <TextView android:textSize="15.0dip" android:gravity="center_vertical" android:id="@id/ai4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="12.0dip" android:id="@id/ai0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/a14" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:minHeight="20.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="#ff507daf" android:id="@id/ai3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/a16" android:paddingTop="15.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TableLayout android:gravity="center_vertical" android:id="@id/afe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="0">
+                <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15.0dip" android:id="@id/ai6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                    <TextView android:textSize="10.0dip" android:textColor="@color/pr" android:gravity="center" android:id="@id/anf" android:background="@drawable/bp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:maxLines="1" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="6.0dip" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:textSize="12.0dip" android:id="@id/ai1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:layout_gravity="center" android:id="@id/a12" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="9.0dip">
+            <ImageView android:id="@id/tm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dip" android:id="@id/ahi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="2.0dip" />
+        </LinearLayout>
+        <Space android:layout_width="13.0dip" android:layout_height="fill_parent" />
+        <com.sina.weibo.base.component.avatar.WBAvatarView android:id="@id/vu" android:layout_width="@dimen/xa" android:layout_height="@dimen/xa" android:layout_marginTop="15.0dip" android:layout_marginBottom="11.0dip" android:scaleType="fitXY" android:layout_marginEnd="14.0dip" weibo:bl="@dimen/xb" weibo:bq="14.0dip" weibo:hj="20.0dip" weibo:hq="@color/cc" weibo:hr="1.0px" weibo:xv="true" />
+        <com.hengye.share.sina.view.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/tq" android:visibility="gone" android:saveEnabled="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:scaleType="fitXY" android:adjustViewBounds="false" android:layout_marginEnd="10.0dip" weibo:hj="16.0dip" weibo:xv="true" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/ep" android:background="?a34" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

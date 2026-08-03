@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/aui" android:key="drawer_menu" />
+    <Preference android:title="@string/aug" android:key="drawer_cover_type" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/a5" android:title="@string/ave" android:key="navigation_position" android:summary="%s" android:defaultValue="2" android:entryValues="@array/a6" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/avd" android:key="navigation_hide_on_scroll" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/axm" android:key="toolbar_fix_on_scroll" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/aun" android:key="flat_status_bar" android:summary="@string/auo" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/avf" android:key="navigation_theme_color" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/aws" android:key="show_drawer_from_left" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/awt" android:key="show_fab_from_left" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/aul" android:key="fast_scroll_indicator" android:summary="@string/aum" android:defaultValue="true" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/ax8" android:key="show_video_close_from_left" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomListPreference android:entries="@array/m" android:title="@string/auk" android:key="fab_options" android:summary="%s" android:defaultValue="4" android:entryValues="@array/n" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/auv" android:key="hide_hot_tab" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/auu" android:key="hide_hot_search" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/auy" android:key="hide_often_visit" android:defaultValue="false" />
+    <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/auz" android:key="hide_share_friend_list" android:defaultValue="false" />
+</PreferenceScreen>

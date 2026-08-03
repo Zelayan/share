@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/a_e" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/fm" android:textSize="15.0dip" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="7.0dip" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="3.0dip" android:layout_alignParentStart="true" />
+    <ViewStub android:id="@id/ae4" android:layout="@layout/bz" android:inflatedId="@id/ae6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_alignParentBottom="true" />
+</RelativeLayout>

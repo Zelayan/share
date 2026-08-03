@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/h7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="show content" android:onClick="showContent" />
+    <Button android:id="@id/h8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="show empty" android:onClick="showEmpty" />
+    <Button android:id="@id/ha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="show no network" android:onClick="showNoNetwork" />
+    <Button android:id="@id/h9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="show loading" android:onClick="showLoading" />
+    <FrameLayout android:id="@id/k1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

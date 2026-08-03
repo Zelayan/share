@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ep" android:paddingBottom="@dimen/ep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="@dimen/xh" android:layout_height="@dimen/xe" app:e8="@color/of" app:e9="4.0dip" app:e_="0.0dip">
+        <com.hengye.share.ui.widget.image.StatusImageView android:id="@id/us" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/to" android:textColor="@color/pr" android:gravity="end" android:layout_gravity="bottom" android:id="@id/ak6" android:background="@drawable/ax" android:padding="@dimen/rx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ry" />
+        <TextView android:textSize="@dimen/tf" android:textColor="@color/ph" android:layout_gravity="end|bottom|center" android:id="@id/alw" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/s0" android:text="@string/b2i" android:drawableStart="@drawable/pb" android:paddingStart="@dimen/s0" android:paddingEnd="@dimen/s0" android:layout_marginEnd="@dimen/s0" />
+        <TextView android:textSize="@dimen/te" android:textColor="@color/pr" android:layout_gravity="end|center|top" android:id="@id/aky" android:paddingTop="@dimen/ry" android:paddingBottom="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:paddingStart="@dimen/rx" android:paddingEnd="@dimen/rx" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/ru">
+        <com.hengye.share.ui.widget.textview.TagTextView android:textSize="@dimen/tl" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/anv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ru">
+            <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ajt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="@dimen/rz" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

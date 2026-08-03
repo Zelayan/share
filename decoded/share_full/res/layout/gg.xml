@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout android:id="@id/yt" android:layout_width="200.0dip" android:layout_height="0.0dip" android:layout_margin="@dimen/eo" android:layout_weight="1.0">
+        <ImageView android:id="@id/us" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/wz" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.hengye.share.ui.widget.fab.AnimatedFloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/ns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/h3" app:lu="a4g" />
+    </com.hengye.appbase.ui.widget.viewgroup.RatioFrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/eo" android:layout_marginEnd="@dimen/eo">
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:layout_gravity="start" android:id="@id/fs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ek" android:text="@string/rl" />
+        <com.hengye.appbase.ui.widget.theme.widget.CustomStyleButton android:layout_gravity="end" android:id="@id/fj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ek" android:text="@string/rh" />
+    </FrameLayout>
+    <View android:background="?a34" android:layout_width="fill_parent" android:layout_height="@dimen/gm" android:layout_marginTop="@dimen/rz" android:layout_marginBottom="@dimen/rz" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorPrimary" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/eo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vt" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/rz" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/a9a" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/rz" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorPrimary" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/eo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rg" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/rz" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/aau" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/rz" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ta" android:textColor="?android:textColorPrimary" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/eo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rj" android:paddingStart="@dimen/eo" android:paddingEnd="@dimen/rz" />
+            <SeekBar android:layout_gravity="center_vertical" android:id="@id/aav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/rz" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

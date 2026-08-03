@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/a2l" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/a29" layout="@layout/m6" />
+    <include android:id="@id/a2d" layout="@layout/m8" />
+    <com.google.android.material.timepicker.ClockFaceView android:layout_gravity="center" android:id="@id/a2_" android:layout_width="@dimen/jd" android:layout_height="@dimen/jd" android:layout_marginTop="36.0dip" app:q6="a6y" app:qo="a6y" app:qr="@id/a29" />
+</merge>

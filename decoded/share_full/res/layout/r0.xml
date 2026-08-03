@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@drawable/az" android:layout_width="fill_parent" android:layout_height="0.0dip" app:q6="a6y" app:qd="0.6" app:qo="a6y" app:qs="a6y" />
+    <View android:background="@drawable/aw" android:layout_width="fill_parent" android:layout_height="0.0dip" app:q0="a6y" app:q6="a6y" app:qd="0.6" app:qo="a6y" />
+</androidx.constraintlayout.widget.ConstraintLayout>

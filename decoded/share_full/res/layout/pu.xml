@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/aod" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/agr" android:background="@color/ov" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize">
+        <TextView android:textColor="@color/ow" android:layout_gravity="center" android:id="@id/agt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ayg" style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:id="@id/aoc" android:background="@color/oo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/aqe" android:layout_below="@id/agr">
+        <ImageView android:layout_gravity="center" android:id="@id/ra" android:layout_width="@dimen/v0" android:layout_height="@dimen/v0" app:srcCompat="@drawable/fl" />
+        <com.yalantis.ucrop.view.UCropView android:id="@id/aob" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    </FrameLayout>
+</RelativeLayout>

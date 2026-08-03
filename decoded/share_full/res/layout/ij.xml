@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sb" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/s0" android:paddingBottom="@dimen/s0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/ru" android:paddingEnd="@dimen/ru">
+            <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/ua" android:layout_width="@dimen/iy" android:layout_height="@dimen/iy" android:src="@drawable/if" />
+            <TextView android:textSize="@dimen/to" android:id="@id/ao2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sl" android:layout_marginStart="@dimen/rz" />
+        </LinearLayout>
+        <View android:id="@id/lu" android:layout_width="fill_parent" android:layout_height="@dimen/gm" />
+        <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/an6" android:paddingTop="@dimen/su" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj" />
+        <include layout="@layout/l2" />
+        <LinearLayout android:orientation="vertical" android:id="@id/acu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ek">
+            <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/an9" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/l2" />
+            <Space android:id="@id/ac0" android:layout_width="fill_parent" android:layout_height="@dimen/s0" />
+        </LinearLayout>
+        <Space android:id="@id/abw" android:layout_width="fill_parent" android:layout_height="@dimen/s0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/tj" android:textColor="@color/ax" android:id="@id/aje" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ru" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/zt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.share.ui.widget.image.AvatarImageView android:id="@id/u9" android:layout_width="@dimen/s4" android:layout_height="@dimen/s4" android:layout_marginTop="@dimen/bn" android:layout_marginEnd="@dimen/ep" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/bn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <include android:id="@id/ti" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/l4" />
+        <TextView android:textSize="@dimen/sf" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ak2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rx" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/z8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/em" android:paddingTop="@dimen/rz" android:paddingBottom="@dimen/rz" android:layout_width="wrap_content" android:layout_height="@dimen/s_" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj">
+            <ImageView android:id="@id/u3" android:layout_width="@dimen/iy" android:layout_height="@dimen/iy" android:src="@drawable/sg" android:tint="?a37" android:contentDescription="@null" />
+            <Space android:layout_width="@dimen/ei" android:layout_height="0.0dip" />
+            <TextView android:textSize="@dimen/tb" android:textColor="?android:textColorSecondary" android:id="@id/aic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rx" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

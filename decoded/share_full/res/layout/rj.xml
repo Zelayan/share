@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/zy" android:layout_width="fill_parent" android:layout_height="@dimen/xd">
+        <com.hengye.appbase.ui.widget.textview.DrawableTextView android:textSize="@dimen/to" android:textStyle="bold" android:ellipsize="end" android:id="@id/anv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:drawablePadding="@dimen/s0" android:layout_weight="1.0" android:layout_marginStart="@dimen/bj" android:layout_marginEnd="@dimen/rz" />
+        <ImageView android:id="@id/fp" android:padding="@dimen/rz" android:layout_width="@dimen/it" android:layout_height="@dimen/it" android:contentDescription="@string/aph" android:layout_marginEnd="@dimen/bk" />
+    </LinearLayout>
+    <View android:background="?a34" android:layout_width="fill_parent" android:layout_height="@dimen/go" />
+    <com.hengye.appbase.ui.widget.recyclerview.ShareRecyclerView android:id="@id/a9_" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</merge>

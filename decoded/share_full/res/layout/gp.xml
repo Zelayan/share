@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/bn" android:paddingBottom="@dimen/bn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/bj" android:paddingEnd="@dimen/bj"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/hb" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/yb" android:paddingTop="@dimen/bn" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/tg" android:textColor="?android:textColorPrimary" android:id="@id/anv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <ImageView android:id="@id/qf" android:padding="@dimen/rx" android:visibility="visible" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:contentDescription="@string/ao4" android:layout_marginStart="@dimen/rx" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/z1" android:padding="@dimen/rz" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn">
+        <ImageView android:id="@id/vx" android:visibility="visible" android:layout_width="@dimen/ix" android:layout_height="@dimen/ix" android:layout_marginEnd="@dimen/rz" />
+        <TextView android:textSize="@dimen/to" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/am7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/te" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/am8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_marginStart="@dimen/rz" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/te" android:textColor="?android:textColorTertiary" android:ellipsize="end" android:id="@id/ao6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" android:singleLine="true" android:includeFontPadding="false" />
+    <com.hengye.share.ui.widget.textview.ShareTextLayoutView android:id="@id/an6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/x4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn">
+        <include android:id="@id/at" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ll" />
+        <include android:id="@id/au" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ll" />
+        <include android:id="@id/av" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ll" />
+        <include android:id="@id/aw" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ll" />
+        <include android:id="@id/ax" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/ll" />
+    </LinearLayout>
+    <View android:background="?a34" android:layout_width="fill_parent" android:layout_height="@dimen/go" />
+    <com.hengye.appbase.ui.widget.viewgroup.FlowLayout android:id="@id/zv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bn" />
+</LinearLayout>

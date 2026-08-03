@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/a0e" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginEnd="5.0dip" android:layout_alignParentStart="true" />
+    <TextView android:textAppearance="@style/fl" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="3.0dip" android:layout_toEndOf="@id/a0e" />
+    <ImageView android:id="@id/af0" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_toEndOf="@id/title" />
+    <TextView android:textAppearance="@style/fj" android:id="@id/la" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="8.0dip" android:layout_toStartOf="@id/ux" />
+    <TextView android:textAppearance="@style/fj" android:ellipsize="end" android:id="@id/aed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="3.0dip" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/la" android:layout_toEndOf="@id/af0" />
+    <ImageView android:id="@id/ux" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lt" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

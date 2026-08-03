@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/awf" android:key="ringtone_group">
+        <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/ax9" android:key="sound_off" android:summary="@string/ax_" android:defaultValue="false" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomMultiSelectListPreference android:entries="@array/ao" android:title="@string/awg" android:key="ringtone_type" android:defaultValue="@array/an" android:entryValues="@array/ap" />
+        <Preference android:title="调整通知的振动和铃声" android:key="ringtone_notify_oreo" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+    <com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory android:title="@string/axs" android:key="vibration_group">
+        <com.hengye.appbase.ui.widget.theme.preference.CustomSwitchPreference android:title="@string/axv" android:key="vibration_on" android:defaultValue="true" />
+        <com.hengye.appbase.ui.widget.theme.preference.CustomCheckBoxPreference android:title="@string/axt" android:key="vibration_feedback" android:summary="@string/axu" android:defaultValue="true" />
+    </com.hengye.appbase.ui.widget.theme.preference.CustomPreferenceCategory>
+</PreferenceScreen>

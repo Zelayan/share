@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/do" android:background="@null" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" android:stateListAnimator="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.hengye.share.ui.widget.toolbar.TopicHomePageToolbarLayout android:id="@id/jm" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="@dimen/ib" app:rc="nn|aa2" app:a4e="false" app:a4p="@id/agr">
+        <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/us" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:pt="a6x" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/oj" android:layout_width="fill_parent" android:layout_height="wrap_content" app:pt="none">
+            <LinearLayout android:orientation="horizontal" android:id="@id/a03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/i2" android:layout_marginBottom="@dimen/i5">
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/xc" android:layout_width="@dimen/i8" android:layout_height="@dimen/i8" android:layout_marginBottom="@dimen/ry" android:layout_marginStart="@dimen/rv">
+                    <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/u9" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:layout_gravity="center" android:id="@id/vt" android:visibility="gone" android:layout_width="@dimen/iu" android:layout_height="@dimen/iu" android:src="@drawable/ld" android:contentDescription="@string/f3" />
+                    <TextView android:textSize="@dimen/tc" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="bottom" android:id="@id/ais" android:background="#eee9cf0e" android:padding="@dimen/rx" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/a1m" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/i_" android:layout_weight="1.0" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz">
+                    <TextView android:textAppearance="@style/qo" android:ellipsize="end" android:id="@id/anv" android:padding="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:drawablePadding="@dimen/rx" />
+                    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/ta" android:ellipsize="end" android:id="@id/ajt" android:padding="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" android:layout_marginEnd="20.0dip" />
+                        <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/uw" android:padding="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="-20.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/ta" android:ellipsize="end" android:id="@id/ana" android:padding="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:includeFontPadding="false" />
+                    <TextView android:textSize="@dimen/ta" android:ellipsize="end" android:id="@id/ajy" android:padding="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+                    <TextView android:textSize="@dimen/ta" android:ellipsize="end" android:id="@id/ajz" android:padding="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+                    <TextView android:textSize="@dimen/ta" android:ellipsize="end" android:id="@id/ak0" android:padding="@dimen/ry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="false" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/z_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ry" android:layout_marginEnd="@dimen/rv">
+                    <com.hengye.share.ui.widget.image.ShareImageView android:id="@id/w3" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                    <TextView android:textSize="@dimen/tb" android:ellipsize="end" android:id="@id/ams" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ry" android:maxLines="3" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/er" android:layout_width="fill_parent" android:layout_height="@dimen/ia" />
+        </LinearLayout>
+        <com.hengye.appbase.ui.widget.common.CommonToolBar android:theme="@style/fq" android:id="@id/agr" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:pt="a7e" app:rc="mx" app:title="@string/app_name" />
+        <FrameLayout android:id="@id/ags" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:pt="a7e">
+            <TextView android:textSize="@dimen/tl" android:layout_gravity="end|center" android:id="@id/ain" android:paddingTop="@dimen/rx" android:paddingBottom="@dimen/rx" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/rz" android:paddingEnd="@dimen/rz" android:layout_marginEnd="?actionBarSize" />
+        </FrameLayout>
+    </com.hengye.share.ui.widget.toolbar.TopicHomePageToolbarLayout>
+    <com.hengye.appbase.ui.widget.common.CommonTabLayout android:id="@id/aeq" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bb="false" app:a1n="ob" />
+</com.google.android.material.appbar.AppBarLayout>

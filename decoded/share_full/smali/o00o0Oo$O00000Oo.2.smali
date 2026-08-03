@@ -1,0 +1,13 @@
+.class public interface abstract Lo00o0Oo$O00000Oo;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lo00o0Oo;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "O00000Oo"
+.end annotation

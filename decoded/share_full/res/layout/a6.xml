@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?a39" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/search_bar" android:background="?a3a" android:paddingLeft="@dimen/bj" android:paddingTop="@dimen/e9" android:paddingRight="@dimen/bj" android:paddingBottom="@dimen/ek" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/a9e" android:layout_width="fill_parent" android:layout_height="@dimen/bx" android:layout_marginBottom="@dimen/s0" android:layout_marginEnd="@dimen/by" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTintImageButton android:layout_gravity="center_vertical" android:id="@id/ql" android:layout_width="@dimen/iv" android:layout_height="@dimen/iv" android:src="@drawable/sj" />
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeView android:layout_gravity="bottom" android:id="@id/aag" app:ir="agc" style="@style/wn" />
+        </FrameLayout>
+        <com.hengye.appbase.ui.widget.theme.widget.CustomThemeEditText android:layout_gravity="center_vertical" android:id="@id/nk" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/ee" android:hint="@string/wv" android:singleLine="true" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="@dimen/ek" android:paddingEnd="@dimen/ek" android:layout_marginStart="@dimen/bw" />
+    </FrameLayout>
+    <include android:id="@id/zg" android:visibility="gone" layout="@layout/hr" />
+    <FrameLayout android:id="@id/z7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/yg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout android:id="@id/a89" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/a9c" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.hengye.appbase.ui.widget.pulltorefresh.PullToRefreshLayout>
+            <com.hengye.appbase.ui.widget.lettersort.SideBar android:layout_gravity="end" android:id="@id/abh" android:background="?a3a" android:layout_width="25.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@id/og" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip">
+            <com.hengye.appbase.ui.widget.theme.widget.CustomThemeTextView android:textSize="50.0sp" android:layout_gravity="center" android:id="@id/al0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:j0="aon" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

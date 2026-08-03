@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/adk" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="7.0dip">
+        <FrameLayout android:id="@id/ado" android:layout_width="22.0dip" android:layout_height="22.0dip">
+            <com.sina.weibo.base.component.avatar.AvatarVImageView android:layout_gravity="bottom|center|right" android:id="@id/dw" android:layout_width="8.0dip" android:layout_height="8.0dip" />
+            <com.hengye.share.sina.story.common.widget.imageview.CircularImageView android:id="@id/adn" android:layout_width="22.0dip" android:layout_height="22.0dip" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#f2ffffff" android:layout_gravity="start|center" android:id="@id/adm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:alpha="0.8" android:layout_marginStart="26.0dip" android:layout_marginEnd="60.0dip" />
+        <com.hengye.share.sina.story.common.widget.textview.CountTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#f2ffffff" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/adl" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:alpha="0.8" android:drawableStart="@drawable/oq" />
+    </FrameLayout>
+    <TextView android:textSize="10.0dip" android:textColor="@color/pr" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/adj" android:background="@drawable/fb" android:layout_width="34.0dip" android:layout_height="18.0dip" android:layout_margin="10.0dip" android:text="@string/akd" />
+    <View android:layout_gravity="bottom" android:id="@id/ad1" android:background="@drawable/f_" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</FrameLayout>

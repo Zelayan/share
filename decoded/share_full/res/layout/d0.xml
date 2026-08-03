@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:id="@id/ao8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="12.0dip" android:ellipsize="end" android:id="@id/ajo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:id="@id/ajp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b38" android:layout_marginStart="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/aq0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:divider="@drawable/gc" android:showDividers="middle" android:layout_marginStart="10.0dip" />
+    <com.hengye.share.sina.card.view.VoteImageItemView android:id="@id/apz" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/apy" layout="@layout/qj" />
+    <TextView android:textSize="15.0dip" android:textColor="@drawable/ga" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/amx" android:background="@drawable/g8" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginBottom="10.0dip" android:text="@string/b3n" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+</LinearLayout>
