@@ -73,6 +73,38 @@
 
 
 # virtual methods
+.method protected dispatchDraw(Landroid/graphics/Canvas;)V
+    .locals 1
+
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/CustomBottomBar;->O000000o:Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->ensureThemeCurrent()V
+
+    :cond_0
+    invoke-super {p0, p1}, LPC;->dispatchDraw(Landroid/graphics/Canvas;)V
+
+    return-void
+.end method
+
+.method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 1
+
+    invoke-super {p0, p1}, LPC;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/CustomBottomBar;->O000000o:Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->onConfigurationChanged()V
+
+    invoke-virtual {v0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->scheduleThemeRefresh()V
+
+    :cond_0
+    return-void
+.end method
+
 .method protected onAttachedToWindow()V
     .locals 1
 

@@ -43,9 +43,11 @@
 
 
 # instance fields
-.field private final accentColor:I
+.field private accentColor:I
 
 .field private final bar:Landroid/view/ViewGroup;
+
+.field private barBackground:Landroid/graphics/drawable/Drawable;
 
 .field private final barHeight:I
 
@@ -63,11 +65,11 @@
 
 .field private imeVisible:Z
 
-.field private final inactiveTextColor:I
+.field private inactiveTextColor:I
 
 .field private indicator:Landroid/view/View;
 
-.field private final indicatorColor:I
+.field private indicatorColor:I
 
 .field private itemContainer:Landroid/view/ViewGroup;
 
@@ -78,6 +80,8 @@
 .field private lastVisibleHeight:I
 
 .field private navigationInset:I
+
+.field private nightMode:Z
 
 .field private outerContainer:Landroid/view/ViewGroup;
 
@@ -93,7 +97,7 @@
 
 .field private selectionAnimator:Landroid/animation/ValueAnimator;
 
-.field private final surfaceColor:I
+.field private surfaceColor:I
 
 .field private visibilityApplied:Z
 
@@ -262,31 +266,47 @@
 
     move-result v1
 
-    const v3, -0x1000000
+    const-string v3, "uimode"
 
-    or-int/2addr v1, v3
+    invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
+    move-result-object v3
+
+    check-cast v3, Landroid/app/UiModeManager;
+
+    invoke-virtual {v3}, Landroid/app/UiModeManager;->getNightMode()I
+
+    move-result v3
+
+    const/4 v4, 0x2
+
+    if-ne v3, v4, :cond_light_surface
+
+    const/4 v3, 0x1
+
+    iput-boolean v3, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->nightMode:Z
+
+    const v1, -0xcbb8b2
+
+    goto :goto_surface_resolved
+
+    :cond_light_surface
+    const/4 v3, 0x0
+
+    iput-boolean v3, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->nightMode:Z
+
+    const/4 v1, -0x1
+
+    :goto_surface_resolved
     iput v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->surfaceColor:I
 
     .line 92
-    const v1, 0x7f04044b
-
-    const v3, -0xb897f0
-
-    invoke-direct {p0, v0, v1, v3}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->resolveColor(Landroid/content/Context;II)I
-
-    move-result v1
+    const v1, -0xa69267
 
     iput v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->accentColor:I
 
     .line 93
-    const v3, 0x1010038
-
-    const v4, -0xa09c98
-
-    invoke-direct {p0, v0, v3, v4}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->resolveColor(Landroid/content/Context;II)I
-
-    move-result v3
+    const v3, -0x5b5758
 
     iput v3, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->inactiveTextColor:I
 
@@ -1160,16 +1180,6 @@
     invoke-virtual {p1, v3}, Landroid/view/View;->setSelected(Z)V
 
     .line 204
-    iget v3, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->selectableBackground:I
-
-    if-eqz v3, :cond_53
-
-    invoke-virtual {p1, v3}, Landroid/view/View;->setBackgroundResource(I)V
-
-    goto :goto_56
-
-    .line 205
-    :cond_53
     invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundColor(I)V
 
     .line 207
@@ -2016,6 +2026,253 @@
 
 
 # virtual methods
+.method public onConfigurationChanged()V
+    .registers 7
+
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const v1, 0x7f040456
+
+    const v2, -0xe0e0f
+
+    invoke-direct {p0, v0, v1, v2}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->resolveColor(Landroid/content/Context;II)I
+
+    move-result v1
+
+    const-string v2, "uimode"
+
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/app/UiModeManager;
+
+    invoke-virtual {v2}, Landroid/app/UiModeManager;->getNightMode()I
+
+    move-result v2
+
+    const/4 v3, 0x2
+
+    if-ne v2, v3, :cond_light_surface_refresh
+
+    const/4 v2, 0x1
+
+    iput-boolean v2, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->nightMode:Z
+
+    const v1, -0xcbb8b2
+
+    goto :goto_surface_refreshed
+
+    :cond_light_surface_refresh
+    const/4 v2, 0x0
+
+    iput-boolean v2, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->nightMode:Z
+
+    const/4 v1, -0x1
+
+    :goto_surface_refreshed
+    iput v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->surfaceColor:I
+
+    iget-boolean v2, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->nightMode:Z
+
+    if-eqz v2, :cond_resolve_light_colors
+
+    const v1, -0xa69267
+
+    iput v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->accentColor:I
+
+    const v2, -0x504747
+
+    iput v2, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->inactiveTextColor:I
+
+    goto :goto_theme_colors_ready
+
+    :cond_resolve_light_colors
+    const v1, -0xa69267
+
+    iput v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->accentColor:I
+
+    const v2, -0x5b5758
+
+    iput v2, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->inactiveTextColor:I
+
+    :goto_theme_colors_ready
+    invoke-static {v1}, Landroid/graphics/Color;->red(I)I
+
+    move-result v2
+
+    invoke-static {v1}, Landroid/graphics/Color;->green(I)I
+
+    move-result v3
+
+    invoke-static {v1}, Landroid/graphics/Color;->blue(I)I
+
+    move-result v1
+
+    const/16 v4, 0x24
+
+    invoke-static {v4, v2, v3, v1}, Landroid/graphics/Color;->argb(IIII)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->indicatorColor:I
+
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+
+    iget v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->surfaceColor:I
+
+    const/16 v2, 0x1c
+
+    invoke-direct {p0, v2}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->dp(I)I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    invoke-direct {p0, v1, v2}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->roundRect(IF)Landroid/graphics/drawable/GradientDrawable;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->barBackground:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->invalidateOutline()V
+
+    invoke-direct {p0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bindItems()V
+
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->indicator:Landroid/view/View;
+
+    if-eqz v0, :cond_refresh_done
+
+    iget v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->indicatorColor:I
+
+    const/16 v2, 0x1a
+
+    invoke-direct {p0, v2}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->dp(I)I
+
+    move-result v2
+
+    int-to-float v2, v2
+
+    invoke-direct {p0, v1, v2}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->roundRect(IF)Landroid/graphics/drawable/GradientDrawable;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_refresh_done
+    return-void
+.end method
+
+.method public scheduleThemeRefresh()V
+    .registers 5
+
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+
+    new-instance v1, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate$ThemeRefreshRunnable;
+
+    invoke-direct {v1, p0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate$ThemeRefreshRunnable;-><init>(Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;)V
+
+    const-wide/16 v2, 0x64
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/view/ViewGroup;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    return-void
+.end method
+
+.method public ensureThemeCurrent()V
+    .registers 4
+
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "uimode"
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/UiModeManager;
+
+    invoke-virtual {v0}, Landroid/app/UiModeManager;->getNightMode()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_current_light
+
+    const/4 v0, 0x1
+
+    goto :goto_mode_ready
+
+    :cond_current_light
+    const/4 v0, 0x0
+
+    :goto_mode_ready
+    iget-boolean v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->nightMode:Z
+
+    if-eq v0, v1, :cond_theme_current
+
+    invoke-virtual {p0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->onConfigurationChanged()V
+
+    :cond_theme_current
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->barBackground:Landroid/graphics/drawable/Drawable;
+
+    if-eq v1, v2, :cond_background_current
+
+    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->invalidateOutline()V
+
+    :cond_background_current
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->outerContainer:Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_outer_current
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_outer_current
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_outer_current
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->itemContainer:Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_items_current
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_items_current
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    :cond_items_current
+    return-void
+.end method
+
 .method public attach()V
     .registers 4
 
@@ -2067,6 +2324,8 @@
     invoke-direct {p0, v1, v2}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->roundRect(IF)Landroid/graphics/drawable/GradientDrawable;
 
     move-result-object v1
+
+    iput-object v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->barBackground:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
