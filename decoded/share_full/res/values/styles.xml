@@ -2674,6 +2674,11 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
+    <style name="share_launch" parent="@style/k6">
+        <item name="android:windowBackground">@drawable/share_launch_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
     <style name="k7">
         <item name="android:paddingTop">@dimen/ek</item>
         <item name="android:paddingBottom">@dimen/ek</item>

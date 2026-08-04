@@ -8,7 +8,7 @@
 - Version: `3.9.6` (`versionCode 925`)
 - SDK metadata: `minSdk 21`, `targetSdk 29`
 - Current APK: `artifacts/Share_floating_navigation_ui_fixed.apk`
-- Current SHA-256: `c30dc1e97a94d8443639a27b8e9a443ec2bd12dffb18e6f1f160f303b80826cf`
+- Current SHA-256: `2a7abcde75a12edde6f7fa99f0b35bd4ed186ac42d0da803e2d2ab8a4845da6e`
 - Signing certificate SHA-256: `4abaeb3cd7a99ac96985806f1a5f1f2f096504ebd20c834d68fc862d9b5bbe75`
 
 The current APK is installed on the connected test device. It uses the local signing key in `artifacts/`; future update APKs must reuse this exact key. Credentials are recorded in `artifacts/Share_floating_navigation_签名说明.md`.
@@ -17,7 +17,7 @@ The main-page search transition is also patched to avoid a brief black frame on 
 
 ## Requested Scope
 
-The primary patch is the legacy main-page bottom navigation, plus narrowly scoped search-transition, HotSearch inset, theme-synchronization, and hot-page cleanup fixes. Preserve the original ViewPager, pages, publish behavior, login, account storage, request signing, network layer, native libraries, and business data. Do not introduce Compose or replace the original client identity.
+The primary patch is the legacy main-page bottom navigation, plus narrowly scoped cold-start splash, search-transition, HotSearch inset, theme-synchronization, and hot-page cleanup fixes. Preserve the original ViewPager, pages, publish behavior, login, account storage, request signing, network layer, native libraries, and business data. Do not introduce Compose or replace the original client identity.
 
 Final behavior:
 
@@ -32,11 +32,14 @@ Final behavior:
 - IME visibility remains an independent hide condition.
 - The capsule and original publish FAB avoid the gesture navigation region, with a 24dp fallback when the legacy target receives zero system inset.
 - The system navigation background remains transparent; Android chooses a dark gesture indicator on a light background.
+- Cold starts use a dedicated splash that follows system mode: white with dark system-bar icons in light mode, black with light system-bar icons in dark mode, without a second circular icon background or an overlay on the first content frame.
 - The “热门 > 发现” first page keeps Weibo hot-search terms and removes the following people/live shortcut row and image recommendation card.
 
 ## Important Patch Locations
 
 - `decoded/share_full/res/layout/b5.xml`: capsule dimensions, centered placement, and base margins.
+- `decoded/share_full/AndroidManifest.xml`: assigns the launcher target a dedicated cold-start theme while keeping `StatusActivity` on the normal application theme.
+- `decoded/share_full/res/values/styles.xml` and `res/values-v31/styles.xml`: legacy launch background and explicit Android 12+ splash background/icon policy.
 - `decoded/share_full/smali/com/hengye/share/ui/widget/third/CustomBottomBar.smali`: binary-compatible `LPC` subclass, delayed item binding, and live theme checks.
 - `decoded/share_full/smali/com/hengye/share/ui/widget/behavior/BottomNavigationBehavior.smali`: nested-scroll bridge into the delegate.
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingNavigationBarDelegate.smali`: capsule styling, item layout, selection animation, insets, scroll state, and effective body-theme resolution.
@@ -64,12 +67,14 @@ The other files in the same `smali_classes3/.../third/` directory are required s
 9. The theme manager field `O0000Oo0` means transparent theme, not dark mode. Theme IDs and View/global `uiMode` values can also disagree with the body during a live change. The delegate therefore derives light/dark state from `O000O0OO`, the effective `theme_background_color` used by the body.
 10. `HotSearchActivity` and its CoordinatorLayout both used `fitsSystemWindows=true`, which stopped the page 78px above the bottom of the API 36 test device. A transparent navigation bar therefore exposed the darker window/root background as a separate strip. The Activity now preserves only top/side insets, consumes a zero bottom inset so content draws behind gesture navigation, and also disables the API 29+ contrast scrim.
 11. The hot-discovery response mixes the wanted Weibo hot-search grid with two promotional RecyclerView items. Filtering only container `231619` during initial/refresh delivery removes those items without changing other CardList screens or paginated results.
+12. The launcher target and main Activity shared the legacy `k6` theme. Android 12+ combined its adaptive-icon launch animation with the old `@drawable/co` starting window, producing a circular icon plate and a dimmed first content frame. A dedicated launch theme now supplies a white background with dark system-bar icons in light mode and a black background with light system-bar icons in dark mode, plus the unmasked Share foreground resource and a transparent icon background before handing off to `StatusActivity`.
 
 ## Verification Status
 
 Verified on a Xiaomi `24129PN74C`, Android 16 / API 36, 1200x2670, 520dpi, gesture navigation mode:
 
 - Main, message, and hot tab selection visuals.
+- Android 16 cold starts captured frame-by-frame: light mode shows a solid white splash with dark system-bar icons, dark mode shows a solid black splash with light system-bar icons, and both transition directly to the matching body without a circular icon plate or overlay.
 - Exactly one selected icon and one moving indicator, with no per-tab ripple underneath it.
 - Static checks ensure the capsule reads the effective body background and does not independently read system night mode, stale View configuration, fixed theme IDs, or the transparent-theme flag.
 - Light cold start, live light -> dark -> light switching, and dark cold start verified on the connected Xiaomi `24129PN74C`; body and capsule remained synchronized throughout.

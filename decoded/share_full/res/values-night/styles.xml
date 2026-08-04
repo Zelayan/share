@@ -31,4 +31,9 @@
     <style name="to" parent="@style/tm" />
     <style name="vl" parent="@style/vj" />
     <style name="w8" parent="@style/w9" />
+    <style name="share_launch" parent="@style/k6">
+        <item name="android:windowBackground">@drawable/share_launch_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
 </resources>
