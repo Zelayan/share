@@ -8,7 +8,7 @@
 - Version: `3.9.6` (`versionCode 925`)
 - SDK metadata: `minSdk 21`, `targetSdk 29`
 - Current APK: `artifacts/Share_floating_navigation_ui_fixed.apk`
-- Current SHA-256: `07226817500ccbee1433c697cfaf7730e0f80761b6ca6e50369f02c2a20b3cda`
+- Current SHA-256: `af29f6994dddbd56c51734c450f4bc1d71aa7c5e77450864d35a455a0c062eeb`
 - Signing certificate SHA-256: `4abaeb3cd7a99ac96985806f1a5f1f2f096504ebd20c834d68fc862d9b5bbe75`
 
 The current APK is installed on the connected test device. It uses the local signing key in `artifacts/`; future update APKs must reuse this exact key. Credentials are recorded in `artifacts/Share_floating_navigation_签名说明.md`.
@@ -44,6 +44,8 @@ Final behavior:
 - `decoded/share_full/res/values/styles.xml`: transient translucent theme used while the search window enters.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchActivity.smali`: schedules restoration to an opaque window after the system transition.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchOpaqueRunnable.smali`: restores normal opaque Activity behavior after 400ms.
+- `decoded/share_full/smali/com/hengye/share/module/search/HotSearchActivity.smali`: disables root/child `fitsSystemWindows`, installs the HotSearch inset policy, reapplies transparent gesture navigation, and disables the Android navigation-bar contrast scrim.
+- `decoded/share_full/smali/com/hengye/share/module/search/HotSearchNavigationInsetsListener.smali`: preserves top/side system insets while intentionally consuming a zero bottom inset so the page draws behind gesture navigation.
 
 The other files in the same `smali_classes3/.../third/` directory are required synthetic classes and listeners. Keep them together when rebuilding.
 
@@ -58,6 +60,7 @@ The other files in the same `smali_classes3/.../third/` directory are required s
 7. Live theme changes update the legacy widget after its normal configuration callback and can restore its old inner backgrounds. The delegate reads the theme manager's effective body background color, reapplies its owned capsule background, and clears the two legacy inner backgrounds before drawing.
 8. `StatusActivity` handles `uiMode` without recreation. Its theme manager can rewrite the navigation bar to an opaque color, so both configuration changes and theme events now reapply the transparent navigation-bar policy.
 9. The theme manager field `O0000Oo0` means transparent theme, not dark mode. Theme IDs and View/global `uiMode` values can also disagree with the body during a live change. The delegate therefore derives light/dark state from `O000O0OO`, the effective `theme_background_color` used by the body.
+10. `HotSearchActivity` and its CoordinatorLayout both used `fitsSystemWindows=true`, which stopped the page 78px above the bottom of the API 36 test device. A transparent navigation bar therefore exposed the darker window/root background as a separate strip. The Activity now preserves only top/side insets, consumes a zero bottom inset so content draws behind gesture navigation, and also disables the API 29+ contrast scrim.
 
 ## Verification Status
 
@@ -72,6 +75,7 @@ Verified on a Xiaomi `24129PN74C`, Android 16 / API 36, 1200x2670, 520dpi, gestu
 - Down-scroll hide and reverse-scroll restore.
 - Original page-specific publish FAB visibility.
 - Main-page search opens without black frames and returns to the timeline normally.
+- Weibo hot-search background extends behind gesture navigation in light and dark cold starts, and a live `uiMode` change does not reintroduce the bottom strip.
 - APK zip alignment and v1/v2/v3 signatures.
 - Original native libraries match the baseline APK byte-for-byte.
 

@@ -52,6 +52,61 @@
     return-void
 .end method
 
+.method private applyTransparentNavigationBar()V
+    .locals 3
+
+    invoke-virtual {p0}, LooO00000;->O0O0O0o()V
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1d
+
+    if-lt v0, v1, :cond_apply_insets
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setNavigationBarContrastEnforced(Z)V
+
+    :cond_apply_insets
+    const v0, 0x7f0a0568
+
+    invoke-virtual {p0, v0}, LO000oO0O;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_done
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setFitsSystemWindows(Z)V
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_child_ready
+
+    invoke-virtual {v2, v1}, Landroid/view/View;->setFitsSystemWindows(Z)V
+
+    :cond_child_ready
+    new-instance v1, Lcom/hengye/share/module/search/HotSearchNavigationInsetsListener;
+
+    invoke-direct {v1}, Lcom/hengye/share/module/search/HotSearchNavigationInsetsListener;-><init>()V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnApplyWindowInsetsListener(Landroid/view/View$OnApplyWindowInsetsListener;)V
+
+    invoke-virtual {v0}, Landroid/view/View;->requestApplyInsets()V
+
+    :cond_done
+    return-void
+.end method
+
 
 # virtual methods
 .method public final O000000o(LVL;)V
@@ -367,6 +422,18 @@
     move-result-object p1
 
     invoke-virtual {p1, p0}, LQwa;->O00000Oo(Ljava/lang/Object;)V
+
+    invoke-direct {p0}, Lcom/hengye/share/module/search/HotSearchActivity;->applyTransparentNavigationBar()V
+
+    return-void
+.end method
+
+.method public onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 0
+
+    invoke-super {p0, p1}, LooO00000;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+
+    invoke-direct {p0}, Lcom/hengye/share/module/search/HotSearchActivity;->applyTransparentNavigationBar()V
 
     return-void
 .end method
