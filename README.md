@@ -22,19 +22,20 @@
 - 分别处理滚动和输入法隐藏状态，并让底栏与发布按钮避开手势导航区域。
 - 根据正文实际使用的主题背景同步底栏明暗，支持冷启动和运行中浅色 / 深色切换。
 - 修复 Android 16 上主页面进入搜索时短暂出现黑帧的问题。
+- 修复 Android 16 上发表评论时编辑器上方显示黑屏的问题。
 - 让微博热搜正文延伸至透明手势导航区域，消除底部独立色带。
 - 保留“热门 > 发现”的微博热搜内容，移除人物 / 直播入口和图片推荐卡。
 
 ## 下载与安装
 
-最新构建产物：[下载 Share_floating_navigation_ui_fixed.apk](https://github.com/Zelayan/share/releases/download/v3.9.6-floating-navigation.1/Share_floating_navigation_ui_fixed.apk)（[Release 说明](https://github.com/Zelayan/share/releases/tag/v3.9.6-floating-navigation.1)）
+最新构建产物：[下载 Share_floating_navigation_ui_fixed.apk](https://github.com/Zelayan/share/releases/download/v3.9.6-floating-navigation.3/Share_floating_navigation_ui_fixed.apk)（[Release 说明](https://github.com/Zelayan/share/releases/tag/v3.9.6-floating-navigation.3)）
 
 | 项目 | 值 |
 | --- | --- |
 | 包名 | `com.hengye.share` |
 | 版本 | `3.9.6`（versionCode `925`） |
 | Android SDK | minSdk `21`，targetSdk `29` |
-| APK SHA-256 | `c30dc1e97a94d8443639a27b8e9a443ec2bd12dffb18e6f1f160f303b80826cf` |
+| APK SHA-256 | `dbbb7302f2bfc4efc52c538e93fdb4d5fdb48df1bd795dd91491e2a24ea139c1` |
 | 签名 | APK Signature Scheme v1 / v2 / v3 |
 
 该 APK 使用独立证书签名，不是原版 Share 的发布签名。设备上如果已安装同包名但签名不同的版本，需要先卸载原应用再安装；卸载会清除应用本地数据，请提前备份。后续覆盖升级必须继续使用相同证书。
@@ -73,7 +74,7 @@ scripts/test_hot_search_navigation.sh
 scripts/test_hot_page_cleanup.sh
 ```
 
-当前 APK 已在 Xiaomi `24129PN74C` 上完成主要真机验证：Android 16 / API 36、1200 x 2670、520dpi、手势导航模式。已验证三页切换、底栏滚动显隐、浅色 / 深色主题同步、透明手势区域、搜索转场、热门页清理，以及 APK 对齐和 v1 / v2 / v3 签名。
+当前 APK 已在 Xiaomi `24129PN74C` 上完成主要真机验证：Android 16 / API 36、1200 x 2670、520dpi、手势导航模式。已验证三页切换、底栏滚动显隐、浅色 / 深色主题同步、透明手势区域、搜索转场、评论编辑器透明转换、热门页清理，以及 APK 对齐和 v1 / v2 / v3 签名。
 
 尚未完整覆盖三键导航、输入法开关、屏幕旋转、大字体和 TalkBack；其他设备与系统版本可能存在兼容性差异。完整步骤见[验收清单](artifacts/Share_floating_navigation_验收清单.md)。
 

@@ -8,12 +8,14 @@
 - Version: `3.9.6` (`versionCode 925`)
 - SDK metadata: `minSdk 21`, `targetSdk 29`
 - Current APK: `artifacts/Share_floating_navigation_ui_fixed.apk`
-- Current SHA-256: `2a7abcde75a12edde6f7fa99f0b35bd4ed186ac42d0da803e2d2ab8a4845da6e`
+- Current SHA-256: `dbbb7302f2bfc4efc52c538e93fdb4d5fdb48df1bd795dd91491e2a24ea139c1`
 - Signing certificate SHA-256: `4abaeb3cd7a99ac96985806f1a5f1f2f096504ebd20c834d68fc862d9b5bbe75`
 
 The current APK is installed on the connected test device. It uses the local signing key in `artifacts/`; future update APKs must reuse this exact key. Credentials are recorded in `artifacts/Share_floating_navigation_签名说明.md`.
 
 The main-page search transition is also patched to avoid a brief black frame on Android 16 while preserving the original search screen and back-stack behavior.
+
+The quick-comment editor now converts its window to translucent on Android 16 without calling the removed `Activity.getActivityOptions()` API, so the underlying status detail remains visible above the editor.
 
 ## Requested Scope
 
@@ -51,6 +53,7 @@ Final behavior:
 - `decoded/share_full/smali/com/hengye/share/module/search/HotSearchActivity.smali`: disables root/child `fitsSystemWindows`, installs the HotSearch inset policy, reapplies transparent gesture navigation, and disables the Android navigation-bar contrast scrim.
 - `decoded/share_full/smali/com/hengye/share/module/search/HotSearchNavigationInsetsListener.smali`: preserves top/side system insets while intentionally consuming a zero bottom inset so the page draws behind gesture navigation.
 - `decoded/share_full/smali/ooO0OO00.8.smali`: filters exactly two promotional modules from the initial `231619` hot-discovery response before RecyclerView submission.
+- `decoded/share_full/smali_classes2/dta.1.smali`: invokes `Activity.convertToTranslucent()` with a null `ActivityOptions` argument so quick-comment overlays remain compatible with Android 16.
 
 The other files in the same `smali_classes3/.../third/` directory are required synthetic classes and listeners. Keep them together when rebuilding.
 
@@ -68,6 +71,7 @@ The other files in the same `smali_classes3/.../third/` directory are required s
 10. `HotSearchActivity` and its CoordinatorLayout both used `fitsSystemWindows=true`, which stopped the page 78px above the bottom of the API 36 test device. A transparent navigation bar therefore exposed the darker window/root background as a separate strip. The Activity now preserves only top/side insets, consumes a zero bottom inset so content draws behind gesture navigation, and also disables the API 29+ contrast scrim.
 11. The hot-discovery response mixes the wanted Weibo hot-search grid with two promotional RecyclerView items. Filtering only container `231619` during initial/refresh delivery removes those items without changing other CardList screens or paginated results.
 12. The launcher target and main Activity shared the legacy `k6` theme. Android 12+ combined its adaptive-icon launch animation with the old `@drawable/co` starting window, producing a circular icon plate and a dimmed first content frame. A dedicated launch theme now supplies a white background with dark system-bar icons in light mode and a black background with light system-bar icons in dark mode, plus the unmasked Share foreground resource and a transparent icon background before handing off to `StatusActivity`.
+13. Android 16 removed the hidden `Activity.getActivityOptions()` method while retaining `convertToTranslucent(TranslucentConversionListener, ActivityOptions)`. The legacy helper swallowed the reflection failure before conversion, leaving the quick-comment Activity opaque; it now passes a null options argument directly to the retained method.
 
 ## Verification Status
 
@@ -83,6 +87,7 @@ Verified on a Xiaomi `24129PN74C`, Android 16 / API 36, 1200x2670, 520dpi, gestu
 - Down-scroll hide and reverse-scroll restore.
 - Original page-specific publish FAB visibility.
 - Main-page search opens without black frames and returns to the timeline normally.
+- Quick-comment editor keeps the underlying status detail and comment list visible above the editor on Android 16.
 - Weibo hot-search background extends behind gesture navigation in light and dark cold starts, and a live `uiMode` change does not reintroduce the bottom strip.
 - Hot discovery keeps “更多热搜” while the people/live shortcuts and image recommendation card are absent from both the screenshot and accessibility hierarchy.
 - APK zip alignment and v1/v2/v3 signatures.

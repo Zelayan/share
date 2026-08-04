@@ -25,32 +25,14 @@
 .method public static O000000o(Landroid/app/Activity;Ldta$O00000Oo;)V
     .locals 11
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
     :try_start_0
-    const-class v0, Landroid/app/Activity;
+    const/4 v0, 0x0
 
-    const-string v1, "getActivityOptions"
+    const-class v3, Landroid/app/Activity;
 
     const/4 v2, 0x0
 
-    new-array v3, v2, [Ljava/lang/Class;
-
-    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
     const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
-
-    new-array v3, v2, [Ljava/lang/Object;
-
-    invoke-virtual {v0, p0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    const-class v3, Landroid/app/Activity;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getDeclaredClasses()[Ljava/lang/Class;
 

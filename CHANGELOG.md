@@ -2,6 +2,8 @@
 
 ## 2026-08-04
 
+- 修复 Android 16 评论编辑器上方黑屏：不再反射调用系统已移除的 `Activity.getActivityOptions()`，改为向仍可用的 `convertToTranslucent()` 传入空 `ActivityOptions`，恢复下层微博详情窗口的可见性。
+- 验证：Xiaomi `24129PN74C` Android 16 / API 36 实测评论页 `StatusPublishActivity` 不再遮挡父窗口，编辑器上方正常显示微博正文与评论列表；APK 已重新构建、对齐并通过 v1/v2/v3 签名校验。
 - 修复 Android 12+ 冷启动动画和遮罩：启动入口改用独立 `share_launch` 主题；浅色模式使用纯白背景和深色系统栏图标，深色模式使用纯黑背景和浅色系统栏图标；两种模式均保留 Share 前景图标和透明图标底板，避免系统再次套用圆形自适应图标背景，也不再把启动遮罩带入正文首帧。
 - 新增 `scripts/test_cold_start_theme.sh`，约束启动入口与正文主题分离、Android 12+ Splash 背景和图标资源，以及正文 `StatusActivity` 继续使用 `k6`。
 - 验证：`scripts/test_cold_start_theme.sh`；全部现有回归脚本；apktool 重建；zipalign；apksigner v1/v2/v3 校验通过；Xiaomi `24129PN74C` Android 16 逐帧确认浅色模式白底深色系统栏图标、深色模式黑底浅色系统栏图标，下一帧均直接进入对应正文，无圆形底板和遮罩残留。
