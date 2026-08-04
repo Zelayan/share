@@ -8,3 +8,6 @@
 - 修复微博热搜页底部手势区域的独立色带：移除页面根布局和 CoordinatorLayout 对底部系统 inset 的占用，仅保留左、上、右 inset 作为页面 padding，使正文背景延伸到手势条后方；同时在 API 29+ 关闭系统导航栏对比度遮罩。
 - 新增 `scripts/test_hot_search_navigation.sh`，检查根布局关闭 `fitsSystemWindows`、自定义 inset 监听器只保留顶部/侧边 padding、首次进入及在线配置变化均重新应用透明导航策略。
 - 验证：`scripts/test_hot_search_navigation.sh`；apktool 重建；zipalign；apksigner v1/v2/v3 校验通过；Xiaomi `24129PN74C` 已验证微博热搜页浅色进入、运行中切换 `uiMode` 及深色冷启动，正文背景均连续延伸到手势区域。
+- 精简主界面“热门 > 发现”首屏：仅对容器 `231619` 的首屏/刷新数据移除“热门人物 / 热点直播”入口和紧随其后的大图推荐卡，不影响微博热搜、其他 CardList 页面或后续分页。
+- 新增 `scripts/test_hot_page_cleanup.sh`，约束容器范围、首屏调用时机和恰好两个条目的移除行为。
+- 验证：`scripts/test_hot_page_cleanup.sh`；apktool 重建；zipalign；apksigner v1/v2/v3 校验通过；Xiaomi `24129PN74C` 冷启动后视图层级仅保留“更多热搜”，不再包含红框内四段入口文案或大图卡片。

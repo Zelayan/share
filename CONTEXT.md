@@ -8,7 +8,7 @@
 - Version: `3.9.6` (`versionCode 925`)
 - SDK metadata: `minSdk 21`, `targetSdk 29`
 - Current APK: `artifacts/Share_floating_navigation_ui_fixed.apk`
-- Current SHA-256: `af29f6994dddbd56c51734c450f4bc1d71aa7c5e77450864d35a455a0c062eeb`
+- Current SHA-256: `c30dc1e97a94d8443639a27b8e9a443ec2bd12dffb18e6f1f160f303b80826cf`
 - Signing certificate SHA-256: `4abaeb3cd7a99ac96985806f1a5f1f2f096504ebd20c834d68fc862d9b5bbe75`
 
 The current APK is installed on the connected test device. It uses the local signing key in `artifacts/`; future update APKs must reuse this exact key. Credentials are recorded in `artifacts/Share_floating_navigation_签名说明.md`.
@@ -17,7 +17,7 @@ The main-page search transition is also patched to avoid a brief black frame on 
 
 ## Requested Scope
 
-Only the legacy main-page bottom navigation is patched. Preserve the original ViewPager, pages, publish behavior, login, account storage, request signing, network layer, native libraries, and business data. Do not introduce Compose or replace the original client identity.
+The primary patch is the legacy main-page bottom navigation, plus narrowly scoped search-transition, HotSearch inset, theme-synchronization, and hot-page cleanup fixes. Preserve the original ViewPager, pages, publish behavior, login, account storage, request signing, network layer, native libraries, and business data. Do not introduce Compose or replace the original client identity.
 
 Final behavior:
 
@@ -32,6 +32,7 @@ Final behavior:
 - IME visibility remains an independent hide condition.
 - The capsule and original publish FAB avoid the gesture navigation region, with a 24dp fallback when the legacy target receives zero system inset.
 - The system navigation background remains transparent; Android chooses a dark gesture indicator on a light background.
+- The “热门 > 发现” first page keeps Weibo hot-search terms and removes the following people/live shortcut row and image recommendation card.
 
 ## Important Patch Locations
 
@@ -46,6 +47,7 @@ Final behavior:
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchOpaqueRunnable.smali`: restores normal opaque Activity behavior after 400ms.
 - `decoded/share_full/smali/com/hengye/share/module/search/HotSearchActivity.smali`: disables root/child `fitsSystemWindows`, installs the HotSearch inset policy, reapplies transparent gesture navigation, and disables the Android navigation-bar contrast scrim.
 - `decoded/share_full/smali/com/hengye/share/module/search/HotSearchNavigationInsetsListener.smali`: preserves top/side system insets while intentionally consuming a zero bottom inset so the page draws behind gesture navigation.
+- `decoded/share_full/smali/ooO0OO00.8.smali`: filters exactly two promotional modules from the initial `231619` hot-discovery response before RecyclerView submission.
 
 The other files in the same `smali_classes3/.../third/` directory are required synthetic classes and listeners. Keep them together when rebuilding.
 
@@ -61,6 +63,7 @@ The other files in the same `smali_classes3/.../third/` directory are required s
 8. `StatusActivity` handles `uiMode` without recreation. Its theme manager can rewrite the navigation bar to an opaque color, so both configuration changes and theme events now reapply the transparent navigation-bar policy.
 9. The theme manager field `O0000Oo0` means transparent theme, not dark mode. Theme IDs and View/global `uiMode` values can also disagree with the body during a live change. The delegate therefore derives light/dark state from `O000O0OO`, the effective `theme_background_color` used by the body.
 10. `HotSearchActivity` and its CoordinatorLayout both used `fitsSystemWindows=true`, which stopped the page 78px above the bottom of the API 36 test device. A transparent navigation bar therefore exposed the darker window/root background as a separate strip. The Activity now preserves only top/side insets, consumes a zero bottom inset so content draws behind gesture navigation, and also disables the API 29+ contrast scrim.
+11. The hot-discovery response mixes the wanted Weibo hot-search grid with two promotional RecyclerView items. Filtering only container `231619` during initial/refresh delivery removes those items without changing other CardList screens or paginated results.
 
 ## Verification Status
 
@@ -76,6 +79,7 @@ Verified on a Xiaomi `24129PN74C`, Android 16 / API 36, 1200x2670, 520dpi, gestu
 - Original page-specific publish FAB visibility.
 - Main-page search opens without black frames and returns to the timeline normally.
 - Weibo hot-search background extends behind gesture navigation in light and dark cold starts, and a live `uiMode` change does not reintroduce the bottom strip.
+- Hot discovery keeps “更多热搜” while the people/live shortcuts and image recommendation card are absent from both the screenshot and accessibility hierarchy.
 - APK zip alignment and v1/v2/v3 signatures.
 - Original native libraries match the baseline APK byte-for-byte.
 

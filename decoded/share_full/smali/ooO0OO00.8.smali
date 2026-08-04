@@ -414,6 +414,47 @@
     return-object v1
 .end method
 
+.method private removeHotDiscoveryPromotions(Ljava/util/List;)V
+    .locals 2
+
+    const-string v0, "231619"
+
+    iget-object v1, p0, LooO0OO00;->O000oOo0:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_done
+
+    if-eqz p1, :cond_done
+
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-le v0, v1, :cond_done
+
+    invoke-interface {p1, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-le v0, v1, :cond_done
+
+    invoke-interface {p1, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    :cond_done
+    return-void
+.end method
+
 
 # virtual methods
 .method public O000000o(LGG;)V
@@ -459,6 +500,15 @@
     return-void
 
     :cond_0
+    if-eqz p2, :cond_skip_hot_cleanup
+
+    invoke-virtual {p1}, LGG;->O00oOooO()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, LooO0OO00;->removeHotDiscoveryPromotions(Ljava/util/List;)V
+
+    :cond_skip_hot_cleanup
     iget-object v0, p0, LooO0OO00;->O000ooOo:LoOoooOO0;
 
     invoke-virtual {v0, p2}, LoOoooOO0;->O00000Oo(Z)V
