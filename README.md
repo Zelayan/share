@@ -27,7 +27,7 @@
 
 ## 下载与安装
 
-最新构建产物：[Share_floating_navigation_ui_fixed.apk](artifacts/Share_floating_navigation_ui_fixed.apk)
+最新构建产物：[下载 Share_floating_navigation_ui_fixed.apk](https://github.com/Zelayan/share/releases/download/v3.9.6-floating-navigation.1/Share_floating_navigation_ui_fixed.apk)（[Release 说明](https://github.com/Zelayan/share/releases/tag/v3.9.6-floating-navigation.1)）
 
 | 项目 | 值 |
 | --- | --- |
