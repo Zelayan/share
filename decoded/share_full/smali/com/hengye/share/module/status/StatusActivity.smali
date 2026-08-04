@@ -4481,6 +4481,8 @@
     invoke-static {p1}, Lo0o0OoO;->O000000o(Landroid/view/View;)V
 
     :cond_1
+    invoke-virtual {p0}, LooO00000;->O0O0O0o()V
+
     return-void
 .end method
 
@@ -6826,6 +6828,8 @@
     invoke-virtual {p0, v0}, LO000oO0O;->setTheme(I)V
 
     invoke-virtual {p1, p0}, LoOoOooO;->O00000o0(Landroid/app/Activity;)V
+
+    invoke-virtual {p0}, LooO00000;->O0O0O0o()V
 
     invoke-virtual {p0}, Lcom/hengye/share/module/status/StatusActivity;->O00O0OO()V
 

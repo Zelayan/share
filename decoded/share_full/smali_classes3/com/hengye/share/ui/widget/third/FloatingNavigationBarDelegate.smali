@@ -113,6 +113,75 @@
     return-void
 .end method
 
+.method private isDarkTheme()Z
+    .registers 4
+
+    sget-object v0, LRy;->O000o0:LRy;
+
+    iget-boolean v0, v0, LoOoOooO;->O0000Oo0:Z
+
+    if-eqz v0, :cond_check_system_mode
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_check_system_mode
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const-string v1, "uimode"
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/UiModeManager;
+
+    invoke-virtual {v0}, Landroid/app/UiModeManager;->getNightMode()I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_check_configuration
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_check_configuration
+    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/content/res/Configuration;->uiMode:I
+
+    and-int/lit8 v0, v0, 0x30
+
+    const/16 v1, 0x20
+
+    if-ne v0, v1, :cond_light_theme
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_light_theme
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method static constructor <clinit>()V
     .registers 4
 
@@ -266,21 +335,11 @@
 
     move-result v1
 
-    const-string v3, "uimode"
-
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/app/UiModeManager;
-
-    invoke-virtual {v3}, Landroid/app/UiModeManager;->getNightMode()I
+    invoke-direct {p0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->isDarkTheme()Z
 
     move-result v3
 
-    const/4 v4, 0x2
-
-    if-ne v3, v4, :cond_light_surface
+    if-eqz v3, :cond_light_surface
 
     const/4 v3, 0x1
 
@@ -2043,21 +2102,11 @@
 
     move-result v1
 
-    const-string v2, "uimode"
-
-    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/app/UiModeManager;
-
-    invoke-virtual {v2}, Landroid/app/UiModeManager;->getNightMode()I
+    invoke-direct {p0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->isDarkTheme()Z
 
     move-result v2
 
-    const/4 v3, 0x2
-
-    if-ne v2, v3, :cond_light_surface_refresh
+    if-eqz v2, :cond_light_surface_refresh
 
     const/4 v2, 0x1
 
@@ -2188,36 +2237,10 @@
 .method public ensureThemeCurrent()V
     .registers 4
 
-    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "uimode"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/UiModeManager;
-
-    invoke-virtual {v0}, Landroid/app/UiModeManager;->getNightMode()I
+    invoke-direct {p0}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->isDarkTheme()Z
 
     move-result v0
 
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_current_light
-
-    const/4 v0, 0x1
-
-    goto :goto_mode_ready
-
-    :cond_current_light
-    const/4 v0, 0x0
-
-    :goto_mode_ready
     iget-boolean v1, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->nightMode:Z
 
     if-eq v0, v1, :cond_theme_current
