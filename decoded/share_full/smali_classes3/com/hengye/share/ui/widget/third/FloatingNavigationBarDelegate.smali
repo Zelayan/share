@@ -114,63 +114,37 @@
 .end method
 
 .method private isDarkTheme()Z
-    .registers 4
+    .registers 5
 
     sget-object v0, LRy;->O000o0:LRy;
 
-    iget-boolean v0, v0, LoOoOooO;->O0000Oo0:Z
+    iget v0, v0, LoOoOooO;->O000O0OO:I
 
-    if-eqz v0, :cond_check_system_mode
+    invoke-static {v0}, Landroid/graphics/Color;->red(I)I
 
-    const/4 v0, 0x1
+    move-result v1
 
-    return v0
+    mul-int/lit16 v1, v1, 0x12b
 
-    :cond_check_system_mode
-    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
+    invoke-static {v0}, Landroid/graphics/Color;->green(I)I
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    move-result v2
 
-    move-result-object v0
+    mul-int/lit16 v2, v2, 0x24b
 
-    const-string v1, "uimode"
+    add-int/2addr v1, v2
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0}, Landroid/graphics/Color;->blue(I)I
 
-    move-result-object v0
+    move-result v2
 
-    check-cast v0, Landroid/app/UiModeManager;
+    mul-int/lit8 v2, v2, 0x72
 
-    invoke-virtual {v0}, Landroid/app/UiModeManager;->getNightMode()I
+    add-int/2addr v1, v2
 
-    move-result v0
+    const v2, 0x1f400
 
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_check_configuration
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_check_configuration
-    iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->bar:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/content/res/Configuration;->uiMode:I
-
-    and-int/lit8 v0, v0, 0x30
-
-    const/16 v1, 0x20
-
-    if-ne v0, v1, :cond_light_theme
+    if-ge v1, v2, :cond_light_theme
 
     const/4 v0, 0x1
 
