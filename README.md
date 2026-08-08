@@ -14,6 +14,10 @@
 | --- | --- |
 | ![悬浮底栏显示状态](screenshots/scroll-shown.png) | ![悬浮底栏隐藏状态](screenshots/scroll-hidden.png) |
 
+| 正文操作栏显示 | 向下浏览后隐藏 |
+| --- | --- |
+| ![正文悬浮操作栏](screenshots/status-action-shown.png) | ![正文操作栏隐藏状态](screenshots/status-action-hidden.png) |
+
 ## 主要改动
 
 - 将原底栏改为居中的悬浮胶囊，保留“微博 / 消息 / 热门”三个入口。
@@ -21,6 +25,7 @@
 - 向下浏览累计超过 24dp 后隐藏底栏，反向手势立即恢复；程序滚动不会误触发。
 - 分别处理滚动和输入法隐藏状态，并让底栏与发布按钮避开手势导航区域。
 - 根据正文实际使用的主题背景同步底栏明暗，支持冷启动和运行中浅色 / 深色切换。
+- 将微博正文页的评论、点赞和转发操作栏改为悬浮胶囊，并沿用向下隐藏、反向恢复和手势安全区规则。
 - 修复 Android 16 上主页面进入搜索时短暂出现黑帧的问题。
 - 修复 Android 16 上发表评论时编辑器上方显示黑屏的问题。
 - 让微博热搜正文延伸至透明手势导航区域，消除底部独立色带。
@@ -35,7 +40,7 @@
 | 包名 | `com.hengye.share` |
 | 版本 | `3.9.6`（versionCode `925`） |
 | Android SDK | minSdk `21`，targetSdk `29` |
-| APK SHA-256 | `dbbb7302f2bfc4efc52c538e93fdb4d5fdb48df1bd795dd91491e2a24ea139c1` |
+| APK SHA-256 | `f423fa85e1038bcea48531db8714180b05199989611d079f63bbf8912a1094ef` |
 | 签名 | APK Signature Scheme v1 / v2 / v3 |
 
 该 APK 使用独立证书签名，不是原版 Share 的发布签名。设备上如果已安装同包名但签名不同的版本，需要先卸载原应用再安装；卸载会清除应用本地数据，请提前备份。后续覆盖升级必须继续使用相同证书。
@@ -72,9 +77,10 @@ scripts/build_signed.sh
 scripts/test_theme_detection.sh
 scripts/test_hot_search_navigation.sh
 scripts/test_hot_page_cleanup.sh
+scripts/test_status_action_bar.sh
 ```
 
-当前 APK 已在 Xiaomi `24129PN74C` 上完成主要真机验证：Android 16 / API 36、1200 x 2670、520dpi、手势导航模式。已验证三页切换、底栏滚动显隐、浅色 / 深色主题同步、透明手势区域、搜索转场、评论编辑器透明转换、热门页清理，以及 APK 对齐和 v1 / v2 / v3 签名。
+当前 APK 已在 Xiaomi `24129PN74C` 上完成主要真机验证：Android 16 / API 36、1200 x 2670、520dpi、手势导航模式。已验证三页切换、主底栏与正文操作栏滚动显隐、浅色 / 深色主题同步、透明手势区域、搜索转场、评论编辑器透明转换、热门页清理，以及 APK 对齐和 v1 / v2 / v3 签名。
 
 尚未完整覆盖三键导航、输入法开关、屏幕旋转、大字体和 TalkBack；其他设备与系统版本可能存在兼容性差异。完整步骤见[验收清单](artifacts/Share_floating_navigation_验收清单.md)。
 

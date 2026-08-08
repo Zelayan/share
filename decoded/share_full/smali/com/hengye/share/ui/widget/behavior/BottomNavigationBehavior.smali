@@ -288,7 +288,18 @@
         }
     .end annotation
 
+    instance-of v0, p1, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBar;
+
+    if-eqz v0, :main_navigation
+
+    invoke-static {p1, p2}, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->setExternallyHidden(Landroid/view/View;Z)V
+
+    goto :visibility_done
+
+    :main_navigation
     invoke-static {p1, p2}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->setExternallyHidden(Landroid/view/View;Z)V
+
+    :visibility_done
 
     return-void
 
@@ -472,7 +483,7 @@
 .end method
 
 .method public O00000Oo(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II[II)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -483,7 +494,18 @@
         }
     .end annotation
 
+    instance-of v0, p2, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBar;
+
+    if-eqz v0, :main_navigation_scroll
+
+    invoke-static {p2, p5, p7}, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->onNestedScroll(Landroid/view/View;II)V
+
+    goto :nested_scroll_done
+
+    :main_navigation_scroll
     invoke-static {p2, p5, p7}, Lcom/hengye/share/ui/widget/third/FloatingNavigationBarDelegate;->onNestedScroll(Landroid/view/View;II)V
+
+    :nested_scroll_done
 
     return-void
 .end method

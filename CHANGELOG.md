@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-08
+
+- 将微博正文两种布局的评论 / 点赞 / 转发操作栏改为全宽悬浮胶囊：左右 16dp、高 56dp、圆角 28dp，并按手势导航 inset + 8dp 放置；旧系统或零 inset 使用 24dp 兜底。
+- 正文悬浮栏复用主底栏的有效正文背景色判断和显隐动画；向下浏览累计 24dp 后隐藏，反向手势立即恢复，键盘状态独立控制显示，动态占位确保最后一条评论不被遮挡。
+- 新增 `scripts/test_status_action_bar.sh`，约束两种正文布局、原操作控件 ID、主题来源、滚动桥和 IME 控制器接入。
+- 验证：全部静态回归脚本；apktool 重建；zipalign；apksigner v1/v2/v3；Xiaomi `24129PN74C` Android 16 / API 36 实测悬浮外观、滚动隐藏、反向恢复、评论编辑器透明转换及返回状态。
+
 ## 2026-08-04
 
 - 修复 Android 16 评论编辑器上方黑屏：不再反射调用系统已移除的 `Activity.getActivityOptions()`，改为向仍可用的 `convertToTranslucent()` 传入空 `ActivityOptions`，恢复下层微博详情窗口的可见性。

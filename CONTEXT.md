@@ -8,7 +8,7 @@
 - Version: `3.9.6` (`versionCode 925`)
 - SDK metadata: `minSdk 21`, `targetSdk 29`
 - Current APK: `artifacts/Share_floating_navigation_ui_fixed.apk`
-- Current SHA-256: `dbbb7302f2bfc4efc52c538e93fdb4d5fdb48df1bd795dd91491e2a24ea139c1`
+- Current SHA-256: `f423fa85e1038bcea48531db8714180b05199989611d079f63bbf8912a1094ef`
 - Signing certificate SHA-256: `4abaeb3cd7a99ac96985806f1a5f1f2f096504ebd20c834d68fc862d9b5bbe75`
 
 The current APK is installed on the connected test device. It uses the local signing key in `artifacts/`; future update APKs must reuse this exact key. Credentials are recorded in `artifacts/Share_floating_navigation_签名说明.md`.
@@ -36,6 +36,7 @@ Final behavior:
 - The system navigation background remains transparent; Android chooses a dark gesture indicator on a light background.
 - Cold starts use a dedicated splash that follows system mode: white with dark system-bar icons in light mode, black with light system-bar icons in dark mode, without a second circular icon background or an overlay on the first content frame.
 - The “热门 > 发现” first page keeps Weibo hot-search terms and removes the following people/live shortcut row and image recommendation card.
+- Both status-detail layout modes use a full-width floating `56dp` action capsule for comment, like, and repost controls, with 16dp side margins, the same theme surface and navigation inset policy, and the same 24dp user-scroll threshold.
 
 ## Important Patch Locations
 
@@ -47,6 +48,8 @@ Final behavior:
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingNavigationBarDelegate.smali`: capsule styling, item layout, selection animation, insets, scroll state, and effective body-theme resolution.
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingNavigationBarDelegate$ThemeRefreshRunnable.smali`: deferred theme refresh after legacy widget configuration handling.
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/ImeAwareNavigationBarController.smali`: show/hide animation and combined IME/scroll visibility.
+- `decoded/share_full/res/layout/b6.xml` and `b7.xml`: floating status action bar overlay and dynamic bottom safety spacer for both detail modes.
+- `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate.smali`: status action capsule styling, theme checks, navigation/IME insets, spacer sizing, and scroll visibility.
 - `decoded/share_full/res/values/styles.xml`: transient translucent theme used while the search window enters.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchActivity.smali`: schedules restoration to an opaque window after the system transition.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchOpaqueRunnable.smali`: restores normal opaque Activity behavior after 400ms.
@@ -72,6 +75,7 @@ The other files in the same `smali_classes3/.../third/` directory are required s
 11. The hot-discovery response mixes the wanted Weibo hot-search grid with two promotional RecyclerView items. Filtering only container `231619` during initial/refresh delivery removes those items without changing other CardList screens or paginated results.
 12. The launcher target and main Activity shared the legacy `k6` theme. Android 12+ combined its adaptive-icon launch animation with the old `@drawable/co` starting window, producing a circular icon plate and a dimmed first content frame. A dedicated launch theme now supplies a white background with dark system-bar icons in light mode and a black background with light system-bar icons in dark mode, plus the unmasked Share foreground resource and a transparent icon background before handing off to `StatusActivity`.
 13. Android 16 removed the hidden `Activity.getActivityOptions()` method while retaining `convertToTranslucent(TranslucentConversionListener, ActivityOptions)`. The legacy helper swallowed the reflection failure before conversion, leaving the quick-comment Activity opaque; it now passes a null options argument directly to the retained method.
+14. The status action controller calls `setBackgroundColor()` on its root during binding. The dedicated floating View intentionally ignores that rectangular background write and owns its rounded drawable, while preserving all child IDs and listeners used by the controller.
 
 ## Verification Status
 
@@ -85,6 +89,7 @@ Verified on a Xiaomi `24129PN74C`, Android 16 / API 36, 1200x2670, 520dpi, gestu
 - Capsule and publish FAB placement above the gesture indicator.
 - Transparent system navigation area.
 - Down-scroll hide and reverse-scroll restore.
+- Status-detail action capsule layout, down-scroll hide, reverse-scroll restore, and preserved quick-comment launch behavior.
 - Original page-specific publish FAB visibility.
 - Main-page search opens without black frames and returns to the timeline normally.
 - Quick-comment editor keeps the underlying status detail and comment list visible above the editor on Android 16.
