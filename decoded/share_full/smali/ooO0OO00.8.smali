@@ -680,7 +680,7 @@
 
     move-result v7
 
-    const/high16 v8, 0x42480000    # 50.0f
+    const/high16 v8, 0x42600000    # 56.0f
 
     invoke-static {v8}, LoOoo0OOo;->O000000o(F)I
 

@@ -230,7 +230,7 @@
 
 # virtual methods
 .method public final O000000o(II)V
-    .locals 2
+    .locals 3
 
     iget-object v0, p0, LooO00ooo;->O00000o0:Landroid/view/ViewGroup;
 
@@ -244,11 +244,51 @@
 
     invoke-direct {v0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$O00000oO;-><init>(II)V
 
+    iget-object p1, p0, LooO00ooo;->O00000o:Landroid/widget/LinearLayout;
+
+    instance-of p1, p1, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBar;
+
+    if-eqz p1, :capsule_margins_done
+
+    const/high16 p1, 0x41800000    # 16.0f
+
+    invoke-static {p1}, LoOoo0OOo;->O000000o(F)I
+
+    move-result p1
+
+    const/high16 p2, 0x42000000    # 32.0f
+
+    invoke-static {p2}, LoOoo0OOo;->O000000o(F)I
+
+    move-result p2
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, p1, v2, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+
+    :capsule_margins_done
+
     iput v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$O00000oO;->O00000o0:I
+
+    iget-object p1, p0, LooO00ooo;->O00000o:Landroid/widget/LinearLayout;
+
+    instance-of p1, p1, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBar;
+
+    if-eqz p1, :legacy_behavior
+
+    new-instance p1, Lcom/hengye/share/ui/widget/behavior/BottomNavigationBehavior;
+
+    invoke-direct {p1}, Lcom/hengye/share/ui/widget/behavior/BottomNavigationBehavior;-><init>()V
+
+    goto :behavior_ready
+
+    :legacy_behavior
 
     new-instance p1, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
 
     invoke-direct {p1}, Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;-><init>()V
+
+    :behavior_ready
 
     invoke-virtual {v0, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$O00000oO;->O000000o(Landroidx/coordinatorlayout/widget/CoordinatorLayout$O00000Oo;)V
 
@@ -264,6 +304,30 @@
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-direct {v0, p1, p2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+
+    iget-object p1, p0, LooO00ooo;->O00000o:Landroid/widget/LinearLayout;
+
+    instance-of p1, p1, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBar;
+
+    if-eqz p1, :frame_margins_done
+
+    const/high16 p1, 0x41800000    # 16.0f
+
+    invoke-static {p1}, LoOoo0OOo;->O000000o(F)I
+
+    move-result p1
+
+    const/high16 p2, 0x42000000    # 32.0f
+
+    invoke-static {p2}, LoOoo0OOo;->O000000o(F)I
+
+    move-result p2
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, p1, v2, p1, p2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+
+    :frame_margins_done
 
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
@@ -1070,7 +1134,11 @@
 
     const/4 p1, -0x1
 
-    const/4 p2, -0x2
+    const/high16 p2, 0x42400000    # 48.0f
+
+    invoke-static {p2}, LoOoo0OOo;->O000000o(F)I
+
+    move-result p2
 
     invoke-virtual {p0, p1, p2}, LooO00ooo;->O000000o(II)V
 

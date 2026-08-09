@@ -308,6 +308,46 @@
 
 
 # virtual methods
+.method private applyContentEdgeToEdge()V
+    .locals 3
+
+    invoke-virtual {p0}, LooO00000;->O0O0O0o()V
+
+    const v0, 0x7f0a0568
+
+    invoke-virtual {p0, v0}, LO000oO0O;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :done
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setFitsSystemWindows(Z)V
+
+    check-cast v0, Landroid/view/ViewGroup;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v2
+
+    if-eqz v2, :child_ready
+
+    invoke-virtual {v2, v1}, Landroid/view/View;->setFitsSystemWindows(Z)V
+
+    :child_ready
+    new-instance v1, Lcom/hengye/share/module/search/HotSearchNavigationInsetsListener;
+
+    invoke-direct {v1}, Lcom/hengye/share/module/search/HotSearchNavigationInsetsListener;-><init>()V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnApplyWindowInsetsListener(Landroid/view/View$OnApplyWindowInsetsListener;)V
+
+    invoke-virtual {v0}, Landroid/view/View;->requestApplyInsets()V
+
+    :done
+    return-void
+.end method
+
 .method public final O000000o(Landroid/net/Uri;Ljava/lang/String;ZZ)V
     .locals 7
 
@@ -1244,6 +1284,8 @@
 
     invoke-super {p0, p1}, LooO00000;->onCreate(Landroid/os/Bundle;)V
 
+    invoke-direct {p0}, Lcom/hengye/share/module/search/SearchActivity;->applyContentEdgeToEdge()V
+
     new-instance v0, Lcom/hengye/share/module/search/SearchOpaqueRunnable;
 
     invoke-direct {v0, p0}, Lcom/hengye/share/module/search/SearchOpaqueRunnable;-><init>(Landroid/app/Activity;)V
@@ -1733,6 +1775,16 @@
     invoke-virtual {p1, v0}, Lcom/hengye/share/ui/widget/SearchView;->setSearchContent(Ljava/lang/String;)V
 
     :cond_f
+    return-void
+.end method
+
+.method public onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 0
+
+    invoke-super {p0, p1}, LooO00000;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+
+    invoke-direct {p0}, Lcom/hengye/share/module/search/SearchActivity;->applyContentEdgeToEdge()V
+
     return-void
 .end method
 

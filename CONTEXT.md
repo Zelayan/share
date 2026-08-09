@@ -37,6 +37,7 @@ Final behavior:
 - Cold starts use a dedicated splash that follows system mode: white with dark system-bar icons in light mode, black with light system-bar icons in dark mode, without a second circular icon background or an overlay on the first content frame.
 - The “热门 > 发现” first page keeps Weibo hot-search terms and removes the following people/live shortcut row and image recommendation card.
 - Both status-detail layout modes use a full-width floating `48dp` action capsule for comment, like, and repost controls, preserving the original action-row content height while adding 16dp side margins, an 88%-opaque theme surface, and the same 24dp user-scroll threshold. The capsule uses the navigation inset for safe positioning, while comment content draws through that inset behind the retained gesture indicator.
+- Search result pages use the same `FloatingStatusActionBar` capsule for the dynamically-created discussion / share / shortcut bar. The `rh` template is edge-to-edge with a 48dp height, 16dp horizontal margins, and a 32dp bottom fallback; SearchActivity preserves only the top system inset so the bar is positioned above the gesture indicator.
 
 ## Important Patch Locations
 
@@ -53,6 +54,8 @@ Final behavior:
 - `decoded/share_full/smali/com/hengye/share/module/statusdetail/StatusDetailActivity.smali`: mirrors the main page's null Window background and reapplies transparent navigation after creation and configuration changes.
 - `decoded/share_full/res/values/styles.xml`: transient translucent theme used while the search window enters.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchActivity.smali`: schedules restoration to an opaque window after the system transition.
+- `decoded/share_full/res/layout/rh.xml` and `decoded/share_full/smali/ooO00ooo.22.smali`: search result discussion bar capsule template, fixed height, margins, and capsule-specific nested-scroll behavior.
+- `decoded/share_full/smali/ooO0OO00.8.smali`: search result bottom content reservation for the 48dp bar plus spacing.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchOpaqueRunnable.smali`: restores normal opaque Activity behavior after 400ms.
 - `decoded/share_full/smali/com/hengye/share/module/search/HotSearchActivity.smali`: disables root/child `fitsSystemWindows`, installs the HotSearch inset policy, reapplies transparent gesture navigation, and disables the Android navigation-bar contrast scrim.
 - `decoded/share_full/smali/com/hengye/share/module/search/HotSearchNavigationInsetsListener.smali`: preserves top/side system insets while intentionally consuming a zero bottom inset so the page draws behind gesture navigation.
