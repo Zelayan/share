@@ -2881,10 +2881,70 @@
     return v0
 .end method
 
+.method private applyContentEdgeToEdge()V
+    .locals 3
+
+    const/4 v1, 0x0
+    const/4 v2, 0x0
+
+    const v0, 0x7f0a066a    # toolbar container
+    invoke-virtual {p0, v0}, LO000oO0O;->findViewById(I)Landroid/view/View;
+    move-result-object v0
+
+    if-eqz v0, :root
+    invoke-virtual {v0}, Landroid/view/View;->getTop()I
+    move-result v2
+
+    :root
+    const v0, 0x7f0a0568    # activity_base CoordinatorLayout
+    invoke-virtual {p0, v0}, LO000oO0O;->findViewById(I)Landroid/view/View;
+    move-result-object v0
+
+    if-eqz v0, :layout_root
+    invoke-virtual {v0, v1}, Landroid/view/View;->setFitsSystemWindows(Z)V
+    invoke-virtual {v0, v1, v2, v1, v1}, Landroid/view/View;->setPadding(IIII)V
+
+    :layout_root
+    const v0, 0x7f0a03c0    # activity_base layout_root LinearLayout
+    invoke-virtual {p0, v0}, LO000oO0O;->findViewById(I)Landroid/view/View;
+    move-result-object v0
+
+    if-eqz v0, :done
+    invoke-virtual {v0, v1}, Landroid/view/View;->setFitsSystemWindows(Z)V
+    invoke-virtual {v0, v1, v2, v1, v1}, Landroid/view/View;->setPadding(IIII)V
+
+    :done
+    return-void
+.end method
+
+.method public onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 0
+
+    invoke-super {p0, p1}, LooO00000;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+
+    invoke-direct {p0}, Lcom/hengye/share/module/statusdetail/StatusDetailActivity;->applyContentEdgeToEdge()V
+
+    invoke-virtual {p0}, LooO00000;->O0O0O0o()V
+
+    return-void
+.end method
+
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
 
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
     invoke-super {p0, p1}, LooO00000;->onCreate(Landroid/os/Bundle;)V
+
+    invoke-direct {p0}, Lcom/hengye/share/module/statusdetail/StatusDetailActivity;->applyContentEdgeToEdge()V
+
+    invoke-virtual {p0}, LooO00000;->O0O0O0o()V
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 

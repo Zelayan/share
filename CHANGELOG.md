@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-08-09
+
+- 将正文页悬浮评论 / 点赞 / 转发栏从 56dp 调整为原操作栏的 48dp 内容高度，圆角同步调整为 24dp。
+- 恢复评论操作栏的透底效果：浅色与深色胶囊背景均使用 88% 不透明度，不再显示为实心色块。
+- 修复 Android 16 评论页底部手势“小白条”区域不透明：正文窗口严格复用主页的透明导航初始化，不再额外调用 `setDecorFitsSystemWindows`、重复设置导航栏颜色或关闭系统对比度遮罩，避免 HyperOS 对两页应用不同的导航区域底色。
+- 评论列表底部 padding 不再消耗 78px 导航 inset，使评论内容实际绘制到保留的系统手势横线后方；navigation inset 仍用于悬浮栏安全定位。
+- 评论详情继续保留标题栏所需的 `activity_base` 容器，但关闭其外层 `CoordinatorLayout` 与 `layout_root` 的 `fitsSystemWindows`，恢复原顶部 inset 并只舍弃底部 inset，让 RecyclerView 的测量高度与主页一样延伸到屏幕底部。
+- 修正上述 smali 分支的布尔寄存器初始化，避免根视图查找分支触发 Android Verifier 启动拒绝。
+- 在关闭 fits 前读取标题栏容器的实际 `top`，再把该动态顶部 inset 应用到 `layout_root`，避免标题栏移入状态栏下方且不写死设备尺寸。
+- 补齐根视图缺失分支下的 padding 寄存器默认值，确保 Android Verifier 在所有布局分支都能通过。
+- 评论详情 Activity 复用主页的 Window 初始化顺序：在 `super.onCreate()` 前清空 Window 背景，并在创建及配置变化后重应用透明导航策略，避免主题窗口底板重新覆盖沉浸区域。
+- 显隐位移和评论列表底部动态占位同步使用 48dp，避免视觉高度与交互计算不一致。
+- 验证：`scripts/test_status_action_bar.sh` 已覆盖“只复用主页助手且不包含额外 Window API”的回归约束；其余构建、签名及 Xiaomi `24129PN74C` Android 16 / 520dpi 实机对比将在本次重建后复验。
+
 ## 2026-08-08
 
 - 将微博正文两种布局的评论 / 点赞 / 转发操作栏改为全宽悬浮胶囊：左右 16dp、高 56dp、圆角 28dp，并按手势导航 inset + 8dp 放置；旧系统或零 inset 使用 24dp 兜底。

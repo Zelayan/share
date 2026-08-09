@@ -36,7 +36,7 @@ Final behavior:
 - The system navigation background remains transparent; Android chooses a dark gesture indicator on a light background.
 - Cold starts use a dedicated splash that follows system mode: white with dark system-bar icons in light mode, black with light system-bar icons in dark mode, without a second circular icon background or an overlay on the first content frame.
 - The “热门 > 发现” first page keeps Weibo hot-search terms and removes the following people/live shortcut row and image recommendation card.
-- Both status-detail layout modes use a full-width floating `56dp` action capsule for comment, like, and repost controls, with 16dp side margins, the same theme surface and navigation inset policy, and the same 24dp user-scroll threshold.
+- Both status-detail layout modes use a full-width floating `48dp` action capsule for comment, like, and repost controls, preserving the original action-row content height while adding 16dp side margins, an 88%-opaque theme surface, and the same 24dp user-scroll threshold. The capsule uses the navigation inset for safe positioning, while comment content draws through that inset behind the retained gesture indicator.
 
 ## Important Patch Locations
 
@@ -49,7 +49,8 @@ Final behavior:
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingNavigationBarDelegate$ThemeRefreshRunnable.smali`: deferred theme refresh after legacy widget configuration handling.
 - `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/ImeAwareNavigationBarController.smali`: show/hide animation and combined IME/scroll visibility.
 - `decoded/share_full/res/layout/b6.xml` and `b7.xml`: floating status action bar overlay and dynamic bottom safety spacer for both detail modes.
-- `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate.smali`: status action capsule styling, theme checks, navigation/IME insets, spacer sizing, and scroll visibility.
+- `decoded/share_full/smali_classes3/com/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate.smali`: status action capsule styling, theme checks, navigation/IME insets, spacer sizing, scroll visibility, and delegation to the same transparent-navigation helper used by the main page.
+- `decoded/share_full/smali/com/hengye/share/module/statusdetail/StatusDetailActivity.smali`: mirrors the main page's null Window background and reapplies transparent navigation after creation and configuration changes.
 - `decoded/share_full/res/values/styles.xml`: transient translucent theme used while the search window enters.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchActivity.smali`: schedules restoration to an opaque window after the system transition.
 - `decoded/share_full/smali/com/hengye/share/module/search/SearchOpaqueRunnable.smali`: restores normal opaque Activity behavior after 400ms.
@@ -76,6 +77,7 @@ The other files in the same `smali_classes3/.../third/` directory are required s
 12. The launcher target and main Activity shared the legacy `k6` theme. Android 12+ combined its adaptive-icon launch animation with the old `@drawable/co` starting window, producing a circular icon plate and a dimmed first content frame. A dedicated launch theme now supplies a white background with dark system-bar icons in light mode and a black background with light system-bar icons in dark mode, plus the unmasked Share foreground resource and a transparent icon background before handing off to `StatusActivity`.
 13. Android 16 removed the hidden `Activity.getActivityOptions()` method while retaining `convertToTranslucent(TranslucentConversionListener, ActivityOptions)`. The legacy helper swallowed the reflection failure before conversion, leaving the quick-comment Activity opaque; it now passes a null options argument directly to the retained method.
 14. The status action controller calls `setBackgroundColor()` on its root during binding. The dedicated floating View intentionally ignores that rectangular background write and owns its rounded drawable, while preserving all child IDs and listeners used by the controller.
+15. HyperOS can produce different gesture-navigation surfaces when a detail page combines the legacy main-page helper with modern `Window` edge-to-edge APIs. The status-detail flow now mirrors the homepage exactly: clear the Window background before `super.onCreate()`, turn off only the detail Activity's `activity_base` root `fitsSystemWindows`, then use only `O0O0O0o()` for the transparent navigation color and legacy decor flags.
 
 ## Verification Status
 

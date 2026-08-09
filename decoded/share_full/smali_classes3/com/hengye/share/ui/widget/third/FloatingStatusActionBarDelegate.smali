@@ -23,7 +23,7 @@
     move-result-object v0
     iget v0, v0, Landroid/util/DisplayMetrics;->density:F
     iput v0, p0, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->density:F
-    const/16 v0, 0x38
+    const/16 v0, 0x30
     invoke-direct {p0, v0}, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->dp(I)I
     move-result v0
     iput v0, p0, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->barHeight:I
@@ -82,7 +82,7 @@
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
-    const/16 v1, 0x1c
+    const/16 v1, 0x18
     invoke-direct {p0, v1}, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->dp(I)I
     move-result v1
     int-to-float v1, v1
@@ -96,10 +96,10 @@
     move-result v0
     iput-boolean v0, p0, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->nightMode:Z
     if-eqz v0, :light
-    const v1, -0xcbb8b2    # ff34474e
+    const v1, -0x1fcbb8b2    # e034474e
     goto :color
     :light
-    const/4 v1, -0x1
+    const v1, -0x1f000001    # e0ffffff
     :color
     invoke-direct {p0, v1}, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->roundRect(I)Landroid/graphics/drawable/GradientDrawable;
     move-result-object v1
@@ -112,7 +112,7 @@
 .end method
 
 .method private applyTransparentNavigationBar()V
-    .locals 3
+    .locals 2
     iget-object v0, p0, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->bar:Landroid/view/ViewGroup;
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
     move-result-object v0
@@ -120,13 +120,6 @@
     if-eqz v1, :done
     check-cast v0, LooO00000;
     invoke-virtual {v0}, LooO00000;->O0O0O0o()V
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
-    const/16 v2, 0x1d
-    if-lt v1, v2, :done
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-    move-result-object v0
-    const/4 v1, 0x0
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setNavigationBarContrastEnforced(Z)V
     :done
     return-void
 .end method
@@ -190,7 +183,6 @@
     iget v3, p0, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->barHeight:I
     iget v4, p0, Lcom/hengye/share/ui/widget/third/FloatingStatusActionBarDelegate;->bottomSpacing:I
     add-int/2addr v3, v4
-    add-int/2addr v3, v0
     invoke-virtual {v1}, Landroid/view/View;->getPaddingLeft()I
     move-result v0
     invoke-virtual {v1}, Landroid/view/View;->getPaddingTop()I
