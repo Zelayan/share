@@ -1,3 +1,5 @@
+
+
 # Share Floating Navigation
 
 面向 Share 3.9.6 Android 客户端的 APK 级 UI 修补项目。在保留原有页面、ViewPager、发布流程、登录、网络层与 native 库行为的前提下，为主界面加入悬浮胶囊底栏，并修复新版 Android 上的主题同步、搜索转场和手势导航区域显示问题。
@@ -71,13 +73,14 @@ scripts/build_signed.sh
 
 ## 回归检查
 
-以下静态测试覆盖本项目新增的主题判断、微博热搜手势区域和热门页清理逻辑：
+以下静态测试覆盖本项目新增的主题判断、微博热搜手势区域、热门页清理逻辑及热搜结果页操作栏：
 
 ```sh
 scripts/test_theme_detection.sh
 scripts/test_hot_search_navigation.sh
 scripts/test_hot_page_cleanup.sh
 scripts/test_status_action_bar.sh
+scripts/test_search_result_action_bar.sh
 ```
 
 当前 APK 已在 Xiaomi `24129PN74C` 上完成主要真机验证：Android 16 / API 36、1200 x 2670、520dpi、手势导航模式。已验证三页切换、主底栏与正文操作栏滚动显隐、浅色 / 深色主题同步、透明手势区域、搜索转场、评论编辑器透明转换、热门页清理，以及 APK 对齐和 v1 / v2 / v3 签名。
